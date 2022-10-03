@@ -1,4 +1,4 @@
-# CabañApp 🏡
+# CabaniApp 🏡
 ## Proyecto Colaborativo / Módulo Full Stack / ISPC / Cohorte 2022 // grupo 22
 
 ### Integrantes
