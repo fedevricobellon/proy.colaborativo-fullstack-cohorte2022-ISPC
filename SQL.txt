@@ -1,0 +1,26 @@
+create table cabianiapp;
+use cabaniapp;
+
+create table Users (
+id_user int auto_increment primary key,
+name varchar (25) not null,
+surname varchar (25) not null,
+age int not null,
+isAdmin bit,
+email varchar (50) not null,
+phone int not null,
+cityLocation varchar (25) not null,
+country varchar (15) not null
+);
+
+create table Cabin(
+id_Cabin int auto_increment primary key,
+id_user_ToCabin int not null,  
+constraint fk_CaUs foreign key (id_user_ToCabin) references Users (id_user)
+);
+
+alter table Users
+add isEmployee bit;
+alter table Cabin
+add url_img varchar (50),
+add description_Cabin varchar (125)
