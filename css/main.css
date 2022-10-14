@@ -1,0 +1,18 @@
+.jumbotron{
+    background-color:#F8EBBE;
+    color:#001909;
+}
+
+.btn-primary{
+    background-color: maroon;
+    color:#F8EBBE;
+    margin-top:10px;
+}
+
+footer {
+    padding: 10px 10px 10px 100px;
+    background-color:#F8EBBE;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+}
