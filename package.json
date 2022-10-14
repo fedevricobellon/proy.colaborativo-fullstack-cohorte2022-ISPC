@@ -4,7 +4,7 @@
   "description": "Guia de Cabañas",
   "main": "index.html",
   "scripts": {
-	  "dev": "lite-server",
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/fedevricobellon/proy.colaborativo-fullstack-cohorte2022-ISPC#readme",
   "dependencies": {
-    "lite-server": "^2.6.1"
+    "bootstrap": "^5.2.2",
+    "jquerry": "^0.0.1-security",
+    "lite-server": "^2.6.1",
+    "popper.js": "^1.16.1"
   }
 }
