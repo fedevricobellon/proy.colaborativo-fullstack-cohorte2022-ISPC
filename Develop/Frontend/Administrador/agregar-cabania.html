@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin-style.css">
+    <title>Agregar Cabania</title>
+</head>
+<body>
+    <header></header>
+
+    <main>
+
+        <div class="container">
+            <div class="cuadro-sup">
+                <h1>CABAÑAS</h1>
+                <div class="selec-complejo">
+                    <h2>SELECCIONAR COMPLEJO</h2>                    
+                    <select name="" id="">
+                        <option value="0">+ AGREGAR COMPLEJO</option>
+                        <option value="1" selected>Cabañas "Arco Iris"</option>
+                    </select>
+                    <!-- Boton aparece si selecciona "AGREGAR COMPLEJO" solamente. -->
+                    <button hidden>Agregar</button>
+                </div>
+            </div>
+            <div class="form-cabania">
+                <form action="POST">
+                    <legend>NUEVA CABAÑA</legend>
+                    <div class="caracteres">
+                        <label for="nom-cab">Nombre Cabaña:</label>
+                        <input type="text" id="nom-cab">
+                    </div>
+                    <div class="caracteres">
+                        <label for="dorm-cab">Cantidad de Dormitorios:</label>
+                        <input type="number" id="dorm-cab" min="1"> 
+                    </div>
+                    <div class="caracteres">
+                        <label for="plaza-cab">Plaza Total:</label>
+                        <input type="number" id="plaza-cab" min="1">
+                    </div>
+                    <div class="caracteres">
+                        <label for="plaza-cab">Plaza Total:</label>
+                        <input type="number" id="plaza-cab" min="1">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
