@@ -3,6 +3,9 @@
 .cabecera{
     background-color: #fff4ce;
     /* background-color: #2E2300; */
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
 }
 
 .pieDePagina{
@@ -18,11 +21,16 @@
     
 }
 
+.btn{
+    height: 5%;
+
+}
+
 .seccionPrincipal{ 
     width:90%;
     height: auto;
     margin: 30px auto;
-    padding:30px 0 30px 20px;
+    padding:40px 0 40px 30px;
     border: 1px solid rgb(171, 168, 168);
     border-radius: 25px;
     box-shadow: 5px 5px 2px #888;
@@ -69,7 +77,7 @@
 }
 
 .img2{
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .img3{
     margin-top:10px;
@@ -95,7 +103,6 @@ ul{
 }
 
 
-
 /* ____________________media querys_______________________ */
 @media(min-width:600px) and (max-width:1280px){
     .seccionTexto1, .seccionTexto2, .seccionTexto3{
@@ -111,12 +118,14 @@ ul{
  
     .img2{
        padding-left: 10px;
+       margin-bottom: 20px;
     }
     .seccion-img1, .seccion-img2, .seccion-img3{
         margin:0 auto;
     }
 
 }
+
 
 @media(max-width:599px){
     .seccionTexto1, .seccionTexto2, .seccionTexto3{
@@ -130,13 +139,12 @@ ul{
     }
 
     .img2, .img3{
-        width:400px;
-        height:250px;
-        padding-left: 15px;
+        width:90%;
+        height:90%;
      }
 
-    .img3{
-        padding-left: 25px;
+    .img2{
+        margin-bottom:20px;
     }
 
 }
