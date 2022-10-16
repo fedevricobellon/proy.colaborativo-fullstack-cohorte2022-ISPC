@@ -12,9 +12,11 @@
 <body>
     <header>
         <!-- Vuelve al panel administración. -->
-        <button><a href="#"><-- VOLVER</a></button>
-        <div class="titulo-central">
-            <h1>NUEVA CABAÑA</h1>
+        <div class="col">
+            <button><a href="#"><---- VOLVER</a></button>
+        </div>
+        <div class="titulo-central col">
+            <h1>Nueva Cabaña</h1>
         </div>
     </header>
 
@@ -25,7 +27,7 @@
                 <h1>CABAÑA</h1>
                 <div class="selec-complejo">
                     <h2>SELECCIONAR COMPLEJO</h2>
-                    <select name="" id="">
+                    <select name="agregar-complejo" id="">
                         <option value="0">+ AGREGAR COMPLEJO</option>
                         <option value="1" selected>Cabañas "Arco Iris"</option>
                     </select>
@@ -36,7 +38,7 @@
             <div class="forms-cabanias">
                 <div class="form-cabania">
                     <form action="POST">
-                        <legend>DATOS CABAÑA</legend>
+                        <legend>Datos de la Cabaña</legend>
                         <div>
                             <label for="nom-cab">Nombre Cabaña:</label>
                             <input type="text" id="nom-cab" placeholder="Denominación o numeración de la cabaña.">
@@ -58,34 +60,39 @@
                     </form>
                 </div>
                 <div class="form-cabania">
-                    <legend>SERVICIOS CABAÑA</legend>
+                    <legend class="legend2">Servicios de la Cabaña</legend>
                     <div class="servicios">
                         <label for="serv-1">Serv. Digitales:</label>
-                        WI-FI<input type="checkbox" name="serv-1" value="1">
-                        TV<input type="checkbox" name="serv-1" value="2">
-                        DIRECTV<input type="checkbox" name="serv-1" value="3">
+                        WI-FI<input type="checkbox" name="serv-cab-1" value="1">
+                        TV<input type="checkbox" name="serv-cab-1" value="2">
+                        DIRECTV<input type="checkbox" name="serv-cab-1" value="3">
                     </div>
                     <div class="servicios">
-                        <label for="serv-2">Serv. Ropa Blanca:</label>
-                        SABANAS<input type="checkbox" name="serv-2" value="1">
-                        FRAZADAS<input type="checkbox" name="serv-2" value="2">
-                        TOALLAS<input type="checkbox" name="serv-2" value="3">
+                        <label for="serv-cab-2">Serv. Ropa Blanca:</label>
+                        SABANAS<input type="checkbox" name="serv-cab-2" value="1">
+                        FRAZADAS<input type="checkbox" name="serv-cab-2" value="2">
+                        TOALLAS<input type="checkbox" name="serv-cab-2" value="3">
                     </div>
                     <div class="servicios">
-                        <label for="serv-3">Serv. Cocina/Comedor:</label>
-                        COCINA<input type="checkbox" name="serv-3" value="1">
-                        HORNO<input type="checkbox" name="serv-3" value="2">
-                        MICROONDAS<input type="checkbox" name="serv-3" value="3">
-                        CUBIERTOS<input type="checkbox" name="serv-3" value="4">
-                        VASOS / TAZAS<input type="checkbox" name="serv-3" value="5">
+                        <label for="serv-cab-3">Serv. Cocina/Comedor:</label>
+                        COCINA<input type="checkbox" name="serv-cab-3" value="1">
+                        HORNO<input type="checkbox" name="serv-cab-3" value="2">
+                        MICROONDAS<input type="checkbox" name="serv-cab-3" value="3">
+                        CUBIERTOS<input type="checkbox" name="serv-cab-3" value="4">
+                        VASOS / TAZAS<input type="checkbox" name="serv-cab-3" value="5">
                     </div>
                     <div class="servicios">
-                        <label for="serv-4">Serv. Climatización:</label>
-                        VENTILADOR<input type="checkbox" name="serv-4" value="1">
-                        CALEFACCIÓN<input type="checkbox" name="serv-4" value="2">
-                        AIRE ACONDICIONADO<input type="checkbox" name="serv-4" value="3">
+                        <label for="serv-cab-4">Serv. Climatización:</label>
+                        VENTILADOR<input type="checkbox" name="serv-cab-4" value="1">
+                        CALEFACCIÓN<input type="checkbox" name="serv-cab-4" value="2">
+                        AIRE ACONDICIONADO<input type="checkbox" name="serv-cab-4" value="3">
                     </div>
-                    
+                    <div class="servicios">
+                        <label for="serv-cab-5">Otros Servicios:</label>
+                        PILETA PRIVADA<input type="checkbox" name="serv-cab-5" value="1">
+                        LAVARROPAS<input type="checkbox" name="serv-cab-5" value="2">
+                        SET LIMPIEZA<input type="checkbox" name="serv-cab-5" value="3">
+                    </div>                    
                 </div>
             </div>
         </div>

@@ -1,12 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cabanias-complejos.css">
     <title>Nuevo Complejo</title>
 </head>
+
 <body>
-    
+    <header>
+        <!-- Vuelve al panel administración. -->
+        <div class="col">
+            <button><a href="#">
+                    <---- VOLVER</a></button>
+        </div>
+        <div class="titulo-central col">
+            <h1>Nuevo Complejo</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="cuadro-sup">
+                <h1>COMPLEJO</h1>
+            </div>
+            <div class="forms-cabanias">
+                <div class="form-cabania">
+                    <form action="POST">
+                        <legend>Datos del Complejo</legend>
+                        <div>
+                            <label for="nom-complejo">Nombre Complejo:</label>
+                            <input type="text" id="nom-complejo"
+                                placeholder="Ej: 'Cabañas Arco Iris', 'Complejo Cuarzo'...">
+                        </div>
+                        <div>
+                            <label for="cab-complejo">Cantidad de Cabañas:</label>
+                            <input type="number" id="dorm-complejo" min="1" placeholder="Total de cabañas habitables.">
+                        </div>
+                        <div class="opciones">
+                            <label for="prov-complejo">Provincia:</label>
+                            <select name="prov-complejo">
+                                <option value="1">Buenos Aires</option>
+                                <option value="2">Mendoza</option>
+                                <option value="3">San Luis</option>
+                                <option value="4">Entre Rios</option>
+                                <option value="5">Cordoba</option>
+                                <option value="6">Santa Cruz</option>
+                            </select>
+                        </div>
+                        <div class="opciones">
+                            <label for="ciudad-complejo">Ciudad:</label>
+                            <select name="ciud-complejo">
+                                <option value="1">El Trapiche</option>
+                                <option value="2">Rio Gallego</option>
+                                <option value="3">Merlo</option>
+                                <option value="4">Villa Gral Belgrano</option>
+                                <option value="5">La Cumbrecita</option>
+                                <option value="6">Santa Cruz</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="dir-complejo">Calle / Av. / Ruta:</label>
+                            <input type="text" id="calle-complejo" placeholder="Nombre de la ubicación del complejo.">
+                        </div>
+                        <div>
+                            <label for="num-complejo">Numeración / Km:</label>
+                            <input type="number" id="num-complejo"
+                                placeholder="Numeración de la ubicación del complejo.">
+                        </div>
+                        <div class="mapa-complejo">
+                            <label>Ubicación Mapa:</label>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13366.472678972592!2d-66.0729686!3d-33.1191208!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbb77a3febea5b5a!2sCondominio%20Cuarzo!5e0!3m2!1ses!2sar!4v1665950661879!5m2!1ses!2sar"
+                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <!-- Luego habrá que configurarlo para que el usuario pueda subir más de una imagen. -->
+                        <div>
+                            <label for="img-complejo">Imagenes del Complejo:</label>
+                            <input type="file" id="img-complejo">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="form-cabania">
+                    <legend class="legend2">Servicios del Complejo</legend>
+                    <div class="servicios serv-comp">
+                        <label for="serv-complejo-1">Serv. Cochera:</label>
+                        TECHADA<input type="checkbox" name="serv-complejo-1" value="1">
+                        SIN TECHAR<input type="checkbox" name="serv-complejo-1" value="2">
+                    </div>
+                    <div class="servicios serv-comp">
+                        <label for="serv-complejo-2">Serv. Pileta:</label>
+                        PILETA COMPARTIDA<input type="checkbox" name="serv-complejo-2" value="1">
+                        PILETA PRIVADA<input type="checkbox" name="serv-complejo-2" value="2">
+                        PILETA PRIVADA<input type="checkbox" name="serv-complejo-2" value="3">
+                    </div>
+                    <div class="servicios serv-comp">
+                        <label for="serv-complejo-3">Serv. Asadores:</label>
+                        ASADORES<input type="checkbox" name="serv-complejo-3" value="1">
+                        HORNO DE BARRO<input type="checkbox" name="serv-complejo-3" value="2">
+                        NO POSEE<input type="checkbox" name="serv-complejo-3" value="3">
+                    </div>
+                    <div class="servicios serv-comp">
+                        <label for="serv-complejo-3">Otros Servicios:</label>
+                        PARQUIZADO<input type="checkbox" name="serv-complejo-3" value="1">
+                        JUEGOS P/ NIÑOS<input type="checkbox" name="serv-complejo-3" value="2">
+                        QUINCHOS<input type="checkbox" name="serv-complejo-3" value="3">
+                        CANCHAS DEPORTIVAS<input type="checkbox" name="serv-complejo-3" value="4">
+                        MESAS EXTERIORES<input type="checkbox" name="serv-complejo-3" value="5">
+                        ZONA DE CAMPING<input type="checkbox" name="serv-complejo-3" value="6">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
 </body>
+
 </html>

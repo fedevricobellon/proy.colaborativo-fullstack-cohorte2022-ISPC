@@ -5,24 +5,23 @@
 
 header{
     display: grid;
-    grid-column: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 0.5fr 11.5fr;
     height: 100px;
-    background-color: #2E2300;
+    background-color: hsl(47, 100%, 90%);
 }
 
 header button{
     height: 30%;
-    background-color: #2E2300;
-    color: goldenrod;
-    border: 1px solid #2E2300;
-    margin: 5px 0px 7px 0px;
+    background-color: hsl(47, 100%, 90%);
+    border: 1px solid hsl(47, 100%, 90%);
+    margin: 5px 0px 10px 5px;
 
 }
 
 header button a{
-    color: goldenrod;
+    color:#322701;
+    font-size: 1.1em;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -30,7 +29,10 @@ header button a{
 
 header .titulo-central{
     font-size: 2em;
-    color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #322701;
 }
 
 .cuadro-sup{
@@ -52,6 +54,11 @@ header .titulo-central{
     margin-bottom: 3px;
 }
 
+.selec-complejo select{
+    padding: 3px;
+    margin-top: 5px;
+}
+
 .forms-cabanias{
    display: flex;
    gap: 10px;
@@ -68,11 +75,26 @@ header .titulo-central{
     text-align: center;
     font-size: 2em;
     padding: 10px;
-    margin-bottom: 1%;
+    margin: 10px;
+    background-color: hsl(47, 100%, 90%);
+}
+
+.form-cabania .legend2{
+    margin-right: 25px;
 }
 
 .form-cabania label{
     display: block;
+    font-size: 1.5em;
+}
+
+.form-cabania .opciones{
+    margin: 10px 0px 20px 0px;
+}
+
+.form-cabania .opciones label{
+    display: inline-block;
+    margin-right: 20px;
     font-size: 1.5em;
 }
 
@@ -88,12 +110,22 @@ header .titulo-central{
 }
 
 .form-cabania input:hover{
-    background-color: rgb(239, 236, 236);
+    background-color: hsl(47, 76%, 92%);
 }
+
 
 .form-cabania .servicios input{
     width: 3%;
     margin: 0px 15px 25px 3px;
     display: inline;
     align-items: center;
+}
+
+.serv-comp{
+    margin-bottom: 35px;
+}
+
+.mapa-complejo{
+    border-radius: 10px;
+    margin: 10px 0px 20px 0px;
 }
