@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/admin-style.css">
-    <title>Agregar Cabania</title>
+    <link rel="stylesheet" href="css/cabanias-complejos.css">
+    <title>Nueva Cabaña</title>
 </head>
+
 <body>
-    <header></header>
+    <header>
+        <!-- Vuelve al panel administración. -->
+        <button><a href="#"><-- VOLVER</a></button>
+        <div class="titulo-central">
+            <h1>NUEVA CABAÑA</h1>
+        </div>
+    </header>
 
     <main>
 
         <div class="container">
             <div class="cuadro-sup">
-                <h1>CABAÑAS</h1>
+                <h1>CABAÑA</h1>
                 <div class="selec-complejo">
-                    <h2>SELECCIONAR COMPLEJO</h2>                    
+                    <h2>SELECCIONAR COMPLEJO</h2>
                     <select name="" id="">
                         <option value="0">+ AGREGAR COMPLEJO</option>
                         <option value="1" selected>Cabañas "Arco Iris"</option>
@@ -25,30 +33,65 @@
                     <button hidden>Agregar</button>
                 </div>
             </div>
-            <div class="form-cabania">
-                <form action="POST">
-                    <legend>NUEVA CABAÑA</legend>
-                    <div class="caracteres">
-                        <label for="nom-cab">Nombre Cabaña:</label>
-                        <input type="text" id="nom-cab">
+            <div class="forms-cabanias">
+                <div class="form-cabania">
+                    <form action="POST">
+                        <legend>DATOS CABAÑA</legend>
+                        <div>
+                            <label for="nom-cab">Nombre Cabaña:</label>
+                            <input type="text" id="nom-cab" placeholder="Denominación o numeración de la cabaña.">
+                        </div>
+                        <div>
+                            <label for="dorm-cab">Cantidad de Dormitorios:</label>
+                            <input type="number" id="dorm-cab" min="1" placeholder="Espacios con cama/s.">
+                        </div>
+                        <div>
+                            <label for="plaza-cab">Grupo Familiar:</label>
+                            <input type="number" id="plaza-cab" min="1"
+                                placeholder="Máx. cantidad de personas permitidas.">
+                        </div>
+                        <!-- Luego habrá que configurarlo para que el usuario pueda subir más de una imagen. -->
+                        <div>
+                            <label for="img-cab">Imagenes de la cabaña:</label>
+                            <input type="file" id="img-cab">
+                        </div>
+                    </form>
+                </div>
+                <div class="form-cabania">
+                    <legend>SERVICIOS CABAÑA</legend>
+                    <div class="servicios">
+                        <label for="serv-1">Serv. Digitales:</label>
+                        WI-FI<input type="checkbox" name="serv-1" value="1">
+                        TV<input type="checkbox" name="serv-1" value="2">
+                        DIRECTV<input type="checkbox" name="serv-1" value="3">
                     </div>
-                    <div class="caracteres">
-                        <label for="dorm-cab">Cantidad de Dormitorios:</label>
-                        <input type="number" id="dorm-cab" min="1"> 
+                    <div class="servicios">
+                        <label for="serv-2">Serv. Ropa Blanca:</label>
+                        SABANAS<input type="checkbox" name="serv-2" value="1">
+                        FRAZADAS<input type="checkbox" name="serv-2" value="2">
+                        TOALLAS<input type="checkbox" name="serv-2" value="3">
                     </div>
-                    <div class="caracteres">
-                        <label for="plaza-cab">Plaza Total:</label>
-                        <input type="number" id="plaza-cab" min="1">
+                    <div class="servicios">
+                        <label for="serv-2">Serv. Cocina/Comedor:</label>
+                        COCINA<input type="checkbox" name="serv-2" value="1">
+                        HORNO<input type="checkbox" name="serv-2" value="2">
+                        MICROONDAS<input type="checkbox" name="serv-2" value="3">
+                        CUBIERTOS<input type="checkbox" name="serv-2" value="4">
+                        VASOS / TAZAS<input type="checkbox" name="serv-2" value="4">
                     </div>
-                    <div class="caracteres">
-                        <label for="plaza-cab">Plaza Total:</label>
-                        <input type="number" id="plaza-cab" min="1">
+                    <div class="servicios">
+                        <label for="serv-2">Serv. Climatización:</label>
+                        VENTILADOR<input type="checkbox" name="serv-2" value="1">
+                        CALEFACCIÓN<input type="checkbox" name="serv-2" value="2">
+                        AIRE ACONDICIONADO<input type="checkbox" name="serv-2" value="3">
                     </div>
-                </form>
+                    
+                </div>
             </div>
-
+        </div>
         </div>
     </main>
 
 </body>
+
 </html>
