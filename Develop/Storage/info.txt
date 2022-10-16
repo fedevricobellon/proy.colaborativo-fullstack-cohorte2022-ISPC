@@ -1,0 +1,2 @@
+Esta carpeta contiene almacenadas las imagenes que los clientes carguen a nuestra app
+(no confundir con las fotos de nuestra app que hacen al front)
