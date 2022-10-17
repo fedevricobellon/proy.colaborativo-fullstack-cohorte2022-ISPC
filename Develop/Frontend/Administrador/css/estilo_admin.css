@@ -5,13 +5,13 @@
 }
 
 body {
-    color: white;
+    color: black;
     font-family: 'calibri';
 }
 
 header h1 {
-    background: url('../imagenes/complejo_de_cabañas.jpeg');
-    height: 300px;
+    background: url('/Administrador/img/complejo_de_cabañas.jpeg');
+    height: 150px;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
