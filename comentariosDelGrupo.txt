@@ -4,3 +4,11 @@ nuevos archivos. Estoy metiendo todos los push de archivos adentro de la rama de
 al patro MVC. El que quiera hacer cambios no tiene mas que hacer pull a su compu y continuar modificando
 Jessi y Patry ahora su proyecto esta dentro de /Develop/Frontend/Home-Nosotros
 ahi adentro tiene el css y los 3 html
+
+HOME-NOSOTROS = corresponde a la parte de usuarios no administradores
+ADMINISTRADOR = corresponde a la parte de usuarios que ofrecen sus cabañas
+
+otro aviso: algunas paginas del front estaban laburando en algun momento con una carpeta de node_modules con
+los javascript para que funcionara bootstrap. Esa carpeta desaparecio jaja, asi que actualice los htmls de todos
+con los links de bootstrap para funcionar con normalidad pero ahora todos traidos desde la pagina.
+Repito: solo Dios sabe donde quedo esa carpeta node_modules con la info de boostrap
