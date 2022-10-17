@@ -1,0 +1,6 @@
+Coia (17/10/2022):
+gente, estoy acomodando un poco todas las carpetas para que vaya quedando todo prolijo a medida q estamos subiendo
+nuevos archivos. Estoy metiendo todos los push de archivos adentro de la rama develop, y agrupandolos de acuerdo
+al patro MVC. El que quiera hacer cambios no tiene mas que hacer pull a su compu y continuar modificando
+Jessi y Patry ahora su proyecto esta dentro de /Develop/Frontend/Home-Nosotros
+ahi adentro tiene el css y los 3 html
