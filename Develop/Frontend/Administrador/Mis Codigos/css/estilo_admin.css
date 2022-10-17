@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'calibri';
+}
+
+header h1 {
+    background: url('../imagenes/complejo_de_cabañas.jpeg');
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+    font-size: 40px;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1px 0;
+}
+
+.conte {
+    text-align: center;
+}
+
+
+.conte p {
+color: black;
+font-size:  30px;
+font-weight:  bold;
+margin:  2em 0;
+}
+
+.conte a {
+    color: white;
+    text-decoration: none;
+    background:  #DB9501;
+    padding: 50px 45px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin: 15 px;
+}
+
+.conte a:hover {
+    background: #C05805;
+}
