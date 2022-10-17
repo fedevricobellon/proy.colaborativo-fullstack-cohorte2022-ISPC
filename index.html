@@ -13,19 +13,21 @@
     <title>Home CabaniApp</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md" style="background-color: #ca8c05;">
+    <nav class="navbar fixed-top  navbar-expand-md" style="background-color: #e7b242e9 ;"><!--Sirve para poner la barra de navegacion fija (Fixed-top)--> 
       <div class="container-fluid">
         <img src="/Imagenes/Logo.svg" alt="Bootstrap" width="30" height="48">
-      < <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">CabaniApp</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Terminos y Condiciones</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+          
         </ul>
       </div>
     </nav>
@@ -34,7 +36,11 @@
     </div>
 
     <div class="container">
-
+      <nav aria-label="breadcrumb"  >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
       <div class="row">
         <div class="col">
           <h3><strong>¿Cómo funciona?</strong></h3>
@@ -169,11 +175,10 @@
         </div>
       </div>
      </footer>
-    
-    
-    
-    <script src="node_modules/jquerry/dist/jquerry.min.js/"></script> 
+  
+    <script src="node_modules/jquerry/dist/jquerry.min.js/"></script>
     <script src="node_modules/popper.js/dist/popper.min.js" ></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
   </body>
 </html>

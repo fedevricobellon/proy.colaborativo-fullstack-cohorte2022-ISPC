@@ -1,6 +1,7 @@
 .jumbotron{
     background-color:#F8EBBE;
     color:#001909;
+    margin-top: 60px;
 }
 
 .btn-primary{
@@ -25,4 +26,7 @@ footer {
 }
 .row a{
     color:#555453;
+}
+.breadcrumb{
+    background-color: #c8e5ec;
 }
