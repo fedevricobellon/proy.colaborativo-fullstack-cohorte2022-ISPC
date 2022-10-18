@@ -35,7 +35,7 @@ footer {
 
 /* ______________quienes somos______________ */
 .seccionPrincipal{ 
-    width:96%;
+    width:98%;
     height: auto;
     margin: 30px auto;
     padding:40px 0 40px 30px;
@@ -76,7 +76,6 @@ footer {
 }
 .seccion-img1{
     padding:20px 0;
-    margin-left: 10px;
 }
 .img1, .img2, .img3{
     width:495px;
