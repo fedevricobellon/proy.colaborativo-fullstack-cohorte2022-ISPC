@@ -56,3 +56,71 @@ margin:  2em 0;
     text-decoration: none !important;
     color: black;
 }
+
+footer {
+    width: :10%;
+    *padding: 40px 0px;
+    background_size: cover;
+    background: #DB9501;
+}
+
+.container_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box_footer .logo img{
+    width: 180 px;
+}
+
+.box_footer .terms {
+    max-width: 400px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: black;
+    font-size: 18px;
+}
+
+.box_footer h2 {
+    margin-bottom: 30px;
+    color: black;
+    font-weight: 700;
+}
+
+.box_footer a {
+    margin-top: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+.box_footer a:hover{
+    opacity: 0.8;
+}
+
+.box_copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box_copyright p {
+    margin-top: 20px;
+    color: black;
+}
+
+.box_copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #C05805;
+}
