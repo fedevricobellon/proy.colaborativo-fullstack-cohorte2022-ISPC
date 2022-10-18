@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cabanias-complejos.css">
+    <link rel="stylesheet" href="css/estilo_admin.css">
     <title>Nueva Cabaña</title>
 </head>
 
@@ -13,7 +14,7 @@
     <header>
         <!-- Vuelve al panel administración. -->
         <div class="col">
-            <button><a href="#"><---- VOLVER</a></button>
+            <button><a href="gestion_administrador.html"><---- VOLVER</a></button>
         </div>
         <div class="titulo-central col">
             <h1>Nueva Cabaña</h1>
@@ -28,11 +29,10 @@
                 <div class="selec-complejo">
                     <h2>SELECCIONAR COMPLEJO</h2>
                     <select name="agregar-complejo" id="">
-                        <option value="0">+ AGREGAR COMPLEJO</option>
                         <option value="1" selected>Cabañas "Arco Iris"</option>
                     </select>
                     <!-- Boton aparece si selecciona "AGREGAR COMPLEJO" solamente. -->
-                    <button hidden>Agregar</button>
+                    <button><a href="agregar-complejo.html">Agregar Complejo</a></button>
                 </div>
             </div>
             <div class="forms-cabanias">
@@ -98,6 +98,52 @@
         </div>
         </div>
     </main>
+
+    <!-- FOOTER -->
+<footer>
+    <div class="container_footer">
+        <div class="box_footer">
+            <div class="logo">
+                <img src="../Mis Codigos/imagenes/logo sin borde.jpeg" alt="">
+            </div>
+            <div class="terms">
+                <p>Lorem ipsum dolor sit amet consectetur,
+                   adipisicing elit. Explicabo labore modi 
+                   inventore consequatur porro blanditiis 
+                   facilis totam aliquam itaque deserunt 
+                   dicta maxime velit asperiores doloribus 
+                   facere corrupti, illum quasi. Eius.
+            
+                </p>
+            </div>
+        </div>
+
+            <div class="box_footer">
+                <h2>ADMINISTRACION</h2>
+                <a href="#">CABAÑAS</a>
+                <a href="#">AGENDA</a>
+                <a href="#">INFORME</a>
+                <a href="#">RESERVAS</a>
+            </div>
+
+            <div class="box_footer">
+                <h2>REDES SOCIALES</h2>
+                <a href="#">FACEBOOK</a>
+                <a href="#">INSTAGRAM</a>
+                <a href="#">TWITTER</a>
+                <a href="#">TIK TOK</a>
+            </div>
+
+            <div class="box_copyright">
+                <hr>
+                <p>Todos los derechos reservados & 2022
+                    <b>ISPC</b>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
 
 </body>
 
