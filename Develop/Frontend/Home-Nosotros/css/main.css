@@ -35,10 +35,10 @@ footer {
 
 /* ______________quienes somos______________ */
 .seccionPrincipal{ 
-    width:96%;
+    width:90%;
     height: auto;
     margin: 30px auto;
-    padding:40px 0 40px 30px;
+    padding:40px 0 40px 50px;
     border: 1px solid rgb(171, 168, 168);
     border-radius: 25px;
     box-shadow: 5px 5px 2px #888;
