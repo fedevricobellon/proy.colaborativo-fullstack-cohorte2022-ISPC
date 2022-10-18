@@ -10,7 +10,7 @@ body {
 }
 
 header h1 {
-    background: url('/Administrador/img/complejo_de_cabañas.jpeg');
+    background: url("../img/complejo_de_cabañas.jpeg");
     height: 150px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -50,4 +50,9 @@ margin:  2em 0;
 
 .conte a:hover {
     background: #C05805;
+}
+
+.accordion-body li a{
+    text-decoration: none !important;
+    color: black;
 }
