@@ -7,15 +7,15 @@ main {
   header{
     display: grid;
     grid-template-columns: 0.5fr 11.5fr;
-    height: 100px;
+    height: 150px;
     background-color: hsl(47, 100%, 90%);
 }
 
-header .titulo-central{
+header .titulo-central{ 
   font-size: 2em;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:flex-end;
   color: #322701;
 }
 
