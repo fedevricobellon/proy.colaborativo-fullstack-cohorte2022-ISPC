@@ -10,6 +10,9 @@ main {
     height: 150px;
     background-color: hsl(47, 100%, 90%);
 }
+.logo{
+  margin-right: 10px;
+}
 
 header .titulo-central{ 
   font-size: 2em;
@@ -38,21 +41,21 @@ header .titulo-central{
     margin: 20px 0;
   }
   
-  div.elem-group.inlined {
+  div.elem-group.inlined { 
     width: 49%;
     display: inline-block;
     float: left;
     margin-left: 1%;
   }
   
-  label {
+  label { 
     display: block;
     font-family: 'Nanum Gothic';
     padding-bottom: 10px;
     font-size: 1.25em;
   }
   
-  input, select, textarea {
+  input, select, textarea { 
     border-radius: 2px;
     border: 2px solid #777;
     box-sizing: border-box;
@@ -62,7 +65,7 @@ header .titulo-central{
     padding: 10px;
   }
   
-  div.elem-group.inlined input {
+  div.elem-group.inlined input { 
     width: 95%;
     display: inline-block;
   }
@@ -71,11 +74,11 @@ header .titulo-central{
     height: 250px;
   }
   
-  hr {
+  hr { 
     border: 1px dotted #ccc;
   }
   
-  button {
+  button { 
     height: 70px;
     background: rgba(219, 143, 2, 0.438);
     border: 1;
@@ -83,7 +86,12 @@ header .titulo-central{
     font-size: 1.25em;
     font-family: 'Nanum Gothic';
     border-radius: 4px;
-    cursor: pointer;
+    cursor: pointer; 
+  
+  }
+
+  .col{
+    margin-top: 72px;
   }
   
   button:hover {
