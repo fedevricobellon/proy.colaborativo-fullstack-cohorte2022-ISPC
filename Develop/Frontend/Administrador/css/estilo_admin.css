@@ -58,9 +58,9 @@ margin:  2em 0;
 }
 
 footer {
-    width: :10%;
+    width: : 10%;
     *padding: 40px 0px;
-    background_size: cover;
+    background-size: cover;
     background: #DB9501;
 }
 
@@ -123,4 +123,9 @@ footer {
     border: none;
     height: 1px;
     background-color: #C05805;
+}
+
+.day-name {
+    background: #DB9501;
+    font-weight: bold;
 }
