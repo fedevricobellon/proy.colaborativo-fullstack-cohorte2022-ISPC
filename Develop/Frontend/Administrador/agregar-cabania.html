@@ -22,7 +22,6 @@
     </header>
 
     <main>
-
         <div class="container">
             <div class="cuadro-sup">
                 <h1>CABAÑA</h1>
@@ -53,14 +52,25 @@
                                 placeholder="Máx. cantidad de personas permitidas.">
                         </div>
                         <div class="camas">
-                            <label for="plaza-cab">Camas Dobles:</label>
+                            <label for="plaza-cab">Camas Doble:</label>
                             <input type="number" id="plaza-cab" min="1"
-                                placeholder="Número de camas matrimoniales.">
+                                placeholder="Camas matrimoniales.">
                         </div>
                         <div class="camas">
-                            <label for="plaza-cab">Camas Simples:</label>
+                            <label for="plaza-cab">Camas Simple:</label>
                             <input type="number" id="plaza-cab" min="1"
-                                placeholder="Número de camas simples, las cuchetas son 2 simples.">
+                                placeholder="Camas simples, cuchetas.">
+                        </div>
+                        <div class="servicios">
+                            <label for="plaza-cab">Ambientes:</label>
+                            BAÑO<input type="checkbox" name="ambientes-cab-1" value="1">
+                            COMEDOR<input type="checkbox" name="ambientes-cab-1" value="2">
+                            LIVING<input type="checkbox" name="ambientes-cab-1" value="3">
+                            COCINA<input type="checkbox" name="ambientes-cab-1" value="4">
+                            BALCON/TERRAZA<input type="checkbox" name="ambientes-cab-1" value="5"><br>
+                            GALERIA<input type="checkbox" name="ambientes-cab-1" value="6">
+                            COCHERA INDIVIDUAL<input type="checkbox" name="ambientes-cab-1" value="7">
+                            PARRILLA INDIVIDUAL<input type="checkbox" name="ambientes-cab-1" value="8">
                         </div>
                         <!-- Luego habrá que configurarlo para que el usuario pueda subir más de una imagen. -->
                         <div>
@@ -73,22 +83,16 @@
                     <legend class="legend2">Servicios de la Cabaña</legend>
                     <div class="servicios">
                         <label for="serv-1">Serv. Digitales:</label>
-                        WI-FI<input type="checkbox" name="serv-cab-1" value="1">
-                        TV<input type="checkbox" name="serv-cab-1" value="2">
-                        DIRECTV<input type="checkbox" name="serv-cab-1" value="3">
-                    </div>
-                    <div class="servicios">
-                        <label for="serv-cab-2">Serv. Ropa Blanca:</label>
-                        SABANAS<input type="checkbox" name="serv-cab-2" value="1">
-                        FRAZADAS<input type="checkbox" name="serv-cab-2" value="2">
-                        TOALLAS<input type="checkbox" name="serv-cab-2" value="3">
+                        WI-FI<input type="checkbox" name="serv-cab-2" value="1">
+                        TV<input type="checkbox" name="serv-cab-2" value="2">
+                        DIRECTV<input type="checkbox" name="serv-cab-2" value="3">
                     </div>
                     <div class="servicios">
                         <label for="serv-cab-3">Serv. Cocina/Comedor:</label>
                         COCINA<input type="checkbox" name="serv-cab-3" value="1">
-                        HORNO<input type="checkbox" name="serv-cab-3" value="2">
+                        COCINA C/ HORNO<input type="checkbox" name="serv-cab-3" value="2">
                         MICROONDAS<input type="checkbox" name="serv-cab-3" value="3">
-                        CUBIERTOS<input type="checkbox" name="serv-cab-3" value="4">
+                        VAJILLA<input type="checkbox" name="serv-cab-3" value="4">
                         VASOS / TAZAS<input type="checkbox" name="serv-cab-3" value="5">
                     </div>
                     <div class="servicios">
@@ -98,10 +102,12 @@
                         AIRE ACONDICIONADO<input type="checkbox" name="serv-cab-4" value="3">
                     </div>
                     <div class="servicios">
-                        <label for="serv-cab-5">Otros Servicios:</label>
-                        PILETA PRIVADA<input type="checkbox" name="serv-cab-5" value="1">
-                        LAVARROPAS<input type="checkbox" name="serv-cab-5" value="2">
-                        SET LIMPIEZA<input type="checkbox" name="serv-cab-5" value="3">
+                        <label for="serv-cab-5">Serv. Higiene:</label>
+                        LAVARROPAS<input type="checkbox" name="serv-cab-5" value="1">
+                        SET LIMPIEZA COCINA<input type="checkbox" name="serv-cab-5" value="2">
+                        SET LIMPIEZA BAÑO<input type="checkbox" name="serv-cab-5" value="3">
+                        SET LIMPIEZA HOGAR<input type="checkbox" name="serv-cab-5" value="4">
+                        AMENIDADES<input type="checkbox" name="serv-cab-5" value="5">
                     </div>                    
                 </div>
             </div>
@@ -114,7 +120,7 @@
     <div class="container_footer">
         <div class="box_footer">
             <div class="logo">
-                <img src="../Mis Codigos/imagenes/logo sin borde.jpeg" alt="">
+                <!-- <img src="../Mis Codigos/imagenes/logo sin borde.jpeg" alt=""> -->
             </div>
             <div class="terms">
                 <p>Lorem ipsum dolor sit amet consectetur,
