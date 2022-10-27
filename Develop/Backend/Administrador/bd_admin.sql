@@ -3,7 +3,7 @@ use CabaniApp;
 
 /*Tabla Registro - Usuario*/
 CREATE table Usuario (
-idUsuario int primary key,
+idUsuario int auto_increment primary key,
 emailUsuario varchar(50),
 claveUsuario varchar(10),
 tipoUsuario varchar(15)
@@ -22,7 +22,6 @@ ciudadCliente varchar(20),
 provinciaCliente varchar(20),
 paisCliente varchar(30),
 idUsuario1 int,
-constraint pk_idCliente1 primary key(idCliente),
 constraint fk_idUsuario1 foreign key(idUsuario1) references Usuario(idUsuario)
 );
 
@@ -34,7 +33,6 @@ apellidoAdmin varchar(50),
 dniAdmin int(10),
 fechaNacAdmin Date,
 idUsuario2 int,
-constraint pk_idAdmin1 primary key(idAdmin),
 constraint fk_idUsuario2 foreign key(idUsuario2) references Usuario(idUsuario)
 );
 
@@ -47,8 +45,9 @@ direccionComplejo varchar(50),
 numeracionComplejo varchar(20),
 ciudadComplejo varchar(20),
 provinciaComplejo varchar(20),
+formaPagosComplejo varchar(100),
 idAdmin1 int,
-imagenComplejo varchar(100), /* BLOB: Es un tipo de datos de MySQL que puede almacenar datos binarios como los de archivos de imagen, multimedia y PDF */
+imagenComplejo varchar(100),
 constraint fk_idAdmin1 foreign key(idAdmin1) references Administrador(idAdmin)
 );
 
@@ -91,7 +90,7 @@ idCabania1 int,
 constraint fk_idCabania1 foreign key(idCabania1) references Cabania(idCabania)
 );
 
-/*Tabla Reserva*/
+/*Tabla Reserva de Administrador*/
 CREATE table ReservaAdmin (
 idReservaAdmin int auto_increment primary key,
 fechaIngreso Date,
@@ -99,6 +98,7 @@ fechaSalida Date,
 cantPersonas int,
 seniaReserva float,
 pagoTotalReserva float,
+formaPagoReserva varchar(100),
 nombreReserva varchar(50),
 apellidoReserva varchar(50),
 dniReserva int(10),
@@ -106,7 +106,6 @@ mailReserva varchar(30),
 telefonoReserva varchar(20),
 idAdmin1 int,
 idCabania1 int,
-constraint pk_idReserva1 primary key(idReserva),
 constraint fk_idAdmin1 foreign key(idAdmin1) references Administrador(idAdmin),
 constraint fk_idCabania1 foreign key(idCabania1) references Cabania(idCabania)
 );
@@ -114,7 +113,50 @@ constraint fk_idCabania1 foreign key(idCabania1) references Cabania(idCabania)
 /* Tabla Informes */
 CREATE table Informes (
 idInformes int auto_increment primary key,
-pagosInformes float(100),
-gastosInformes float(100)
-)
+pagosInformes float(100) primary key,
+alquilerMesInforme int, 
+alquilerAnualInforme int,
+idAdmin1 int,
+idReserva int,
+constraint fk_idAdmin1 foreign key(idAdmin1) references Administrador(idAdmin),
+);
 
+/*Tabla de Perdidas*/
+CREATE table Perdidas (
+idPerdidas int auto_increment primary key,
+ediliciaPerdidas varchar(100), /* Roturas edilicias: vidrios, paredes, puertas, techo, plomeria, electricidad */
+mobiliarioPerdida varchar(100), /* Sillas, mesas, camas, comodas, placares, roperos, mesada, barra */
+electroPerdida varchar(100), /* tv, cocina, horno, anafe, microondas, heladera, pava electrica */ 
+vajillaPerdida varchar(100),
+ropaBlancaPerdida varchar(100),
+exteriorPerdida varchar(100), /* manguera, asadores, reposeras, sombrillas */
+idAdmin1 int,
+idInformes1 int,
+constraint fk_idAdmin1 foreign key(idAdmin1) references Administrador(idAdmin),
+constraint fk_idInformes1 foreign key(idInformes1) references Informes(idInformes)
+);
+
+/* Tabla Compras */
+CREATE table Compras (
+idCompras int auto_increment primary key,
+limpiezaCompras varchar(100), /* Palo de piso, escobas, rejilla, esponja, virulana, detergente, perfumina, lavandina */
+higieneCompras varchar(100), /* Papel higienico, rollo de cocina, Shampoo, Jabones, Dentrifico */
+vajillaCompras varchar(100), /* platos, cubiertos, vasos, tazas, ollas, coladores, bolw, fuentes, pizzeras, sarten, cucharones, abrelatas, repasadores, cuchillas, tablas de cortar */
+ropaBlancaCompras varchar(100), /* Sabanas, cubrecama, acolchados, frazadas, almohadas, toallas */
+exteriorCompras varchar(100), /* parrilla, pala, rastrillo, maquina de cortar pasto, reposeras, sombrillas, mesas, sillas */
+electrodomesticoCompras varchar(100), /* Tv, pava electrica, microondas, horno, anafe, cocina, cafetera, heladera termotanque, decos, antenas, routers */
+otrasCompras varchar(100),
+idAdmin1 int,
+idInformes1 int,
+constraint fk_idAdmin1 foreign key(idAdmin1) references Administrador(idAdmin),
+constraint fk_idInformes1 foreign key(idInformes1) references Informes(idInformes)
+);
+
+/*Tabla de Ingresos */
+CREATE table Ingresos (
+idIngresos int auto_increment primary key,
+idReservadmin1 int,
+idInformes1 int,
+constraint fk_idReservaAdmin1 foreign key(idReservaAdmin1) references ReservaAdmin(idReservaAdmin),
+constraint fk_idInformes1 foreign key(idInformes1) references Informes(idInformes)
+)
