@@ -1,0 +1,17 @@
+form a{
+    text-decoration: none;
+    color: white;
+}
+
+form a:visited{
+    text-decoration: none;
+    color: white;
+    visibility: hidden;
+}
+
+form a:active{
+    text-decoration: none;
+    color: white;
+}
+
+

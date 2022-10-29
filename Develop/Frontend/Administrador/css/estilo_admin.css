@@ -1,7 +1,6 @@
-* {
+html{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -17,7 +16,7 @@ header h1 {
     text-align: center;
     overflow: hidden;
     font-size: 40px;
-    margin-top: 5px;
+    padding-top: 5px;
 }
 
 section {
@@ -58,9 +57,8 @@ margin:  2em 0;
 }
 
 footer {
-    width: : 10%;
-    *padding: 40px 0px;
-    background-size: cover;
+    width:  100%;
+    margin-top: 10%;
     background: #DB9501;
 }
 
