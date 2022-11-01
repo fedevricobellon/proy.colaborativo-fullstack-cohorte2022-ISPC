@@ -46,16 +46,25 @@
       </nav>
 
     <div class="quieneSomos-titulo">
-      <p>Quiénes Somos?</p>
+      <h2>Quiénes Somos?</h2>
+    </div>
+
+    <div class="botonTraducir">
+      <button id="btn-traducirIn">Traducir al Ingles</button>
+      <button id="btn-traducirEs">Traducir al Español</button>
     </div>
     
     <section class="seccionPrincipal">
-      <div class="seccionTexto1">
+      <div class="seccionTexto1" id="bloqueUnoEs">
         <p>Somos un <strong> grupo de dueños de cabañas </strong>con una amplia trayectoria y un reconocido prestigio, que nos dedicamos a brindarles el mejor servicio, y la tranquilidad que se necesita al momento de elegir una Cabaña para sus vacaciones o 
           escapadas con el fin de satisfacer con responsabilidad las necesidades y expectativas de los visitantes, con atención personal de sus propietarios y cumpliendo con las normas legales vigentes.</p>
-
         <p>El pasajero encuentra la ventaja de alquilar sus estadías de descanso directamente con el dueño de Cabañas, sin Intermediarios. Esperamos poder brindarle nuestro prestigio, confort y tranquilidad a la hora de planificar su viaje.</p>
       </div>
+
+      <div class="seccionTexto1" id="bloqueUnoEn">
+        <p>We are a <strong> group of cabin owners </strong> with extensive experience and recognized prestige, who are dedicated to providing you with the best service, and the peace of mind that is needed when choosing a cabin for your vacations. either
+          getaways in order to responsibly satisfy the needs and expectations of visitors, with personal attention from their owners and complying with current legal regulations.</p>
+          <p>The passenger finds the advantage of renting their rest stays directly with the owner of Cabins, without Intermediaries. We hope to offer you our prestige, comfort and peace of mind when planning your trip.</p></div>
 
         <div class="seccion-img1">
             <img class="img1" src="imagenes/cabania-j.jpg" alt="imagen de cabaña">
@@ -65,7 +74,7 @@
             <img class="img2" src="imagenes/cabania-i.jpg" alt="imagen de cabaña" width="500px" height="300px">
         </div>
 
-        <div class="seccionTexto2">
+        <div class="seccionTexto2" id="bloqueDosEs">
           <h2>Misión</h2>
           <p>Proveer un servicio integral en cabañas, implementando normas de calidad, siendo nuestra prioridad la satisfacción de  servicio  personalizado  a  nuestros  huespedes, 
             en un ambiente familiar, cómodo tranquilo y seguro.</p>
@@ -75,7 +84,16 @@
             <p>Todos los establecimientos publicados, están chequeados de que verdaderamente existen y brindamos esta tranquilidad a la hora de enviar una reserva de dinero!</p>
         </div>
 
-        <div class="seccionTexto3">
+        <div class="seccionTexto2" id="bloqueDosEn">
+          <h2>Mission</h2>
+          <p>Provide a comprehensive service in cabins, implementing quality standards, our priority being the satisfaction of personalized service to our guests,
+            in a familiar, comfortable and safe environment.</p>
+            
+          <h2> Vision</h2>
+            <p>To be an internationally recognized portal, meeting the expectations of customers seeking rest, pleasure and/or adventure.</p>
+            <p>All published establishments are checked to see if they really exist and we offer this peace of mind when sending a money reserve!</p></div>
+
+        <div class="seccionTexto3" id="bloqueTresEs">
           <h2>Valores:</h2> 
             <ul class="lista">
                 <li>Respeto</li>
@@ -88,9 +106,23 @@
             </ul>   
         </div>
 
-        <div class="seccion-img3">
+        <div class="seccionTexto3" id="bloqueTresEn">
+          <h2>Values:</h2>
+            <ul class="list">
+                <li>Respect</li>
+                <li>Security</li>
+                <li>Service</li>
+                <li>Responsibility</li>
+                <li>Trust</li>
+                <li>Honesty</li>
+                <li>Love of work</li>
+            </ul>
+        </div>   
+
+         <div class="seccion-img3">
             <img class="img3" src="imagenes/cabania-m.webp" alt="imagen de cabaña" width="500px" height="300px">
         </div>
+        
     </section>
 
       </div>
@@ -114,5 +146,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
      crossorigin="anonymous"></script>
+     <script src="traductor.js"></script>
   </body>
 </html>

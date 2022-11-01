@@ -37,7 +37,7 @@ footer {
 .seccionPrincipal{ 
     width:98%;
     height: auto;
-    margin: 30px auto;
+    margin: 2px auto 30px auto;
     padding:40px 0 40px 30px;
     border: 1px solid rgb(171, 168, 168);
     border-radius: 25px;
@@ -58,13 +58,30 @@ footer {
    
 }
 
-.quieneSomos-titulo p{
-    font-size: 40px;
+.quieneSomos-titulo h2{
+    font-size: 45px;
     margin-top:10px;
     padding-top:20px;
     text-align: center;
     text-shadow: 1px 2px black;
 }
+
+.botonTraducir{
+    display:inline;
+}
+
+#btn-traducirEs, #btn-traducirIn{
+    margin: 1% 0 0 1.2%; 
+    padding: 0.9%; 
+    border-radius:  50px 10px 15px; 
+    border-radius: 0.25rem;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+    font-weight: bold;
+
+}
+
 
 .seccionTexto1, .seccionTexto2, .seccionTexto3{
     width:49%;
@@ -95,6 +112,10 @@ footer {
 
 .img1:hover{
     filter: none;
+    transition-duration: 5s;
+    transform: scale(1.03);
+   
+   
 }
 .img2:hover{
     filter: none;
