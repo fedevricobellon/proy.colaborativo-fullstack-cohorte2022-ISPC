@@ -12,62 +12,130 @@ const showPanel = (show) => {
 }
 
 //#region INNER PANELES
-panel_Inicio = `
-    <div class="container-fluid" id="panelInicio">
+panel_Inicio_Contabilidad = `
+<div class="container-fluid" id="panelInicio">
 
-    <div class="row">
-      <div class="col">
-        <div class="card text-center">
-          <div class="card-header text-start">
-            INICIO
-          </div>
-          <div class="card-body">
-            <h4 class="card-title text-start">Nombre del administrador</h4>
-            <h2 class="card-text">$00.00 Facturado en el mes   -   0 ocupadas / 0 disponibles /0 reservadas  </h2>
-          </div>
-          <div class="card-footer text-muted text-end">
-            Próximos 7 días de actividad
-          </div>
-        </div>
+<div class="row">
+  <div class="col">
+    <div class="card text-center">
+      <div class="card-header text-start">
+        INICIO
+      </div>
+      <div class="card-body">
+        <h4 class="card-title text-start">Nombre del administrador</h4>
+        <h2 class="card-text">$00.00 Facturado en el mes   -   0 ocupadas / 0 disponibles /0 reservadas  </h2>
+      </div>
+      <div class="card-footer text-muted text-end">
+        Próximos 7 días de actividad
       </div>
     </div>
-    
-    <div class="row">
-      <div class="col">
-        <div class="card mt-2">
-          <div class="card-body">
-            <h5 class="card-title text-center">Reportes</h5>
-            <p class="card-text text-center">Elija el periodo que desea visualizar</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Desde</li>
-            <li class="list-group-item">Hasta</li>
-          </ul>
-          <div class="card-body text-center">
-            <button type="button" class="btn btn-primary">Consulta</button>
-          </div>
-        </div>
-      </div>
+  </div>
+</div>
 
-      <div class="col">
-        <div class="card mt-2">
-          <div class="card-body">
-            <h5 class="card-title text-center">Agenda</h5>
-            <p class="card-text text-center">Elija el periodo que desea visualizar</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Desde</li>
-            <li class="list-group-item">Hasta</li>
-          </ul>
-          <div class="card-body text-center">
-            <button type="button" class="btn btn-primary">Consulta</button>
-          </div>
-        </div>
+<div class="row">
+  <div class="col">
+    <div class="card mt-2">
+      <div class="card-body">
+        <h5 class="card-title text-center">Reportes</h5>
+        <p class="card-text text-center">Elija el periodo que desea visualizar</p>
       </div>
-      
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Desde</li>
+        <li class="list-group-item">Hasta</li>
+        <li class="list-group-item">Cabañas</li>
+      </ul>
+      <div class="card-body text-center">
+        <button type="button" class="btn btn-primary">Consulta</button>
+      </div>
     </div>
+  </div>
 
-</div>`
+  <div class="col">
+    <div class="card mt-2">
+      <div class="card-body">
+        <h5 class="card-title text-center">Egresos</h5>
+        <p class="card-text text-center">Añadir un nuevo egreso</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Importe</li>
+        <li class="list-group-item">Tipo de egreso</li>
+        <li class="list-group-item">Fecha</li>
+        <li class="list-group-item">Origen</li>
+      </ul>
+      <div class="card-body text-center">
+        <button type="button" class="btn btn-primary">Añadir</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+`
+
+panel_Inicio_Agenda = `
+<div class="container-fluid" id="panelInicio">
+
+<div class="row">
+  <div class="col">
+    <div class="card text-center">
+      <div class="card-header text-start">
+        INICIO
+      </div>
+      <div class="card-body">
+        <h4 class="card-title text-start">Nombre del administrador</h4>
+        <h2 class="card-text">$00.00 Facturado en el mes   -   0 ocupadas / 0 disponibles /0 reservadas  </h2>
+      </div>
+      <div class="card-footer text-muted text-end">
+        Próximos 7 días de actividad
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">    
+  <div class="col">
+    <div class="card mt-2">
+      <div class="card-body">
+        <h5 class="card-title text-center">Reserva</h5>
+        <p class="card-text text-center">Elija el periodo que desea chequear para una nueva reserva</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Desde</li>
+        <li class="list-group-item">Dias</li>
+        <li class="list-group-item">N° Personas</li>
+        <li class="list-group-item">Ciudad<input list="Ciudad" style="margin-left:10px; width: 80%;" />
+          <datalist id="Ciudad">
+            <option>Merlo</option>
+            <option>Mendoza</option>
+            <option>Rosario</option>
+          </datalist>
+        </li>
+        </ul>
+          <div class="card-body text-center">
+        <button type="button" class="btn btn-primary">Consulta</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card mt-2">
+      <div class="card-body">
+        <h5 class="card-title text-center">Clientes</h5>
+        <p class="card-text text-center">Elija el modo de presentación de la tabla</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Antiguedad</li>
+        <li class="list-group-item">Aportes</li>
+        <li class="list-group-item">numero de tablas</li>
+      </ul>
+      <div class="card-body text-center">
+        <button type="button" class="btn btn-primary">Consulta</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+`
+
+
 panel_Clientes = `
 <div class="container-fluid" id="panelClientes">
 <h1> panel Clientes </h1>
