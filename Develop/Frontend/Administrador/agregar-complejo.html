@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cabanias-complejos.css">
     <link rel="stylesheet" href="css/estilo_admin.css">
+    <link rel="stylesheet" href="css/cabanias-complejos.css">
+    
     <title>Nuevo Complejo</title>
 </head>
 
@@ -29,16 +30,16 @@
                 <div class="form-cabania">
                     <form action="POST">
                         <legend>Datos del Complejo</legend>
-                        <div>
+                        <div class="datos">
                             <label for="nom-complejo">Nombre Complejo:</label>
                             <input type="text" id="nom-complejo"
                                 placeholder="Ej: 'Cabañas Arco Iris', 'Complejo Cuarzo'...">
                         </div>
-                        <div>
+                        <div class="datos">
                             <label for="cab-complejo">Cantidad de Cabañas:</label>
                             <input type="number" id="dorm-complejo" min="1" placeholder="Total de cabañas habitables.">
                         </div>
-                        <div class="opciones">
+                        <div class="opciones datos">
                             <label for="prov-complejo">Provincia:</label>
                             <select name="prov-complejo">
                                 <option value="1">Buenos Aires</option>
@@ -49,7 +50,7 @@
                                 <option value="6">Santa Cruz</option>
                             </select>
                         </div>
-                        <div class="opciones">
+                        <div class="opciones datos">
                             <label for="ciudad-complejo">Ciudad:</label>
                             <select name="ciud-complejo">
                                 <option value="1">El Trapiche</option>
@@ -60,16 +61,16 @@
                                 <option value="6">Santa Cruz</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="datos">
                             <label for="dir-complejo">Calle / Av. / Ruta:</label>
                             <input type="text" id="calle-complejo" placeholder="Nombre de la ubicación del complejo.">
                         </div>
-                        <div>
+                        <div class="datos">
                             <label for="num-complejo">Numeración / Km:</label>
                             <input type="number" id="num-complejo"
                                 placeholder="Numeración de la ubicación del complejo.">
                         </div>
-                        <div class="mapa-complejo">
+                        <div class="mapa-complejo datos">
                             <label>Ubicación Mapa:</label>
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13366.472678972592!2d-66.0729686!3d-33.1191208!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbb77a3febea5b5a!2sCondominio%20Cuarzo!5e0!3m2!1ses!2sar!4v1665950661879!5m2!1ses!2sar"
@@ -77,54 +78,54 @@
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <!-- Luego habrá que configurarlo para que el usuario pueda subir más de una imagen. -->
-                        <div>
+                        <div class="datos">
                             <label for="img-complejo">Imagenes del Complejo:</label>
                             <input type="file" id="img-complejo">
                         </div>
-
                     </form>
                 </div>
                 <div class="form-cabania">
                     <legend class="legend2">Servicios del Complejo</legend>
                     <div class="servicios serv-comp">
                         <label for="serv-complejo-1">Serv. Cochera:</label>
-                        TECHADA<input type="checkbox" name="serv-complejo-1" value="1">
+                        EXTERIOR<input type="checkbox" name="serv-complejo-1" value="3"><br>
+                        TECHADA<input type="checkbox" name="serv-complejo-1" value="1"><br>                    
                         SIN TECHAR<input type="checkbox" name="serv-complejo-1" value="2">
-                        EXTERIOR<input type="checkbox" name="serv-complejo-1" value="3">
                     </div>
                     <div class="servicios serv-comp">
                         <label for="serv-complejo-2">Serv. Pileta:</label>
+                        PILETA PRIVADA<input type="checkbox" name="serv-complejo-2" value="2"><br>
                         PILETA COMPARTIDA<input type="checkbox" name="serv-complejo-2" value="1">
-                        PILETA PRIVADA<input type="checkbox" name="serv-complejo-2" value="2">
                     </div>
                     <div class="servicios serv-comp">
                         <label for="serv-complejo-3">Serv. Asadores:</label>
-                        ASADORES<input type="checkbox" name="serv-complejo-3" value="1">
+                        ASADORES<input type="checkbox" name="serv-complejo-3" value="1"><br>
                         HORNO DE BARRO<input type="checkbox" name="serv-complejo-3" value="2">
                     </div>
                     <div class="servicios serv-comp">
                         <label for="serv-complejo-4">Serv. Comidas:</label>
-                        DESAYUNO<input type="checkbox" name="serv-complejo-4" value="1">
+                        DESAYUNO<input type="checkbox" name="serv-complejo-4" value="1"><br>
+                        BAR / COMEDOR<input type="checkbox" name="serv-complejo-4" value="3"><br>
                         DESAYUNO + ALMUERZO<input type="checkbox" name="serv-complejo-4" value="2">
-                        BAR / COMEDOR<input type="checkbox" name="serv-complejo-4" value="3">
+                        
                     </div>
                     <div class="servicios serv-comp">
                         <label for="serv-complejo-5">Serv. Ropa Blanca:</label>
-                        SABANAS<input type="checkbox" name="serv-complejo-5" value="1">
-                        SABANAS / FRAZADAS<input type="checkbox" name="serv-complejo-5" value="2">                        
+                        SABANAS<input type="checkbox" name="serv-complejo-5" value="1"><br>
+                        SABANAS / FRAZADAS<input type="checkbox" name="serv-complejo-5" value="2"><br>                      
                         SABANAS / FRAZADAS / TOALLAS<input type="checkbox" name="serv-complejo-5" value="3">
                     </div>                    
                     <div class="servicios serv-comp">
                         <label for="serv-complejo-6">Otros Servicios:</label>
-                        PARQUIZADO<input type="checkbox" name="serv-complejo-6" value="1">
-                        JUEGOS P/ NIÑOS<input type="checkbox" name="serv-complejo-6" value="2">
-                        QUINCHOS<input type="checkbox" name="serv-complejo-6" value="3">
-                        CANCHAS DEPORTIVAS<input type="checkbox" name="serv-complejo-6" value="4"> <br>
-                        MESAS EXTERIORES<input type="checkbox" name="serv-complejo-6" value="5">
-                        LAVANDERIA<input type="checkbox" name="serv-complejo-6" value="6">
-                        EXCURSIONES<input type="checkbox" name="serv-complejo-6" value="7">
-                        ENTRETENIMIENTO<input type="checkbox" name="serv-complejo-6" value="8">
-                        TRASLADOS<input type="checkbox" name="serv-complejo-6" value="9">
+                        QUINCHOS<input type="checkbox" name="serv-complejo-6" value="3"><br>
+                        TRASLADOS<input type="checkbox" name="serv-complejo-6" value="9"><br>
+                        PARQUIZADO<input type="checkbox" name="serv-complejo-6" value="1"><br>
+                        LAVANDERIA<input type="checkbox" name="serv-complejo-6" value="6"><br>
+                        EXCURSIONES<input type="checkbox" name="serv-complejo-6" value="7"><br>
+                        JUEGOS P/ NIÑOS<input type="checkbox" name="serv-complejo-6" value="2"><br>
+                        ENTRETENIMIENTO<input type="checkbox" name="serv-complejo-6" value="8"><br>
+                        MESAS EXTERIORES<input type="checkbox" name="serv-complejo-6" value="5"><br>
+                        CANCHAS DEPORTIVAS<input type="checkbox" name="serv-complejo-6" value="4">
                     </div>
                     <div>
                         <label for="otros-serv">Más Servicios:</label>
@@ -151,8 +152,7 @@
                    inventore consequatur porro blanditiis 
                    facilis totam aliquam itaque deserunt 
                    dicta maxime velit asperiores doloribus 
-                   facere corrupti, illum quasi. Eius.
-            
+                   facere corrupti, illum quasi. Eius.            
                 </p>
             </div>
         </div>

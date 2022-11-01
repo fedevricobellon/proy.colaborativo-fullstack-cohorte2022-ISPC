@@ -3,6 +3,9 @@
     margin: 0px;   
 }
 
+html{
+    width: 100%;
+}
 header{
     display: grid;
     grid-template-columns: 0.5fr 11.5fr;
@@ -123,7 +126,7 @@ header .titulo-central{
 }
 
 .form-cabania input{
-    width:40%;
+    width:50%;
     padding: 5px;
     padding-left: 15px;
     border-radius: 5px;
@@ -136,24 +139,67 @@ header .titulo-central{
 
 .form-cabania .servicios input{
     width: 3%;
-    margin: 0px 15px 25px 3px;
+    margin: 0px 0px 15px 3px;
     display: inline;
     align-items: center;
 }
 
-.serv-comp{
-    margin-bottom: 35px;
+.servicios {
+    margin-bottom: 15px;
 }
 
-.mapa-complejo{
+.datos {
+    margin-bottom: 15px;
+}
+
+.serv-comp{
+    margin-bottom: 20px;
+}
+
+.mapa-complejo,.datos{
     border-radius: 10px;
-    margin: 10px 0px 20px 0px;
+    margin: 10px 0px 30px 0px;
 }
 
 .camas{
     display: inline-block;
 }
 
+
 .camas input{
-    width: 100%;
+    width: 85%;
+}
+
+@media only screen and (max-width: 900px){
+    header {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cuadro-sup{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .forms-cabanias{
+        display: grid;        
+        grid-template-columns: 1fr;
+    }
+
+    .form-cabania{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    iframe{
+        width: 90vw;
+    }
+    
+    .form-cabania .servicios input{
+        width: 3%;
+        margin-bottom: 15px;
+        display: inline;
+        align-items: center;
+    }
 }
