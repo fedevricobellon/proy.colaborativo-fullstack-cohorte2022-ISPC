@@ -55,7 +55,6 @@
                                         <option value="1">Administrador de complejo</option>
                                         <option value="2">Cliente</option>
                                     </select>
-
                                     <button type="button" class="btn btn-primary ms-3" onclick="validarSesion()">Crear cuenta</button>
                                 </div>
                             </fieldset>
@@ -151,12 +150,12 @@
                 document.fvalida.password.focus()
                 return 0
             }
+            
             if (contadorNumeros < 1) {
                 alert("La contraseña debe contener al menos un número.")
                 document.fvalida.password.focus()
                 return 0
             }
-
             // verificación de las dos passwords.
 
             if(document.fvalida.password.value !== document.fvalida.password2.value){
@@ -164,7 +163,7 @@
                 document.fvalida.password.focus()
                 return 0;
             }
-
+            
             // Verificamos que seleccione una opción.
             if(document.fvalida.tipo.value == "0"){
                 alert("Debe seleccionarse una opción")
@@ -172,8 +171,6 @@
                 return 0;
             }
             
-
-
             alert("Muchas gracias por enviar el formulario.")
             document.fvalida.submit()
             
