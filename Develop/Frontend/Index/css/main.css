@@ -5,7 +5,7 @@
 }
 
 .btn-primary{
-    background-color: maroon;
+    background-color: #800000;
     color:#F8EBBE;
     margin-top:10px;
 }
@@ -75,8 +75,8 @@ footer {
     padding: 0.9%; 
     border-radius:  50px 10px 15px; 
     border-radius: 0.25rem;
-    background-color: #d81b1b;
-    border-color: #d43b18;
+    background-color: #800000;
+    border-color: #800000;
     color: #fff;
     font-weight: bold;
 
