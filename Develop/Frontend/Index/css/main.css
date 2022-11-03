@@ -75,8 +75,8 @@ footer {
     padding: 0.9%; 
     border-radius:  50px 10px 15px; 
     border-radius: 0.25rem;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: #d81b1b;
+    border-color: #d43b18;
     color: #fff;
     font-weight: bold;
 
@@ -99,7 +99,7 @@ footer {
     height:300px;
     border-radius: 5px;
     box-shadow: 15px 15px 15px rgb(74, 74, 74);
-    filter: grayscale(0.5);    
+    filter: grayscale(0.8);    
 }
 
 .img2{
@@ -119,9 +119,13 @@ footer {
 }
 .img2:hover{
     filter: none;
+    transition-duration: 5s;
+    transform: scale(1.03);
 }
 .img3:hover{
     filter: none;
+    transition-duration: 5s;
+    transform: scale(1.03);
 }
 
 .seccion-img2{
