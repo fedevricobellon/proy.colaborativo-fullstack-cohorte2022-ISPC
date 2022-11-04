@@ -32,6 +32,7 @@ nombreAdmin varchar(50),
 apellidoAdmin varchar(50),
 dniAdmin int(10),
 fechaNacAdmin Date,
+telAdmin bigint,
 idUsuario2 int,
 constraint fk_idUsuario2 foreign key(idUsuario2) references Usuario(idUsuario)
 );
