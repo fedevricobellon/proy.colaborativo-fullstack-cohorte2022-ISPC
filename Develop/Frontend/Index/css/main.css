@@ -48,8 +48,9 @@ footer {
 .seccionPrincipal{ 
     width:98%;
     height: auto;
+    background-color: #ffffff;
     margin: 2px auto 30px auto;
-    padding:40px 0 40px 30px;
+    padding:40px 0 40px 80px;
     border: 1px solid rgb(171, 168, 168);
     border-radius: 25px;
     box-shadow: 5px 5px 2px #888;
@@ -102,8 +103,23 @@ footer {
     box-sizing: border-box;
     
 }
+
+#bloqueTresEs ul li span{
+    color:#000000;
+ }
+#bloqueTresEs ul li {
+   color:#800000;
+}
+#bloqueTresEn ul li span{
+    color:#000000;
+}
+
+#bloqueTresEn ul li{
+    color:#800000;
+}
+
 .seccion-img1{
-    padding:20px 0;
+    padding:20px 20px;
 }
 .img1, .img2, .img3{
     width:495px;
@@ -114,9 +130,10 @@ footer {
 }
 
 .img2{
-    margin-right: 20px;
+    margin-right: 50px;
 }
 .img3{
+    margin-left:13px;
     margin-top:10px;
 }
 
@@ -124,8 +141,7 @@ footer {
 .img1:hover{
     filter: none;
     transition-duration: 5s;
-    transform: scale(1.03);
-   
+    transform: scale(1.03);  
    
 }
 .img2:hover{
@@ -195,6 +211,9 @@ ul{
 
     .img2{
         margin-bottom:20px;
+    }
+    .seccionPrincipal{ 
+        padding-left: 30px;
     }
 
 }
