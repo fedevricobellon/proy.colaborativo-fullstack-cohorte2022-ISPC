@@ -1,3 +1,14 @@
+header h1 {
+    background: url("../imagenes/complejo_de_cabañas.jpeg");
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+    font-size: 40px;
+    padding-top: 5px;
+}
+
 .jumbotron{
     background-color:#F8EBBE;
     color:#001909;
@@ -134,6 +145,12 @@ footer {
 
 ul{
     list-style:circle;
+}
+
+.fondo_general {
+    background: #eacda3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #caa069, #eacda3, #caa069,);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #caa069, #eacda3, #caa069,); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
