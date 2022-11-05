@@ -1,61 +1,179 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-    crossorigin="anonymous">
-    
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Quienes Somos?</title>
-  </head>
-  <body>
-    <nav class="navbar fixed-top  navbar-expand-md" style="background-color: #e7b242e9 ;"><!--Sirve para poner la barra de navegacion fija (Fixed-top)--> 
-      <div class="container-fluid">
-        <img src="Imagenes/Logo.svg" alt="Bootstrap" width="60" height="50">
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-          <li class="nav-item active"><a class="nav-link" href="#">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Terminos y Condiciones</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-        </ul>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <title>Quienes Somos?</title>
+</head>
+
+<body class="fondo_general">
+
+  <div class="container-fluid mb-4">
+    <div class="row">
+      <div class="col">
+        <header style="color:white">
+          <h1 class="mb-0">Nosotros</h1>
+        </header>
+        <nav class="navbar  navbar-expand-md" style="background-color: #e7b242e9 ;">
+          <div class="container-fluid">
+            <img src="imagenes/Logo.svg" alt="Bootstrap" width="60" height="50">
+            <a class="navbar-brand" href="#">CabaniApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">¿Quienes somos?</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="/proy.colaborativo-fullstack-cohorte2022-ISPC/Develop/Frontend/Index/precios.html">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="/proy.colaborativo-fullstack-cohorte2022-ISPC/Develop/Frontend/Index/login.html">Mi Cuenta</a></li>
+         
+              </ul>
+            </div>
+        </nav>
       </div>
-    </nav>
-    <div class="jumbotron">
-      <h1>CabaniApp</h1>
+    </div>
+  </div>
+
+  <div class="quieneSomos-titulo">
+    <h2>Quiénes Somos?</h2>
+  </div>
+
+  <div class="botonTraducir">
+    <button id="btn-traducirIn">Traducir al Ingles</button>
+    <button id="btn-traducirEs">Traducir al Español</button>
+  </div>
+
+  <section class="seccionPrincipal">
+    <div class="seccionTexto1" id="bloqueUnoEs">
+      <p>Somos un <strong> grupo de dueños de cabañas </strong>con una amplia trayectoria y un reconocido prestigio, que
+        nos dedicamos a brindarles el mejor servicio, y la tranquilidad que se necesita al momento de elegir una Cabaña
+        para sus vacaciones o
+        escapadas con el fin de satisfacer con responsabilidad las necesidades y expectativas de los visitantes, con
+        atención personal de sus propietarios y cumpliendo con las normas legales vigentes.</p>
+      <p>El pasajero encuentra la ventaja de alquilar sus estadías de descanso directamente con el dueño de Cabañas, sin
+        Intermediarios. Esperamos poder brindarle nuestro prestigio, confort y tranquilidad a la hora de planificar su
+        viaje.</p>
     </div>
 
-    <div class="container">
-      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
-        </ol>
-      </nav>
-
-    <div class="quieneSomos-titulo">
-      <p>Quiénes Somos?</p>
+    <div class="seccionTexto1" id="bloqueUnoEn">
+      <p>We are a <strong> group of cabin owners </strong> with extensive experience and recognized prestige, who are
+        dedicated to providing you with the best service, and the peace of mind that is needed when choosing a cabin for
+        your vacations. either
+        getaways in order to responsibly satisfy the needs and expectations of visitors, with personal attention from
+        their owners and complying with current legal regulations.</p>
+      <p>The passenger finds the advantage of renting their rest stays directly with the owner of Cabins, without
+        Intermediaries. We hope to offer you our prestige, comfort and peace of mind when planning your trip.</p>
     </div>
+<<<<<<< HEAD
+
+    <div class="seccion-img1">
+      <img class="img1" src="imagenes/cabania-j.jpg" alt="imagen de cabaña">
+    </div>
+
+    <div class="seccion-img2">
+      <img class="img2" src="imagenes/cabania-i.jpg" alt="imagen de cabaña" width="500px" height="300px">
+    </div>
+
+    <div class="seccionTexto2" id="bloqueDosEs">
+      <h2>Misión</h2>
+      <p>Proveer un servicio integral en cabañas, implementando normas de calidad, siendo nuestra prioridad la
+        satisfacción de servicio personalizado a nuestros huespedes,
+        en un ambiente familiar, cómodo tranquilo y seguro.</p>
+
+      <h2> Visión</h2>
+      <p>Ser un portal reconocido a nivel internacional, llenando las expectativas de clientes que busquen descanso,
+        placer y/o aventura.</p>
+      <p>Todos los establecimientos publicados, están chequeados de que verdaderamente existen y brindamos esta
+        tranquilidad a la hora de enviar una reserva de dinero!</p>
+    </div>
+
+    <div class="seccionTexto2" id="bloqueDosEn">
+      <h2>Mission</h2>
+      <p>Provide a comprehensive service in cabins, implementing quality standards, our priority being the satisfaction
+        of personalized service to our guests,
+        in a familiar, comfortable and safe environment.</p>
+
+      <h2> Vision</h2>
+      <p>To be an internationally recognized portal, meeting the expectations of customers seeking rest, pleasure and/or
+        adventure.</p>
+      <p>All published establishments are checked to see if they really exist and we offer this peace of mind when
+        sending a money reserve!</p>
+    </div>
+
+    <div class="seccionTexto3" id="bloqueTresEs">
+      <h2>Valores:</h2>
+      <ul class="lista">
+        <li>Respeto</li>
+        <li>Seguridad</li>
+        <li>Servicio</li>
+        <li>Responsabilidad</li>
+        <li>Confianza</li>
+        <li>Honradez</li>
+        <li>Amor al trabajo</li>
+      </ul>
+    </div>
+
+    <div class="seccionTexto3" id="bloqueTresEn">
+      <h2>Values:</h2>
+      <ul class="list">
+        <li>Respect</li>
+        <li>Security</li>
+        <li>Service</li>
+        <li>Responsibility</li>
+        <li>Trust</li>
+        <li>Honesty</li>
+        <li>Love of work</li>
+      </ul>
+    </div>
+
+    <div class="seccion-img3">
+      <img class="img3" src="imagenes/cabania-m.webp" alt="imagen de cabaña" width="500px" height="300px">
+    </div>
+
+  </section>
+
+  </div>
+  <footer>
+    <div class="row">
+      <div class="col-sm-4 d-flex flex-column">
+        <i class="bi bi-facebook"><a href="#"> Facebook</a></i>
+        <i class="bi bi-twitter"><a href="#"> Twitter</a></i>
+        <i class="bi bi-instagram"><a href="#"> Instagram</a></i>
+        <i class="bi bi-whatsapp"><a href="#"> Whatsapp</a></i>
+      </div>
+      <div class="col-sm-4 d-flex flex-column align-items-end">
+        <a href="#">Nosotros</a>
+        <a href="#">Precios</a>
+        <a href="#">Terminos y Condiciones</a>
+        <a href="#">Contacto</a>
+=======
     
     <section class="seccionPrincipal">
-      <div class="seccionTexto1">
-        <p>Somos un <strong> grupo de dueños de cabañas </strong>con una amplia trayectoria y un reconocido prestigio, que nos dedicamos a brindarles el mejor servicio, y la tranquilidad que se necesita al momento de elegir una Cabaña para sus vacaciones o 
+      <div class="seccionTexto1" id="bloqueUnoEs">
+        <p><strong>Somos un grupo de dueños de cabañas </strong>con una amplia trayectoria y un reconocido prestigio, que nos dedicamos a brindarles el mejor servicio, y la tranquilidad que se necesita al momento de elegir una Cabaña para sus vacaciones o 
           escapadas con el fin de satisfacer con responsabilidad las necesidades y expectativas de los visitantes, con atención personal de sus propietarios y cumpliendo con las normas legales vigentes.</p>
-
         <p>El pasajero encuentra la ventaja de alquilar sus estadías de descanso directamente con el dueño de Cabañas, sin Intermediarios. Esperamos poder brindarle nuestro prestigio, confort y tranquilidad a la hora de planificar su viaje.</p>
       </div>
+
+      <div class="seccionTexto1" id="bloqueUnoEn">
+        <p>We are a <strong> group of cabin owners </strong> with extensive experience and recognized prestige, who are dedicated to providing you with the best service, and the peace of mind that is needed when choosing a cabin for your vacations. either
+          getaways in order to responsibly satisfy the needs and expectations of visitors, with personal attention from their owners and complying with current legal regulations.</p>
+          <p>The passenger finds the advantage of renting their rest stays directly with the owner of Cabins, without Intermediaries. We hope to offer you our prestige, comfort and peace of mind when planning your trip.</p></div>
 
         <div class="seccion-img1">
             <img class="img1" src="imagenes/cabania-j.jpg" alt="imagen de cabaña">
@@ -65,7 +183,7 @@
             <img class="img2" src="imagenes/cabania-i.jpg" alt="imagen de cabaña" width="500px" height="300px">
         </div>
 
-        <div class="seccionTexto2">
+        <div class="seccionTexto2" id="bloqueDosEs">
           <h2>Misión</h2>
           <p>Proveer un servicio integral en cabañas, implementando normas de calidad, siendo nuestra prioridad la satisfacción de  servicio  personalizado  a  nuestros  huespedes, 
             en un ambiente familiar, cómodo tranquilo y seguro.</p>
@@ -75,44 +193,56 @@
             <p>Todos los establecimientos publicados, están chequeados de que verdaderamente existen y brindamos esta tranquilidad a la hora de enviar una reserva de dinero!</p>
         </div>
 
-        <div class="seccionTexto3">
+        <div class="seccionTexto2" id="bloqueDosEn">
+          <h2>Mission</h2>
+          <p>Provide a comprehensive service in cabins, implementing quality standards, our priority being the satisfaction of personalized service to our guests,
+            in a familiar, comfortable and safe environment.</p>
+            
+          <h2> Vision</h2>
+            <p>To be an internationally recognized portal, meeting the expectations of customers seeking rest, pleasure and/or adventure.</p>
+            <p>All published establishments are checked to see if they really exist and we offer this peace of mind when sending a money reserve!</p></div>
+
+        <div class="seccionTexto3" id="bloqueTresEs">
           <h2>Valores:</h2> 
             <ul class="lista">
-                <li>Respeto</li>
-                <li>Seguridad</li>
-                <li>Servicio</li>
-                <li>Responsabilidad</li>
-                <li>Confianza</li>
-                <li>Honradez</li>
-                <li>Amor al trabajo</li>
+                <li><span>Respeto</span></li>
+                <li><span>Seguridad</span></li> 
+                <li><span>Servicio</span></li>
+                <li><span>Responsabilidad</span></li>
+                <li><span>Confianza</span></li>
+                <li><span>Honradez</span></li>
+                <li><span>Amor al trabajo</span></li>
             </ul>   
         </div>
 
-        <div class="seccion-img3">
+        <div class="seccionTexto3" id="bloqueTresEn">
+          <h2>Values:</h2>
+            <ul class="list">
+                <li><span>Respect</span></li>
+                <li><span>Security</span></li>
+                <li><span>Service</span></li>
+                <li><span>Responsibility</span></li>
+                <li><span>Trust</span></li>
+                <li><span>Honesty</span></li>
+                <li><span>Love of work</span></li>
+            </ul>
+        </div>   
+
+         <div class="seccion-img3">
             <img class="img3" src="imagenes/cabania-m.webp" alt="imagen de cabaña" width="500px" height="300px">
         </div>
+        
     </section>
 
+>>>>>>> a4eb5cdd8f274e24408de9ca230bd9a50148d0ba
       </div>
-     <footer>
-      <div class="row">
-        <div class="col-sm-4 d-flex flex-column">
-          <i class="bi bi-facebook"><a href="#"> Facebook</a></i>
-          <i class="bi bi-twitter"><a href="#"> Twitter</a></i>
-          <i class="bi bi-instagram"><a href="#"> Instagram</a></i>
-          <i class="bi bi-whatsapp"><a href="#"> Whatsapp</a></i>
-        </div>
-        <div class="col-sm-4 d-flex flex-column align-items-end">
-          <a href="#">Nosotros</a>
-          <a href="#">Precios</a>
-          <a href="#">Terminos y Condiciones</a>
-          <a href="#">Contacto</a>
-        </div>
-      </div>
-     </footer>
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-     crossorigin="anonymous"></script>
-  </body>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="traductor.js"></script>
+</body>
+
 </html>

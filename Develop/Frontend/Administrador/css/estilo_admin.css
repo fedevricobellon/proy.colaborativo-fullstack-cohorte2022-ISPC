@@ -1,4 +1,4 @@
-html{
+html {
     margin: 0;
     padding: 0;
 }
@@ -6,6 +6,15 @@ html{
 body {
     color: black;
     font-family: 'calibri';
+}
+
+.background-style {
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c4a86d, #966042, #c4a86d);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c4a86d, #966042, #c4a86d);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header h1 {
@@ -31,16 +40,16 @@ section {
 
 
 .conte p {
-color: black;
-font-size:  30px;
-font-weight:  bold;
-margin:  2em 0;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 2em 0;
 }
 
 .conte a {
     color: white;
     text-decoration: none;
-    background:  #DB9501;
+    background: #DB9501;
     padding: 50px 45px;
     border-radius: 10px;
     font-size: 30px;
@@ -51,13 +60,13 @@ margin:  2em 0;
     background: #C05805;
 }
 
-.accordion-body li a{
+.accordion-body li a {
     text-decoration: none !important;
     color: black;
 }
 
 footer {
-    width:  100%;
+    width: 100%;
     margin-top: 10%;
     background: #DB9501;
 }
@@ -65,19 +74,19 @@ footer {
 .container_footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
     max-width: 1100px;
     margin: auto;
     margin-top: 100px;
 }
 
-.box_footer{
+.box_footer {
     display: flex;
     flex-direction: column;
     padding: 40px;
 }
 
-.box_footer .logo img{
+.box_footer .logo img {
     width: 180 px;
 }
 
@@ -101,7 +110,7 @@ footer {
     font-weight: 600;
 }
 
-.box_footer a:hover{
+.box_footer a:hover {
     opacity: 0.8;
 }
 
@@ -117,10 +126,10 @@ footer {
     color: black;
 }
 
-.box_copyright hr{
+.box_copyright hr {
     border: none;
     height: 1px;
-    background-color: #C05805;
+    background-color: #C05805;
 }
 
 .day-name {
