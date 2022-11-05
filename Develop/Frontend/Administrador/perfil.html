@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/perfil.css">
-    <link rel="stylesheet" href="css/estilo_admin.css">
 
 
     <title>Perfil</title>
@@ -30,7 +29,7 @@
         <div class="container">
             <div class="forms-cabanias">
                 <div class="perfil form-cabania">
-                    <form action="POST">
+                    <form name="fvalida">
                         <legend>Perfil Administrador</legend>
                         <div class="datos">
                             <label for="nom-admin">Nombre:</label>
@@ -53,6 +52,7 @@
                             <label for="contacto-admin">Teléfono:</label>
                             <input type="tel" id="contacto-admin" placeholder="N° de teléfono administrador.">
                         </div>
+                        <button id="boton" type="button" onclick="validaPerfil()">AGREGAR</button>
                     </form>
                 </div>
             </div>
@@ -103,6 +103,8 @@
         </div>
         </div>
     </footer>
+
+    <script src="js/valid-perfil.js"></script>
 
 </body>
 
