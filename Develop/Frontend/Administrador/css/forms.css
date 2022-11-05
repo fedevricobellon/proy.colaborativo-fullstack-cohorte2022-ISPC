@@ -10,6 +10,20 @@ html {
 body {
     color: black;
     font-family: 'calibri';
+    
+}
+
+.background-style {
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c4a86d, #966042, #c4a86d);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c4a86d, #966042, #c4a86d);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main{
+    margin-bottom: -10%;
 }
 
 header h1 {
@@ -101,11 +115,16 @@ header .titulo-central {
 }
 
 .form-cabania {
-
     margin: 15px;
     width: 50%;
-    background-color: #675107da;
+    color: hsl(47deg 97% 90%);
+    background-color: #78451a;
     border-radius: 15px;
+    border: 2px solid #2E2300;
+}
+
+.form-cabania legend{
+    color: #2E2300;
 }
 /* Modificaciones personales de form reserva admin. */
 #reserva{
@@ -224,7 +243,7 @@ footer {
     justify-content: space-between;
     max-width: 1100px;
     margin: auto;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .box_footer {
@@ -287,19 +306,21 @@ footer {
 #boton{
     width: 25%;
     text-decoration: none;
-    background-color: blue;
-    color: white;
+    background-color: #5d3c21;
+    font-size: 1.2em;
+    color: rgb(224, 223, 223);
     margin-bottom: 10px;
     padding: 8px 4px;
     border-radius: 8px;
+    border: 3px solid #b88b5c;
 }
 
 #boton:hover{
-    background-color: rgb(25, 25, 254);
+    background-color: #8e582c;
 }
 
 #boton:visited{
-    background-color: blue;
+    background-color: #5d3c21;
     color: white;
 }
 

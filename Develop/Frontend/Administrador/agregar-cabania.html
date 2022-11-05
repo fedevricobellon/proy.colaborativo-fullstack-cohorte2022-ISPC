@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/forms.css">
-    <link rel="stylesheet" href="css/estilo_admin.css">
     <title>Nueva Cabaña</title>
 </head>
 
@@ -37,7 +36,7 @@
             </div>
             <div class="forms-cabanias">
                 <div class="form-cabania">
-                    <form action="POST" name="fvalida">
+                    <form name="fvalida">
                         <legend>Datos de la Cabaña</legend>
                         <div class="datos">
                             <label for="nom-cab">Nombre Cabaña:</label>
@@ -49,7 +48,7 @@
                         </div>
                         <div class="datos">
                             <label for="plaza-cab">Max. Personas:</label>
-                            <input type="number" id="plaza-cab" min="1" placeholder="Máx. cantidad permitida.">
+                            <input type="number" id="plaza-cab" min="1" placeholder="Máx. cantidad permitida." required>
                         </div>
                         <div class="datos camas camas-dobles">
                             <label for="camas-cab">Camas Doble:</label>
@@ -78,7 +77,7 @@
                     </form>
                 </div>
                 <div class="form-cabania">
-                    <form action="POST" name="fvalida">
+                    <form name="fvalida">
                         <legend class="legend2">Servicios de la Cabaña</legend>
                         <div class="servicios">
                             <label for="serv-1">Serv. Digitales:</label>
@@ -159,7 +158,6 @@
         </div>
         </div>
     </footer>
-
 </body>
 
 </html>
