@@ -24,7 +24,7 @@ header {
     display: grid;
     grid-template-columns: 0.5fr 11.5fr;
     height: 100px;
-    background-image: url(../img/complejo_de_cabañas.jpeg);
+    background-image: url(../img/complejo\ cabañas\ 2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
