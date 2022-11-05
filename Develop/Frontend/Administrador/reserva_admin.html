@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/perfil.css">
+
+
+
+    <title>Nueva Reserva</title>
+</head>
+
+<body>
+    <header>
+        <!-- Vuelve al panel administración. -->
+        <div class="col">
+            <button><a href="gestion_administrador.html">
+                    <---- VOLVER</a></button>
+        </div>
+        <div class="titulo-central col">
+            <h1>Nueva Reserva</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="forms-cabanias">
+                <div class="perfil form-cabania" id="reserva">
+                    <form name="fvalida">
+                        <legend>Nueva Reserva</legend>
+                        <div id="info-principal">
+                            <div class="datos">
+                                <label for="ingreso-reserva">Ingreso:</label>
+                                <input type="date" id="ingreso-reserva">
+                            </div>
+                            <div class="datos">
+                                <label for="egreso-reserva">Salida:</label>
+                                <input type="date" id="egreso-reserva">
+                            </div>
+                            <div class="datos">
+                                <label for="personas-reserva">N° de Personas:</label>
+                                <input type="number" id="personas-reserva" placeholder="Cant. personas." min="1"
+                                    max="20">
+                            </div>
+                        </div>
+                        <div id="info-pagos">
+                            <div class="datos">
+                                <label for="senia-reserva">Seña:</label>
+                                $<input type="number" id="senia-reserva" min="100">
+                            </div>
+                            <div class="datos">
+                                <label for="total-reserva">Pago Total:</label>
+                                $<input type="number" id="total-reserva" min="100">
+                            </div>
+                        </div>
+                        <div class="servicios">
+                            <label for="formaPago-reserva">Formas de Pago:</label>
+                            Efectivo<input type="checkbox" name="formaPago-reserva" value="1">
+                            Transferencia<input type="checkbox" name="formaPago-reserva" value="2">
+                            Mercado Pago<input type="checkbox" name="formaPago-reserva" value="3"><br>
+                            Uala<input type="checkbox" name="formaPago-reserva" value="4">
+                            Tarjeta de Débito<input type="checkbox" name="formaPago-reserva" value="5">
+                            Tarjeta de Crédito<input type="checkbox" name="formaPago-reserva" value="6">
+                        </div>
+                        <div class="datos">
+                            <label for="nombre-reserva">Nombre:</label>
+                            <input type="text" id="nombre-reserva" placeholder="Nombre del cliente.">
+                        </div>
+                        <div class="datos">
+                            <label for="apellido-reserva">Apellido:</label>
+                            <input type="text" id="apellido-reserva" placeholder="Apellido del cliente.">
+                        </div>
+                        <div class="datos">
+                            <label for="dni-reserva">DNI:</label>
+                            <input type="number" id="dni-reserva" placeholder="DNI del cliente.">
+                        </div>
+                        <div class="datos">
+                            <label for="mail-reserva">Mail:</label>
+                            <input type="text" id="mail-reserva" placeholder="Mail del cliente.">
+                        </div>
+                        <div class="datos">
+                            <label for="tel-reserva">Celular / Teléfono:</label>
+                            <input type="tel" id="tel-reserva" placeholder="N° de contacto del cliente.">
+                        </div>
+                        <button id="boton" type="button" onclick="validaReserva()">Reservar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container_footer">
+            <div class="box_footer">
+                <div class="logo">
+                    <img src="../Mis Codigos/imagenes/logo sin borde.jpeg" alt="">
+                </div>
+                <div class="terms">
+                    <p>Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Explicabo labore modi
+                        inventore consequatur porro blanditiis
+                        facilis totam aliquam itaque deserunt
+                        dicta maxime velit asperiores doloribus
+                        facere corrupti, illum quasi. Eius.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box_footer">
+                <h2>ADMINISTRACION</h2>
+                <a href="#">CABAÑAS</a>
+                <a href="#">AGENDA</a>
+                <a href="#">INFORME</a>
+                <a href="#">RESERVAS</a>
+            </div>
+
+            <div class="box_footer">
+                <h2>REDES SOCIALES</h2>
+                <a href="#">FACEBOOK</a>
+                <a href="#">INSTAGRAM</a>
+                <a href="#">TWITTER</a>
+                <a href="#">TIK TOK</a>
+            </div>
+
+            <div class="box_copyright">
+                <hr>
+                <p>Todos los derechos reservados & 2022
+                    <b>ISPC</b>
+                </p>
+            </div>
+        </div>
+        
+        <script src="js/valid-reserva.js"></script>
+    </footer>
+
+</body>
+
+</html>

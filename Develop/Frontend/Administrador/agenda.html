@@ -152,7 +152,14 @@
                   </li>
                   </ul>
                   <div class="card-body text-center">
-                    <button type="button" class="btn btn-primary">Consulta</button>
+                    <!-- Momentaneamente lleva a reserva, luego con back consultará y luego reserva.-->
+                    <button type="button" class="btn btn-primary" onclick="formReserva()">Reserva</button>
+                    <!-- Función para redireccionar al form reserva. -->
+                    <script>
+                        function formReserva(){
+                          window.location.href = "reserva_admin.html"
+                        }
+                    </script>
                   </div>
                 </div>
               </div>
