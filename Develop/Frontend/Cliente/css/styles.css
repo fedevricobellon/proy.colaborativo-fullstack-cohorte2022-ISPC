@@ -97,3 +97,12 @@ header .titulo-central{
   button:hover {
     border: 2px solid black;
   }
+
+  .background-style {
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#966042, #c4a86d, #966042);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,#966042, #c4a86d, #966042);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
