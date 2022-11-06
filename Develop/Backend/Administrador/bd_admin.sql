@@ -76,8 +76,8 @@ cantPersonasCab int,
 camaCab1 int,
 camaCab2 int,
 imagenCab varchar(100),
-idComplejo1 int,
-constraint fk_idComplejo1 foreign key(idComplejo1) references Complejo(idComplejo)
+idComplejo2 int,
+constraint fk_idComplejo foreign key(idComplejo2) references Complejo(idComplejo)
 );
 
 /* Tabla de Servicios Adicionales de Cabañas */
@@ -105,21 +105,23 @@ apellidoReserva varchar(50),
 dniReserva int(10),
 mailReserva varchar(30),
 telefonoReserva varchar(20),
-idAdmin1 int,
-idCabania1 int,
-constraint fk_idAdmin1 foreign key(idAdmin1) references Administrador(idAdmin),
-constraint fk_idCabania1 foreign key(idCabania1) references Cabania(idCabania)
+idAdmin2 int,
+idCabania2 int,
+constraint fk_idAdmin foreign key(idAdmin2) references Administrador(idAdmin),
+constraint fk_idCabania foreign key(idCabania2) references Cabania(idCabania)
 );
 
 /* Tabla Informes */
 CREATE table Informes (
 idInformes int auto_increment primary key,
-pagosInformes float(100) primary key,
+pagosInformes float,
 alquilerMesInforme int, 
 alquilerAnualInforme int,
-idAdmin1 int,
+idAdmin3 int,
 idReserva int,
-constraint fk_idAdmin1 foreign key(idAdmin1) references Administrador(idAdmin) );
+constraint fk_idAdmin3 foreign key(idAdmin3) references Administrador(idAdmin),
+constraint fk_idReserva foreign key(idReserva) references ReservaAdmin(idReservaAdmin) 
+);
 
 /*Tabla de Perdidas*/
 CREATE table Perdidas (
@@ -130,10 +132,10 @@ electroPerdida varchar(100), /* tv, cocina, horno, anafe, microondas, heladera, 
 vajillaPerdida varchar(100),
 ropaBlancaPerdida varchar(100),
 exteriorPerdida varchar(100), /* manguera, asadores, reposeras, sombrillas */
-idAdmin1 int,
-idInformes1 int,
-constraint fk_idAdmin1 foreign key(idAdmin1) references Administrador(idAdmin),
-constraint fk_idInformes1 foreign key(idInformes1) references Informes(idInformes)
+idAdmin4 int,
+idInformes int,
+constraint fk_idAdmin4 foreign key(idAdmin4) references Administrador(idAdmin),
+constraint fk_idInformes foreign key(idInformes) references Informes(idInformes)
 );
 
 /* Tabla Compras */
@@ -146,17 +148,17 @@ ropaBlancaCompras varchar(100), /* Sabanas, cubrecama, acolchados, frazadas, alm
 exteriorCompras varchar(100), /* parrilla, pala, rastrillo, maquina de cortar pasto, reposeras, sombrillas, mesas, sillas */
 electrodomesticoCompras varchar(100), /* Tv, pava electrica, microondas, horno, anafe, cocina, cafetera, heladera termotanque, decos, antenas, routers */
 otrasCompras varchar(100),
-idAdmin1 int,
+idAdmin5 int,
 idInformes1 int,
-constraint fk_idAdmin1 foreign key(idAdmin1) references Administrador(idAdmin),
+constraint fk_idAdmin5 foreign key(idAdmin5) references Administrador(idAdmin),
 constraint fk_idInformes1 foreign key(idInformes1) references Informes(idInformes)
 );
 
 /*Tabla de Ingresos */
 CREATE table Ingresos (
 idIngresos int auto_increment primary key,
-idReservadmin1 int,
-idInformes1 int,
-constraint fk_idReservaAdmin1 foreign key(idReservaAdmin1) references ReservaAdmin(idReservaAdmin),
-constraint fk_idInformes1 foreign key(idInformes1) references Informes(idInformes)
+idReservaAdmin2 int,
+idInformes2 int,
+constraint fk_idReservaAdmin2 foreign key(idReservaAdmin2) references ReservaAdmin(idReservaAdmin),
+constraint fk_idInformes2 foreign key(idInformes2) references Informes(idInformes)
 )
