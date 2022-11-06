@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
-    --padding-container: 0px 0px 10% 0px ;
+    --padding-container: 100px 0;
     --color-title: #001A49;
 }
 
@@ -21,7 +21,7 @@ body {
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0px auto;
+    margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
 }
@@ -130,53 +130,10 @@ body {
     border-radius: 32px;
 }
 
-/* About */
-
-.about {
-    text-align: center;
-}
-
-.subtitle {
-    color: var(--color-title);
-    font-size: 2rem;
-    margin-bottom: 25px;
-}
-
-
-.about__paragraph {
-    line-height: 1.7;
-}
-
-.about__main {
-    padding-top: 80px;
-    display: grid;
-    width: 90%;
-    margin: 0 auto;
-    gap: 1em;
-    overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
-}
-
-
-.about__icons {
-    display: grid;
-    gap: 1em;
-    justify-items: center;
-    width: 260px;
-    overflow: hidden;
-    margin: 0 auto;
-    color: #fff;
-}
-
-.about__icon {
-    width: 60px;
-}
-
 /* Footer */
 
 .footer{
     background-color: #1b1808d8;
-    margin: 0px;
 }
 
 .footer__title{
@@ -185,7 +142,7 @@ body {
     margin-bottom: 30px;
 }
 
-.footer__title, .footer__newsletter{
+.footer_title, .footer_newsletter{
     color: #fff;
 }
 
@@ -195,7 +152,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #fff;
-    padding: 20px 0px 60px;
+    padding-bottom: 60px;
 }
 
 .nav--footer{
@@ -265,45 +222,6 @@ body {
 /* Media queries */
 
 @media (max-width:800px){
-    .nav__menu{
-        display: block;
-    }
-
-    .nav__link--menu{
-        position: fixed;
-        background-color: #000;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        z-index: 100;
-        opacity: 0;
-        pointer-events: none;
-        transition: .7s opacity;
-    }
-
-    .nav__link--show{
-        --show: block;
-        opacity:1 ;
-        pointer-events: unset;
-    }
-
-    .nav__close{
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        width: 30px;
-        cursor: pointer;
-    }
-
-    .hero__title{
-        font-size: 2.5rem;
-    }
-
 
     .about__main{
         gap: 2em;
@@ -340,18 +258,7 @@ body {
 }
 
 @media (max-width:600px){
-    .hero__title{
-        font-size: 2rem;
-    }
-
-    .hero__paragraph{
-        font-size: 1rem;
-    }
-
-    .subtitle{
-        font-size: 1.8rem;
-    }
-    
+   
     .footer__title{
         justify-self: start;
         margin-bottom: 15px;
@@ -383,6 +290,6 @@ body {
         /* 
         margin:0;
         width: 100%;
-        */
-    }
+        */
+    }
 }
