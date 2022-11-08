@@ -7,7 +7,7 @@
 
 
     <link rel="stylesheet" href="css/footerN.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/login.style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -24,6 +24,18 @@
             <div class="message">
                 <h1>Bienvenido a CabaniApp</h1>
                 <p>Si ya tenes una cuenta por favor inicia sesion aqui</p>
+
+                <div class="datos">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Administrador</label>
+                </div>
+            
+                <div class="datos">
+
+                    <input class="form-check-input" type="checkbox" id="gridCheck" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Cliente</label>
+                </div>
+                
                 <button class="sign-up-btn">Iniciar Sesion</button>
             </div>
         </div>
@@ -44,6 +56,9 @@
             <input type="text" placeholder="Nombre">
             <input type="email" placeholder="E-mail">
             <input type="password" placeholder="Contraseña">
+            <input type="password" placeholder="Repetir Contraseña">
+
+            
             <input type="button" placeholder="Registrarse">
 
         </form>
@@ -66,6 +81,7 @@
             <p class="cuenta-gratis">¿Aun no tienes cuenta?</p>
             <input type="email" placeholder="E-mail">
             <input type="password" placeholder="Contraseña">
+            <input type="password" placeholder="Repetir Contraseña">
             <input type="button" placeholder="Iniciar Sesion">
 
         </form>
@@ -73,58 +89,27 @@
             <div class="message">
                 <h1>Bienvenido nuevamente</h1>
                 <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+               
+
+            <div class="datos">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Administrador</label>
+                </div>
+            
+                <div class="datos">
+
+                    <input class="form-check-input" type="checkbox" id="gridCheck" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Cliente</label>
+                </div>
                 <button class="sign-in-btn">Registrarse</button>
             </div>
+            
         </div>
         
     </div>
 
-    <footer class="footer mt-3">
-        <section class="footer__container container">
-            <nav class="nav nav--footer">
-                <h2 class="footer__title">CABANIAPP</h2>
     
-                <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="../Administrador/index-admin.html" class="nav__links">Inicio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="../Administrador/agregar-cabania.html" class="nav__links">Cabañas</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="../Administrador/contabilidad.html" class="nav__links">Contabilidad</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="../Administrador/agenda.html" class="nav__links">Agenda</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Preguntas Frecuentes</a>
-                    </li>
-                </ul>
-            </nav>
-    
-            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
-                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
-                <div class="footer__inputs">
-                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
-                    <input type="submit" value="Registrate" class="footer__submit">
-                </div>
-            </form>
-        </section>
-    
-        <section class="footer__copy container">
-            <div class="footer__social">
-                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg" class="footer__img"></a>
-            </div>
-    
-            <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
-        </section>
-    </footer>
-    
-    <script src="script.js"></script>
+    <script src="./JavaScrip/login.js"></script>
 </body>
 
 
