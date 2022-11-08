@@ -16,7 +16,11 @@ body {
     background: linear-gradient(to right, #c4a86d, #966042, #c4a86d);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.row {
+    color: black;
+}
 
+/*
 header {
     background: url('./complejo\ cabañas\ 2.jpeg');
     height: 350px;
@@ -58,10 +62,11 @@ header {
     background: #C05805;
 }
 
+
 .accordion-body li a {
     text-decoration: none !important;
     color: black;
-}
+}*/
 
 footer {
     width: 100%;
