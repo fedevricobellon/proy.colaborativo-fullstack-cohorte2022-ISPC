@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente: Reservas</title>
+    <link rel="stylesheet" href="css/footerN.css">
+    <link rel="stylesheet" href="css\style1-cliente.css">
+</head>
+
+<body class="grid-container">
+    <header class="header">Header</header>
+
+    <nav class="navbar">
+        <ul>
+          <li><a href="cliente-datos-personales.html">Datos personales</a></li>
+          <li><a href="cliente-pago-con-tarjetas.html">Tarjeta de pago</a></li>
+          <li><a class="active" href="cliente-form-reservas.html">Reservas</a></li>
+          <li><a href="cliente-seguridad.html">Seguridad</a></li>
+        </ul>
+    </nav>
+
+<!--
+    <aside class="sidebar">Sidebar</aside>
+-->
+
+    <article class="main">
+      <h1>Reservas</h1><br>
+      <h2>Completá el formulario para hacer la reserva</h2><br>
+
+      <form action="reserva-cliente.php" method="post">
+
+        <label for="provincia-elegida">Seleccioná la provincia de destino</label>
+        <select id="provincia-elegida" name="seleccion_provincia" required>
+          <option value="buenos-aires">Buenos Aires</option>
+          <option value="catamarca">Catamarca</option>
+          <option value="cordoba">Córdoba</option>
+          <option value="mendoza">Mendoza</option>
+          <option value="neuquen">Neuquén</option>
+          <option value="rio-negro">Río Negro</option>
+          <option value="san-luis">San Luis</option>
+          <option value="santa-cruz">Santa Cruz</option>
+        </select><br><br>
+
+          <label for="ciudad-elegida">Seleccioná la ciudad</label>
+          <select id="ciudad-elegida" name="seleccion_ciudad" required>
+            <option value="bariloche">Bariloche</option>
+            <option value="gualeguaychu">Gualeguaychú</option>
+            <option value="villa-carlos-paz">Villa Carlos Paz</option>
+          </select><br><br>
+
+          <label for="complejo-elegido">Seleccioná el nombre del complejo</label>
+          <select id="complejo-elegido" name="seleccion_complejo" required>
+            <option value="cabañas-arcoiris">Cabañas Arcoiris</option>
+            <option value="complejo-cuarzo">Complejo Cuarzo</option>
+          </select><br><br>
+
+          <label for="adultos">Adultos</label>
+          <input type="number" id="adultos" name="total_adultos" placeholder="2" min="1" required>
+
+          <label for="menores">Menores</label>
+          <input type="number" id="menores" name="total_menores" placeholder="2" min="0" required><br><br>
+
+          <label for="fecha-ingreso">Fecha de ingreso</label>
+          <input type="date" id="fecha-ingreso" name="ingreso" required>
+
+          <label for="fecha-salida">Fecha de salida</label>
+          <input type="date" id="fecha-salida" name="salida" required><br><br><br>
+
+          <h1>Forma de pago</h1><br>
+          <p>Presione el botón pago en efectivo para reservar y coordinar el pago en efectivo</p><br>
+
+        <button type="submit">Pago en efectivo</button>
+      </form><br><br>
+
+      <h2>Pago con tarjeta</h2>
+
+      <form action="datos-cliente.php" method="post">
+        <label for="nombre-titular-tarjeta">Nombre del titular de la tarjeta</label><br>
+        <input type="text" name="nombre-titular-tarjeta" id="nombre-titular-tarjeta" size="30" placeholder="ingresa el nombre del titular de la tarjeta"><br><br>
+        
+        <label for="numero-tarjeta">Número de la tarjeta</label><br> 
+        <input type="text" name="numero-tarjeta" id="numero-tarjeta" maxlength="16" minlength="16"><br>
+        <small>Ingresá los números que figuran al frente de la tarjeta. Ejemplo: 1234 5678 9101 1213</small><br><br>
+    
+          <label for="vencimiento-tarjeta">Fecha de vencimiento</label><br>
+          <input type="month" id="vencimiento-tarjeta" name="vencimiento-tarjeta" required><br><br>
+  
+          <label for="codigo-seguridad">Código de seguridad</label><br>
+          <input type="text" id="codigo-seguridad" name="codigo-seguridad" maxlength="3" minlength="3" required><br>
+          <small>Ingresa los últimos tres números que figuran al dorso de la tarjeta</small><br><br>
+  
+        <button type="submit">Pagar con tarjeta</button>
+      </form>
+
+        
+    
+    </article>
+
+    <footer class="footer">Footer
+      
+
+
+    </footer>
+
+    
+</body>
+</html>
