@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente: pago con tarjetas</title>
+    <link rel="stylesheet" href="css/footerN.css">
+    <link rel="stylesheet" href="css\style1-cliente.css">
+</head>
+
+<body class="grid-container">
+    <header class="header">Header</header>
+
+    <nav class="navbar">
+        <ul>
+          <li><a href="cliente-datos-personales.html">Datos personales</a></li>
+          <li><a class="active" href="cliente-pago-con-tarjetas.html">Tarjeta de pago</a></li>
+          <li><a href="cliente-form-reservas.html">Reservas</a></li>
+          <li><a href="cliente-seguridad.html">Seguridad</a></li>
+        </ul>
+    </nav>
+
+    <!--<aside class="sidebar">Sidebar</aside>-->
+
+    <article class="main">
+
+      <h1>Carga los datos de tu tarjeta para hacer reservas</h1><br>
+
+    <form action="datos-cliente.php" method="post">
+      <label for="nombre-titular-tarjeta">Nombre del titular de la tarjeta</label><br>
+      <input type="text" name="nombre-titular-tarjeta" id="nombre-titular-tarjeta" size="30" placeholder="ingresa el nombre del titular de la tarjeta"><br><br>
+      
+      <label for="numero-tarjeta">Número de la tarjeta</label><br> 
+      <input type="text" name="numero-tarjeta" id="numero-tarjeta" maxlength="16" minlength="16"><br>
+      <small>Ingresá los números que figuran al frente de la tarjeta. Ejemplo: 1234 5678 9101 1213</small><br><br>
+  
+        <label for="vencimiento-tarjeta">Fecha de vencimiento</label><br>
+        <input type="month" id="vencimiento-tarjeta" name="vencimiento-tarjeta" required><br><br>
+
+        <label for="codigo-seguridad">Código de seguridad</label><br>
+        <input type="text" id="codigo-seguridad" name="codigo-seguridad" maxlength="3" minlength="3" required><br>
+        <small>Ingresa los últimos tres números que figuran al dorso de la tarjeta</small><br><br>
+
+      <button type="submit">Guardar</button>
+    </form>
+
+    </article>
+
+    <footer class="footer">Footer
+      
+
+
+    </footer>
+
+    
+</body>
+</html>

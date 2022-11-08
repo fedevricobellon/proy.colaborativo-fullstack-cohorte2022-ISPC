@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente: datos personlaes</title>
+    <link rel="stylesheet" href="css/footerN.css">
+    <link rel="stylesheet" href="css\style1-cliente.css">
+</head>
+
+<body class="grid-container">
+    <header class="header">Header</header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="cliente-datos-personales.html">Datos personales</a></li>
+            <li><a href="cliente-pago-con-tarjetas.html">Tarjeta de pago</a></li>
+            <li><a href="cliente-form-reservas.html">Reservas</a></li>
+            <li><a href="cliente-seguridad.html">Seguridad</a></li>
+        </ul>
+    </nav>
+
+    <!--
+    <aside class="sidebar">Sidebar</aside>-->
+
+    <article class="main">
+    
+        <form action="datos-cliente.php" method="post">
+          <h1>Completa tus datos personales</h1><br>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre" id="nombre" size="30" placeholder="ingrese su nombre"><br><br>
+            <label for="apellido">Apellido</label><br> 
+            <input type="text" name="apellido" id="apellido" placeholder="ingrese su apellido"><br><br>
+        
+            <label for="email">Dirección de e-mail</label><br> 
+            <input type="email" name="email" id="email" placeholder="ingrese su e-mail"><br><br>
+            <label for="celular">Número de teléfono móvil</label><br>
+            <input type="tel" id="celular" name="celular" placeholder="54-11-12345678" pattern="[0-9]{2}-[0-9]{2}-[0-9]{8}" required><br><br>
+
+            <label for="fecha-nacimiento">Fecha de nacimiento</label><br>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento"><br><br>
+              <label for="pais-elegido">Nacionalidad</label><br>
+              <select id="pais-elegido" name="seleccion_pais" required>
+                <option value="no-pais-declarado">Seleccioná tu país de origen</option>
+                <option value="argentina">Argentina</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="otro">Otro país</option>
+              </select><br><br>
+
+              <label for="genero-elegido">Género</label><br>
+              <select id="genero-elegido" name="seleccion_genero" required>
+                <option value="genero-no-declarado">Seleccioná tu sexo</option>
+                <option value="hombre">Soy hombre</option>
+                <option value="mujer">Soy mujer</option>
+                <option value="no-binario">Soy de género no binario</option>
+                <option value="en-privacidad">Elijo mantenerlo en privacidad</option>
+              </select><br><br>
+
+              <h1>Dirección</h1>
+              <label for="pais-elegido">País</label>
+              <select id="pais-elegido" name="seleccion_pais" required>
+                <option value="no-pais-declarado">Seleccioná el país donde vivis</option>
+                <option value="argentina">Argentina</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="otro">Otro país</option>
+              </select><br><br>
+
+            <label for="calle-numero">Nombre y número de la calle</label><br> 
+            <input type="text" name="calle-numero" id="calle-numero" placeholder="ingrese nombre y número de la calle"><br><br>
+            
+              <label for="Ciudad">Ciudad</label>
+              <input type="text" id="Ciudad" name="total_adultos" placeholder="ingresa la ciudad" required>
+    
+              <label for="codigo-postal">Código postal</label>
+              <input type="text" id="codigo-postal" name="codigo-postal" placeholder="ingresa el CP" required><br><br>
+        
+            <button type="submit">Guardar</button>
+          </form>
+    </article>
+
+    <footer class="footer">Footer
+      
+
+
+    </footer>
+
+    
+</body>
+</html>

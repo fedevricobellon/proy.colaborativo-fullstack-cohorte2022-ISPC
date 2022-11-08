@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conocé tu próximo destino</title>
+    <link rel="stylesheet" href="css/footerN.css">
+    <link rel="stylesheet" href="css\style1-cliente.css">
+</head>
+
+<body class="grid-container">
+    <header class="header">Header</header>
+
+<!--
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#">Datos personales</a></li>
+            <li><a href="#">Medio de pago</a></li>
+            <li><a href="#">Seguridad</a></li>
+        </ul>
+    </nav>
+-->
+
+<!--
+    <aside class="sidebar">Sidebar</aside>
+-->
+
+    <article class="main">
+      <h1>Conocé tu próximo destino </h1><br>
+      <h2>Completá el formulario para consultar las cabañas disponibles</h2><br>
+
+      <form action="reserva-cliente.php" method="post">
+
+        <label for="provincia-elegida">Seleccioná la provincia de destino</label>
+        <select id="provincia-elegida" name="seleccion_provincia" required>
+          <option value="buenos-aires">Buenos Aires</option>
+          <option value="catamarca">Catamarca</option>
+          <option value="cordoba">Córdoba</option>
+          <option value="mendoza">Mendoza</option>
+          <option value="neuquen">Neuquén</option>
+          <option value="rio-negro">Río Negro</option>
+          <option value="san-luis">San Luis</option>
+          <option value="santa-cruz">Santa Cruz</option>
+        </select><br><br>
+
+          <label for="ciudad-elegida">Seleccioná la ciudad</label>
+          <select id="ciudad-elegida" name="seleccion_ciudad" required>
+            <option value="bariloche">Bariloche</option>
+            <option value="gualeguaychu">Gualeguaychú</option>
+            <option value="villa-carlos-paz">Villa Carlos Paz</option>
+          </select><br><br>
+
+          <label for="adultos">Adultos</label>
+          <input type="number" id="adultos" name="total_adultos" placeholder="2" min="1" required>
+
+          <label for="menores">Menores</label>
+          <input type="number" id="menores" name="total_menores" placeholder="2" min="0" required><br><br>
+
+          <label for="fecha-ingreso">Fecha de ingreso</label>
+          <input type="date" id="fecha-ingreso" name="ingreso" required>
+
+          <label for="fecha-salida">Fecha de salida</label>
+          <input type="date" id="fecha-salida" name="salida" required><br><br>
+
+          <h1>Servicios</h1>
+          <label class="container">Wifi
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label><br>
+          </label>
+          <label class="container">TV con Directv
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label><br>
+          <label class="container">Cocina
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label><br>
+          <label class="container">Lavarropas
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label><br>
+          <label class="container">Aire acondicionado
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label><br>
+          <label class="container">Pileta
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label><br>
+          <label class="container">Estacionamiento techado
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label><br>
+          <label class="container">Parrilla
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label><br>
+          <label class="container">Desayuno
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label><br>
+          <label class="container">Servicio de ropa blanca
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label><br><br>
+
+        <button type="submit">Buscar cabañas</button> <!--debe llevar a una página como la de Home pero que diga "Resultados de la búsqueda" -->
+      </form>
+
+        
+    
+    </article>
+
+    <footer class="footer">Footer
+      
+
+
+    </footer>
+
+    
+</body>
+</html>
