@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/forms.css">
-    <link rel="stylesheet" href="./css/footer_nuevo.css">
+    <link rel="stylesheet" href="../Administrador/css/admin.css">
     <title>Nueva Cabaña</title>
 </head>
 
@@ -115,108 +115,50 @@
         </div>
     </main>
 
-    <div class="container-fluid">
-        <footer>
-          <div class="container-footer-all">
-              <div class="container-body">
-                  <div class="colum1">
-                      <figure>
-                          <a href="#">
-                              <img src="./img/footer_icons/logo_para_footer.png" alt="Logo de SLee Dw">
-                          </a>
-                      </figure>
-                  </div>
-                  <div class="colum2">
-                      <h1>Redes Sociales</h1>
-                      <div class="row-footer">
-                          <img src="./img/footer_icons/facebook.png">
-                          <label>Siguenos en Facebook</label>
-                      </div>
-                      <div class="row-footer">
-                          <img src="./img/footer_icons/twitter.png">
-                          <label>Siguenos en Twitter</label>
-                      </div>
-                      <div class="row-footer">
-                          <img src="./img/footer_icons/instagram.png">
-                          <label>Siguenos en Instagram</label>
-                      </div>
-                  </div>
-                  <div class="colum3">
-                      <h1>Informacion Contactos</h1>
-                      <div class="row2">
-                          <img src="./img/footer_icons/house.png">
-                          <label>Domicilio Cabaña</label>
-                      </div>
-                      <div class="row2">
-                          <img src="./img/footer_icons/smartphone.png">
-                          <label>Contacto</label>
-                      </div>
-                      <div class="row2">
-                          <img src="./img/footer_icons/contact.png">
-                          <label>cabaniapp@gmail.com</label>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="container-footer">
-              <div class="footer">
-                  <div class="copyright">
-                      © 2022 Todos los Derechos Reservados | <a href="">CABANIAPP</a>
-                  </div>
-                  <div class="information">
-                      <a href="">Sobre Nosotros</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y
-                          Condiciones</a>
-                  </div>
-              </div>
-          </div>
-      </footer>
-      </div>
+    <footer class="footer mt-3">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">CABANIAPP</h2>
     
-    <!-- FOOTER 
-    <footer>
-        <div class="container_footer">
-            <div class="box_footer">
-                <div class="logo">
-                     <img src="../Mis Codigos/imagenes/logo sin borde.jpeg" alt=""> 
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="../Administrador/index-admin.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/agregar-cabania.html" class="nav__links">Cabañas</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/contabilidad.html" class="nav__links">Contabilidad</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/agenda.html" class="nav__links">Agenda</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
                 </div>
-                <div class="terms">
-                    <p>Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Explicabo labore modi
-                        inventore consequatur porro blanditiis
-                        facilis totam aliquam itaque deserunt
-                        dicta maxime velit asperiores doloribus
-                        facere corrupti, illum quasi. Eius.
-
-                    </p>
-                </div>
+            </form>
+        </section>
+    
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg" class="footer__img"></a>
             </div>
-
-            <div class="box_footer">
-                <h2>ADMINISTRACION</h2>
-                <a href="#">CABAÑAS</a>
-                <a href="#">AGENDA</a>
-                <a href="#">INFORME</a>
-                <a href="#">RESERVAS</a>
-            </div>
-
-            <div class="box_footer">
-                <h2>REDES SOCIALES</h2>
-                <a href="#">FACEBOOK</a>
-                <a href="#">INSTAGRAM</a>
-                <a href="#">TWITTER</a>
-                <a href="#">TIK TOK</a>
-            </div>
-
-            <div class="box_copyright">
-                <hr>
-                <p>Todos los derechos reservados & 2022
-                    <b>ISPC</b>
-                </p>
-            </div>
-
-        </div>
-        </div>
-    </footer> -->
+    
+            <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
+        </section>
+    </footer>
 </body>
 
 </html>
