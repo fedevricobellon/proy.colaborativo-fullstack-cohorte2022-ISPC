@@ -9,22 +9,6 @@ claveUsuario varchar(10),
 tipoUsuario varchar(15)
 );
 
-/* Tabla Cliente */
-CREATE table Cliente (
-idCliente int auto_increment primary key,
-nombreCliente varchar(50),
-apellidoCliente varchar(50),
-dniCliente int(10),
-fechaNacCliente date,
-telefonoCliente varchar (20),
-mailCliente varchar(50),
-ciudadCliente varchar(20),
-provinciaCliente varchar(20),
-paisCliente varchar(30),
-idUsuario1 int,
-constraint fk_idUsuario1 foreign key(idUsuario1) references Usuario(idUsuario)
-);
-
 /* Tabla Administrador*/
 CREATE table Administrador (
 idAdmin int auto_increment primary key,
@@ -105,9 +89,7 @@ apellidoReserva varchar(50),
 dniReserva int(10),
 mailReserva varchar(30),
 telefonoReserva varchar(20),
-idAdmin2 int,
 idCabania2 int,
-constraint fk_idAdmin foreign key(idAdmin2) references Administrador(idAdmin),
 constraint fk_idCabania foreign key(idCabania2) references Cabania(idCabania)
 );
 
@@ -117,9 +99,7 @@ idInformes int auto_increment primary key,
 pagosInformes float,
 alquilerMesInforme int, 
 alquilerAnualInforme int,
-idAdmin3 int,
 idReserva int,
-constraint fk_idAdmin3 foreign key(idAdmin3) references Administrador(idAdmin),
 constraint fk_idReserva foreign key(idReserva) references ReservaAdmin(idReservaAdmin) 
 );
 
@@ -132,9 +112,7 @@ electroPerdida varchar(100), /* tv, cocina, horno, anafe, microondas, heladera, 
 vajillaPerdida varchar(100),
 ropaBlancaPerdida varchar(100),
 exteriorPerdida varchar(100), /* manguera, asadores, reposeras, sombrillas */
-idAdmin4 int,
 idInformes int,
-constraint fk_idAdmin4 foreign key(idAdmin4) references Administrador(idAdmin),
 constraint fk_idInformes foreign key(idInformes) references Informes(idInformes)
 );
 
@@ -148,9 +126,7 @@ ropaBlancaCompras varchar(100), /* Sabanas, cubrecama, acolchados, frazadas, alm
 exteriorCompras varchar(100), /* parrilla, pala, rastrillo, maquina de cortar pasto, reposeras, sombrillas, mesas, sillas */
 electrodomesticoCompras varchar(100), /* Tv, pava electrica, microondas, horno, anafe, cocina, cafetera, heladera termotanque, decos, antenas, routers */
 otrasCompras varchar(100),
-idAdmin5 int,
 idInformes1 int,
-constraint fk_idAdmin5 foreign key(idAdmin5) references Administrador(idAdmin),
 constraint fk_idInformes1 foreign key(idInformes1) references Informes(idInformes)
 );
 
@@ -161,4 +137,59 @@ idReservaAdmin2 int,
 idInformes2 int,
 constraint fk_idReservaAdmin2 foreign key(idReservaAdmin2) references ReservaAdmin(idReservaAdmin),
 constraint fk_idInformes2 foreign key(idInformes2) references Informes(idInformes)
-)
+);
+
+/* Tabla Cliente */
+CREATE table Cliente (
+idCliente int auto_increment primary key,
+nombreCliente varchar(50),
+apellidoCliente varchar(50),
+dniCliente int(10),
+fechaNacCliente date,
+generoCliente varchar (10),
+nacionalidadCliente varchar (50),
+ciudadCliente varchar(20),
+provinciaCliente varchar(20),
+codigoPostal int (10),
+telefonoCliente varchar (20),
+mailCliente varchar(50),
+idUsuario1 int,
+constraint fk_idUsuario1 foreign key (idUsuario1) references Usuario(idUsuario)
+);
+
+/* Tabla seguridadCliente */
+CREATE table seguridadCliente (
+idSeguridadCliente int auto_increment primary key,
+restablecerContraseña varchar(20),
+sesionesActivas int,
+eliminarCuenta varchar(20),
+idCliente2 int,
+constraint fk_idCliente foreign key (idCliente2) references Cliente(idCliente)
+);
+
+/* Tabla Reserva de Clientes de la página web. */
+CREATE table reservaCliente (
+idReservaCliente int primary key,
+cantidadPersonas int,
+fechaIngreso date,
+fechaSalida date,
+pagoContadoCliente float,
+pagoTarjetaCliente float,
+lugarFavorito varchar(50),
+idCliente3 int,
+fk_idIngreso1 int,
+constraint fk_idIngreso1 foreign key (fk_idIngreso1) references Ingresos(idIngresos),
+constraint fk_idCliente1 foreign key(idCliente3) references Cliente(idCliente)
+);
+
+/* Tabla de Pagos con Tarjeta */
+CREATE table pagoConTarjeta(
+idPagoTarjeta int auto_increment primary key,
+nombreTitularTarjeta varchar (50),
+pagoTarjetaCliente float,
+numeroTarjeta int,
+fechaDeCaducidad date,
+codigoDeSeguridad int (4),
+idReservaCliente1 int,
+constraint fk_idReservaCliente foreign key (idReservaCliente1) references reservaCliente(idReservaCliente)
+);

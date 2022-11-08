@@ -16,54 +16,57 @@ body {
     background: linear-gradient(to right, #c4a86d, #966042, #c4a86d);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.row {
+    color: black;
+}
 
-header h1 {
-    background: url("../img/complejo\ cabañas\ 2.jpeg");
-    height: 150px;
+/*
+header {
+    background: url('./complejo\ cabañas\ 2.jpeg');
+    height: 350px;
     background-size: cover;
     background-repeat: no-repeat;
-    text-align: center;
-    overflow: hidden;
-    font-size: 40px;
-    padding-top: 5px;
-}
-
-section {
+  }
+  
+  section {
     max-width: 1000px;
     margin: auto;
-    padding: 1px 0;
-}
-
-.conte {
+    padding: 30px 0;
+  }
+  
+  section h1 {
+    font-size: 44px;
+  }
+  
+  .conte {
     text-align: center;
-}
-
-
-.conte p {
-    color: black;
-    font-size: 30px;
+  }
+  
+  .conte p {
+    font-size: 60px;
     font-weight: bold;
-    margin: 2em 0;
-}
-
-.conte a {
+    margin: 1em 0;
+  }
+  
+  .conte a {
     color: white;
     text-decoration: none;
-    background: #DB9501;
-    padding: 50px 45px;
-    border-radius: 10px;
+    background: #8BC34A;
+    padding: 4px 20px;
+    border-radius: 30px;
     font-size: 30px;
-    margin: 15 px;
-}
-
+    margin: 10px;
+  }
+  
 .conte a:hover {
     background: #C05805;
 }
 
+
 .accordion-body li a {
     text-decoration: none !important;
     color: black;
-}
+}*/
 
 footer {
     width: 100%;
