@@ -1,5 +1,8 @@
 function validarNuevaCuenta() {
 
+    // Validamos el nombre que sean solo caracteres.
+    
+
     // Validamos mail con JS
     if (document.fvalida.email.value.length == 0) {
         alert("Tiene que escribir su email.")
@@ -97,15 +100,6 @@ function validarNuevaCuenta() {
         return 0;
     }
 
-    // Verificamos que seleccione una opción.
-    if(document.fvalida.tipo.value == "0"){
-        alert("Debe seleccionarse una opción")
-        document.fvalida.tipo.focus()
-        return 0;
-    }
-    
-
-
-    alert("Muchas gracias por enviar el formulario.")
+    alert("¡¡Usted se ha registrado con éxito!!")
     document.fvalida.submit()
 }
