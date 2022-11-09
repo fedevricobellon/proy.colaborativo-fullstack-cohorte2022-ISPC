@@ -90,6 +90,8 @@ dniReserva int(10),
 mailReserva varchar(30),
 telefonoReserva varchar(20),
 idCabania2 int,
+idAdmin2 int,
+constraint fk_idAdmin2 foreign key (fk_idADmin2) references Administrador(idAdmin),
 constraint fk_idCabania foreign key(idCabania2) references Cabania(idCabania)
 );
 
@@ -177,6 +179,8 @@ pagoContadoCliente float,
 pagoTarjetaCliente float,
 idCliente3 int,
 fk_idIngreso1 int,
+idAdmin3 int,
+constraint fk_idAdmin3 foreign key (fk_idADmin3) references Administrador(idAdmin),
 constraint fk_idIngreso1 foreign key (fk_idIngreso1) references Ingresos(idIngresos),
 constraint fk_idCliente1 foreign key(idCliente3) references Cliente(idCliente)
 );
