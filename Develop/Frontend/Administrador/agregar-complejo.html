@@ -25,7 +25,7 @@
 
     <main>
 
-        <div class="container"> 
+        <div class="container">
             <div class="forms-cabanias">
                 <div class="form-cabania">
                     <form action="POST">
@@ -89,7 +89,7 @@
                     <div class="servicios serv-comp">
                         <label for="serv-complejo-1">Serv. Cochera:</label>
                         EXTERIOR<input type="checkbox" name="serv-complejo-1" value="3"><br>
-                        TECHADA<input type="checkbox" name="serv-complejo-1" value="1"><br>                    
+                        TECHADA<input type="checkbox" name="serv-complejo-1" value="1"><br>
                         SIN TECHAR<input type="checkbox" name="serv-complejo-1" value="2">
                     </div>
                     <div class="servicios serv-comp">
@@ -107,14 +107,14 @@
                         DESAYUNO<input type="checkbox" name="serv-complejo-4" value="1"><br>
                         BAR / COMEDOR<input type="checkbox" name="serv-complejo-4" value="3"><br>
                         DESAYUNO + ALMUERZO<input type="checkbox" name="serv-complejo-4" value="2">
-                        
+
                     </div>
                     <div class="servicios serv-comp">
                         <label for="serv-complejo-5">Serv. Ropa Blanca:</label>
                         SABANAS<input type="checkbox" name="serv-complejo-5" value="1"><br>
-                        SABANAS / FRAZADAS<input type="checkbox" name="serv-complejo-5" value="2"><br>                      
+                        SABANAS / FRAZADAS<input type="checkbox" name="serv-complejo-5" value="2"><br>
                         SABANAS / FRAZADAS / TOALLAS<input type="checkbox" name="serv-complejo-5" value="3">
-                    </div>                    
+                    </div>
                     <div class="servicios serv-comp">
                         <label for="serv-complejo-6">Otros Servicios:</label>
                         QUINCHOS<input type="checkbox" name="serv-complejo-6" value="3"><br>
@@ -129,13 +129,14 @@
                     </div>
                     <div>
                         <label for="otros-serv">Más Servicios:</label>
-                        <textarea name="otros-serv" id="otros-serv" cols="60" rows="10" placeholder="Adicionar otros servicios que no se hayan considerado..."></textarea>
+                        <textarea name="otros-serv" id="otros-serv" cols="60" rows="10"
+                            placeholder="Adicionar otros servicios que no se hayan considerado..."></textarea>
                     </div>
-                    
-
                 </div>
             </div>
-        </div>
+            <div class="boton-enviar">
+                <button id="boton" type="button" onclick="">AGREGAR COMPLEJO</button>
+            </div>
         </div>
     </main>
 
@@ -143,7 +144,7 @@
         <section class="footer__container container">
             <nav class="nav nav--footer">
                 <h2 class="footer__title">CABANIAPP</h2>
-    
+
                 <ul class="nav__link nav__link--footer">
                     <li class="nav__items">
                         <a href="../Administrador/index-admin.html" class="nav__links">Inicio</a>
@@ -162,7 +163,7 @@
                     </li>
                 </ul>
             </nav>
-    
+
             <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
                 <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
                 <div class="footer__inputs">
@@ -171,15 +172,19 @@
                 </div>
             </form>
         </section>
-    
+
         <section class="footer__copy container">
             <div class="footer__social">
-                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg"
+                        class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg"
+                        class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg"
+                        class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg"
+                        class="footer__img"></a>
             </div>
-    
+
             <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
         </section>
     </footer>
