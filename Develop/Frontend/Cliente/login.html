@@ -39,7 +39,7 @@
                 <button class="sign-up-btn">Iniciar Sesion</button>
             </div>
         </div>
-        <form class="formulario">
+        <form class="formulario" name="fvalida">
             <h2 class="create-account">Crear una cuenta</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -53,17 +53,15 @@
                 </div>
             </div>
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="E-mail">
-            <input type="password" placeholder="Contraseña">
-            <input type="password" placeholder="Repetir Contraseña">
-
-            
-            <input type="button" placeholder="Registrarse">
+            <input type="text" placeholder="Nombre" >
+            <input type="email" placeholder="E-mail" name="email">
+            <input type="password" placeholder="Contraseña" name="password">
+            <input type="password" placeholder="Repetir Contraseña" name="password2">
+            <input type="button" placeholder="Registrarse" onclick="validarNuevaCuenta()">
 
         </form>
     </div>
- 
+
     <script src="./JavaScrip/login.js"></script>
     <script src="JavaScript/valid-crearCuenta.js"></script>
 </body>
