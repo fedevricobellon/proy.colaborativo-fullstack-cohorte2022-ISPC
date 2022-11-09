@@ -3,6 +3,7 @@ var botonTraducirEs=document.querySelector("#btn-traducirEs");
 var bloqueUnoEs=document.querySelector("#bloqueUnoEs");
 var bloqueUnoEn=document.querySelector("#bloqueUnoEn");
 var bloqueDosEs=document.querySelector("#bloqueDosEs");
+var bloqueDosEn=document.querySelector("#bloqueDosEn");
 var bloqueTresEs=document.querySelector("#bloqueTresEs");
 var bloqueTresEn=document.querySelector("#bloqueTresEn");
 var tituloQuieneSomos=document.querySelector(".quieneSomos-titulo");
@@ -46,4 +47,3 @@ function mostrarEnEspaniol(){
     bloqueTresEn.style.display="none";
   
 }
-
