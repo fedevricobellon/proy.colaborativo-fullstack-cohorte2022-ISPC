@@ -17,9 +17,11 @@ botonTraducirEs.style.display="none";
 botonTraducirIn.addEventListener("click",mostrarEnIngles);
 
 function mostrarEnIngles(){  
-    titulo="About Us";
+    titulo="About Us?";
     tituloQuieneSomos.textContent=titulo;
-    tituloQuieneSomos.style.fontSize="50px";
+    tituloQuieneSomos.style.fontSize="45px";
+    tituloQuieneSomos.style.fontWeight="bold";
+    tituloQuieneSomos.style.textShadow="1px 2px black";
     tituloQuieneSomos.style.textAlign="center";
     botonTraducirIn.style.display="none";
     botonTraducirEs.style.display="block";
@@ -35,7 +37,7 @@ function mostrarEnIngles(){
 botonTraducirEs.addEventListener("click",mostrarEnEspaniol);
 
 function mostrarEnEspaniol(){
-    titulo="Quiénes Somos";
+    titulo="Quiénes Somos?";
     tituloQuieneSomos.textContent=titulo;
     botonTraducirIn.style.display="block";
     botonTraducirEs.style.display="none";
