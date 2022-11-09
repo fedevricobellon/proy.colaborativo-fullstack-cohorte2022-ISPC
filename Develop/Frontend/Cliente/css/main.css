@@ -160,8 +160,9 @@ footer {
 }
 
 ul{
-    list-style:circle;
+    list-style:circle; 
 }
+
 
 .fondo_general {
     background: #bdc3c7;
