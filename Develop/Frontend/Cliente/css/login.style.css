@@ -146,3 +146,17 @@ body {
     visibility: hidden;
 }
 
+a {
+    padding: 0.5rem;
+    font-weight: 400;
+    background-color: rgb(128, 0, 0, 66);
+    border-radius: 4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 15px;
+    transition: all .3s ease-in;
+    color: #fefefe;
+}
+
