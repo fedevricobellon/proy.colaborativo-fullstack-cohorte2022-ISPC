@@ -39,7 +39,7 @@
                 <button class="sign-up-btn">Iniciar Sesion</button>
             </div>
         </div>
-        <form class="formulario">
+        <form class="formulario" name="fvalida">
             <h2 class="create-account">Crear una cuenta</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -53,19 +53,17 @@
                 </div>
             </div>
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="E-mail">
-            <input type="password" placeholder="Contraseña">
-            <input type="password" placeholder="Repetir Contraseña">
-
-            
-            <input type="button" placeholder="Registrarse">
+            <input type="text" placeholder="Nombre" >
+            <input type="email" placeholder="E-mail" name="email">
+            <input type="password" placeholder="Contraseña" name="password">
+            <input type="password" placeholder="Repetir Contraseña" name="password2">
+            <input type="button" placeholder="Registrarse" onclick="validarNuevaCuenta()">
 
         </form>
     </div>
 
     <div class="container-form sign-in">
-        <form name="fvalida" class="formulario" >
+        <form class="formulario" >
             <h2 class="create-account">Iniciar Sesion</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -79,11 +77,11 @@
                 </div>
             </div>
             <p class="cuenta-gratis">¿Aun no tienes cuenta?</p>
-            <input type="email" placeholder="E-mail" name="email">
-            <input type="password" placeholder="Contraseña" name="password">
-            <input type="password" placeholder="Repetir Contraseña" name="password2">
-            <button id="boton" type="button" onclick="validaPerfil()">AGREGAR</button>
-            <input type="button" placeholder="Iniciar Sesion" onclick="validarNuevaCuenta()">
+            <input type="email" placeholder="E-mail" >
+            <input type="password" placeholder="Contraseña" >
+            <input type="password" placeholder="Repetir Contraseña" >
+            
+            <input type="button" placeholder="Iniciar Sesion" >
 
         </form>
         <div class="welcome-back">
