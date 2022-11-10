@@ -28,20 +28,21 @@
         <div class="container">
             <div class="forms-cabanias">
                 <div class="form-cabania">
-                    <form action="POST">
+                    <form action="POST" name="fvalida">
                         <legend>Datos del Complejo</legend>
                         <div class="datos">
-                            <label for="nom-complejo">Nombre Complejo:</label>
-                            <input type="text" id="nom-complejo"
+                            <label for="nomComplejo" id="lblNomComplejo">Nombre Complejo:</label>
+                            <input type="text" id="nomComplejo"
                                 placeholder="Ej: 'Cabañas Arco Iris', 'Complejo Cuarzo'...">
                         </div>
                         <div class="datos">
-                            <label for="cab-complejo">Cantidad de Cabañas:</label>
-                            <input type="number" id="dorm-complejo" min="1" placeholder="Total de cabañas habitables.">
+                            <label for="cabComplejo" id="lblCabComplejo">Cantidad de Cabañas:</label>
+                            <input type="text" id="cabComplejo" minlength="1" maxlength="2" placeholder="Total de cabañas habitables.">
                         </div>
                         <div class="opciones datos">
-                            <label for="prov-complejo">Provincia:</label>
-                            <select name="prov-complejo">
+                            <label for="provComplejo">Provincia:</label>
+                            <select name="provComplejo" id="provComplejo">
+                                <option value="0">Seleccionar...</option>
                                 <option value="1">Buenos Aires</option>
                                 <option value="2">Mendoza</option>
                                 <option value="3">San Luis</option>
@@ -51,8 +52,9 @@
                             </select>
                         </div>
                         <div class="opciones datos">
-                            <label for="ciudad-complejo">Ciudad:</label>
-                            <select name="ciud-complejo">
+                            <label for="ciudComplejo">Ciudad:</label>
+                            <select name="ciudComplejo" id="ciudComplejo">
+                                <option value="0">Seleccionar...</option>
                                 <option value="1">El Trapiche</option>
                                 <option value="2">Rio Gallego</option>
                                 <option value="3">Merlo</option>
@@ -62,12 +64,12 @@
                             </select>
                         </div>
                         <div class="datos">
-                            <label for="dir-complejo">Calle / Av. / Ruta:</label>
-                            <input type="text" id="calle-complejo" placeholder="Nombre de la ubicación del complejo.">
+                            <label for="dirComplejo" id="lblDirComplejo">Calle / Av. / Ruta:</label>
+                            <input type="text" id="dirComplejo" placeholder="Nombre de la ubicación del complejo.">
                         </div>
                         <div class="datos">
-                            <label for="num-complejo">Numeración / Km:</label>
-                            <input type="number" id="num-complejo"
+                            <label for="numComplejo" id="lblNumComplejo">Numeración / Km:</label>
+                            <input type="text" id="numComplejo" maxlength="5" minlength="1"
                                 placeholder="Numeración de la ubicación del complejo.">
                         </div>
                         <div class="mapa-complejo datos">
@@ -135,7 +137,7 @@
                 </div>
             </div>
             <div class="boton-enviar">
-                <button id="boton" type="button" onclick="">AGREGAR COMPLEJO</button>
+                <button type="button" id="boton" onclick="validarComplejo()">AGREGAR COMPLEJO</button>
             </div>
         </div>
     </main>
@@ -188,7 +190,7 @@
             <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
         </section>
     </footer>
-
+    <script src="js/valid-comp-cab.js"></script>
 </body>
 
 </html>

@@ -29,7 +29,6 @@ body {
 .navbar {
     grid-area: navbar;
     background-color: aquamarine;
-    background-style: #bdc3c7;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right,#966042, #c4a86d, #966042);
         /* Chrome 10-25, Safari 5.1-6 */
@@ -40,7 +39,6 @@ body {
 .sidebar {
     grid-area: sidebar;
     background-color: whitesmoke;
-    background-style: #bdc3c7;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right,#966042, #c4a86d, #966042);
         /* Chrome 10-25, Safari 5.1-6 */
@@ -51,7 +49,6 @@ body {
 .main {
     grid-area: main;
     background-color: rgb(21, 94, 69);
-    background-style: #bdc3c7;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right,#966042, #c4a86d, #966042);
         /* Chrome 10-25, Safari 5.1-6 */
@@ -69,28 +66,39 @@ body {
 .grid-container {
     display: grid;
     gap: 10px;
-    grid-template-areas:
+   /* grid-template-areas:
     "header"
     "navbar"
     "main"
     "sidebar"
-    "footer";
+    "footer";*/
     
-    grid-template:
+<<<<<<< HEAD
+    /* grid-template:
     "header header"
     "navbar navbar"
     "sidebar main"
-    "footer footer";
+    "footer footer"; */
+=======
+    
+    grid-template-columns: 1fr 3fr
+    
+
+  /*  grid-template:
+    "header header"
+    "navbar navbar"
+    "sidebar main"
+    "footer footer";*/
+>>>>>>> 03213a64a89d9c4e1e24a11359b863f727a19ea5
 
 }
 
 @media (min-width: 900px) {
     .grid-container {
         grid-template:
-        "header header header header header" 100px
-        "navbar main sidebar sidebar sidebar" auto
-        "footer footer footer footer footer" 100px /
-        200px   auto    auto  200px
+        "header"
+        "navbar main" 
+        "footer" 
     }
 }
 
@@ -110,7 +118,7 @@ li a.active {
   color: white;
 }
 
-button { 
+.button { 
     height: 70px;
     width: 125px;
     background: rgba(219, 143, 2, 0.438);
@@ -121,4 +129,17 @@ button {
     border-radius: 4px;
     cursor: pointer; 
 }
+
+.button2 { 
+    height: 70px;
+    width: 165px;
+    background: rgba(219, 143, 2, 0.438);
+    border: 1;
+    color: rgb(0, 0, 0);
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
 
