@@ -36,7 +36,13 @@ body {
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.navbar
+.navbar li{ 
+    display: inline; /*Le decimos que los items vaya en linea.*/
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+
 
  .sidebar {
     grid-area: sidebar;
