@@ -42,6 +42,10 @@ function validarNuevaCuenta() {
                 return 0
             }
         }
+
+        if (cadenaEmail[index] == ".") {
+            contarPuntos++
+        }
     }
 
     if (contarArrobas < 1) {
