@@ -110,7 +110,7 @@ li a.active {
   color: white;
 }
 
-button { 
+.button { 
     height: 70px;
     width: 125px;
     background: rgba(219, 143, 2, 0.438);
@@ -121,4 +121,17 @@ button {
     border-radius: 4px;
     cursor: pointer; 
 }
+
+.button2 { 
+    height: 70px;
+    width: 165px;
+    background: rgba(219, 143, 2, 0.438);
+    border: 1;
+    color: rgb(0, 0, 0);
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
 
