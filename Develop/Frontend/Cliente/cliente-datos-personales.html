@@ -24,18 +24,27 @@
 
     <article class="main">
     
+      <div class="container">
+        <div class="form-cliente">
         <form action="datos-cliente.php" method="post" id="formulario">
           <h1>Completa tus datos personales</h1><br>
+          <div class="datos">
             <label for="nombre">Nombre</label><br>
             <input type="text" name="nombre" id="nombre" size="30" placeholder="ingrese su nombre"><br><br>
+          </div>
+          <div class="datos">
             <label for="apellido">Apellido</label><br> 
             <input type="text" name="apellido" id="apellido" placeholder="ingrese su apellido"><br><br>
-        
+          </div>
+          <div class="datos"></div>
             <label for="email">Dirección de e-mail</label><br> 
             <input type="email" name="email" id="email" placeholder="ingrese su e-mail"><br><br>
+          </div>
+          <div class="datos">
             <label for="celular">Número de teléfono móvil</label><br>
             <input type="tel" id="celular" name="celular" placeholder="54-11-12345678" ><br><br>
             <!-- pattern="[0-9]{2}-[0-9]{2}-[0-9]{8}" required -->
+          </div>
 
             <label for="fecha-nacimiento">Fecha de nacimiento</label><br>
             <input type="date" id="fecha-nacimiento" name="fecha-nacimiento"><br><br>
@@ -85,6 +94,8 @@
             <input class="button" type="submit" value="Guardar">
           
           </form>
+        </div>
+        </div>
     </article>
 
     <footer class="footer">Footer

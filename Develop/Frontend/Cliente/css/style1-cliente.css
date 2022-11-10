@@ -137,3 +137,22 @@ li a.active {
     border-radius: 4px;
     cursor: pointer; 
 }
+
+/* a partir de acá agregué */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.form-cliente {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.datos {
+    border-radius: 10px;
+    margin: 10px 0px 30px 0px;
+}
