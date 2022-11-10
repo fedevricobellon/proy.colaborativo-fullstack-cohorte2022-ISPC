@@ -154,5 +154,22 @@ li a.active {
 
 .datos {
     border-radius: 10px;
-    margin: 10px 0px 30px 0px;
+    margin: 10px 0px 20px 0px;
+}
+
+.datos2 {
+    border-radius: 10px;
+    margin: 10px 0px 0px 0px;
+}
+
+select {
+    border: 2px solid rgb(105, 96, 96);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input {
+    border: 2px solid rgb(105, 96, 96);
+    padding: 5px;
+    border-radius: 5px;
 }
