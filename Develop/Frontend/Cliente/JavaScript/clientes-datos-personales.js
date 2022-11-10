@@ -129,7 +129,7 @@ function validarCodigoPostal(){
 /*validacion de formulario: checkValidity()*/ 
 
 function enviar(){
-    var boton=document.querySelector('#boton')
+    var boton=document.querySelector('.button')
     boton.addEventListener('click', enviarFormulario)
 }
 
