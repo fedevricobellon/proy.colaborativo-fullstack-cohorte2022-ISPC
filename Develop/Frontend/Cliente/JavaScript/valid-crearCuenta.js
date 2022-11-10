@@ -1,7 +1,21 @@
 function validarNuevaCuenta() {
 
     // Validamos el nombre que sean solo caracteres.
-    
+    let cadenaNombre = document.fvalida.nombre.value.split("")
+
+    if (nombre == " ") {
+        alert("El nombre no puede estar vacío.")
+        document.fvalida.nombre.focus()
+        return 0
+    }
+
+    for (let index = 0; index < cadenaNombre.length; index++) {
+        if (parseInt(cadenaNombre[index])) {
+            alert("El nombre no puede contener numeros.")
+            document.fvalida.nombre.focus()
+            return 0
+        }
+    }
 
     // Validamos mail con JS
     if (document.fvalida.email.value.length == 0) {
@@ -19,14 +33,7 @@ function validarNuevaCuenta() {
             document.fvalida.email.focus()
             return 0;
         }
-        if (cadenaEmail[index] == ".") {
-            contarPuntos++
-            if (contarPuntos > 2) {
-                alert("El email debe contener dos puntos como máximo.")
-                document.fvalida.email.focus()
-                return 0
-            }
-        }
+
         if (cadenaEmail[index] == "@") {
             contarArrobas++
             if (contarArrobas > 1) {
@@ -34,6 +41,10 @@ function validarNuevaCuenta() {
                 document.fvalida.email.focus()
                 return 0
             }
+        }
+
+        if (cadenaEmail[index] == ".") {
+            contarPuntos++
         }
     }
 
@@ -49,7 +60,7 @@ function validarNuevaCuenta() {
         return 0
     }
 
-    
+
 
 
     // Verificación contraseña.
@@ -94,7 +105,7 @@ function validarNuevaCuenta() {
 
     // verificación de las dos passwords.
 
-    if(document.fvalida.password.value !== document.fvalida.password2.value){
+    if (document.fvalida.password.value !== document.fvalida.password2.value) {
         alert("Las contraseñas no coinciden")
         document.fvalida.password.focus()
         return 0;

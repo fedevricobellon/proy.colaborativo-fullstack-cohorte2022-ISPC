@@ -29,7 +29,6 @@ body {
 .navbar {
     grid-area: navbar;
     background-color: aquamarine;
-    background-style: #bdc3c7;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right,#966042, #c4a86d, #966042);
         /* Chrome 10-25, Safari 5.1-6 */
@@ -37,21 +36,27 @@ body {
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.sidebar {
+.navbar li{ 
+    display: inline; /*Le decimos que los items vaya en linea.*/
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+
+
+ .sidebar {
     grid-area: sidebar;
     background-color: whitesmoke;
-    background-style: #bdc3c7;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right,#966042, #c4a86d, #966042);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right,#966042, #c4a86d, #966042);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        background: -webkit-linear-gradient(to right,#966042, #c4a86d, #966042); 
+
+        background: linear-gradient(to right,#966042, #c4a86d, #966042); 
+
 }
 
 .main {
     grid-area: main;
     background-color: rgb(21, 94, 69);
-    background-style: #bdc3c7;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right,#966042, #c4a86d, #966042);
         /* Chrome 10-25, Safari 5.1-6 */
@@ -76,21 +81,20 @@ body {
     "sidebar"
     "footer";
     
-    grid-template:
+    /* grid-template:
     "header header"
     "navbar navbar"
     "sidebar main"
-    "footer footer";
+    "footer footer"; */
 
 }
 
 @media (min-width: 900px) {
     .grid-container {
         grid-template:
-        "header header header header header" 100px
-        "navbar main sidebar sidebar sidebar" auto
-        "footer footer footer footer footer" 100px /
-        200px   auto    auto  200px
+        "header"
+        "navbar main" 
+        "footer" 
     }
 }
 
@@ -124,7 +128,7 @@ li a.active {
 
 .button2 { 
     height: 70px;
-    width: 165px;
+    width: 170px;
     background: rgba(219, 143, 2, 0.438);
     border: 1;
     color: rgb(0, 0, 0);
@@ -134,4 +138,21 @@ li a.active {
     cursor: pointer; 
 }
 
+/* a partir de acá agregué */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
 
+.form-cliente {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.datos {
+    border-radius: 10px;
+    margin: 10px 0px 30px 0px;
+}

@@ -31,27 +31,27 @@
                         <legend>Nueva Reserva</legend>
                         <div id="info-principal">
                             <div class="datos">
-                                <label for="ingreso-reserva">Ingreso:</label>
-                                <input type="date" id="ingreso-reserva">
+                                <label for="ingresoReserva" id="lblIngresoReserva">Ingreso:</label>
+                                <input type="date" id="ingresoReserva">
                             </div>
                             <div class="datos">
-                                <label for="egreso-reserva">Salida:</label>
-                                <input type="date" id="egreso-reserva">
+                                <label for="salidaReserva" id="lblSalidaReserva">Salida:</label>
+                                <input type="date" id="salidaReserva">
                             </div>
                             <div class="datos">
-                                <label for="personas-reserva">N° de Personas:</label>
-                                <input type="number" id="personas-reserva" placeholder="Cant. personas." min="1"
-                                    max="20">
+                                <label for="personasReserva" id="lblPersonasReserva">N° de Personas:</label>
+                                <input type="text" id="personasReserva" placeholder="Cant. personas." minlength="1"
+                                    maxlength="2">
                             </div>
                         </div>
                         <div id="info-pagos">
                             <div class="datos">
-                                <label for="senia-reserva">Seña:</label>
-                                $<input type="number" id="senia-reserva" min="100">
+                                <label for="seniaReserva" id="lblSeniaReserva">Seña:</label>
+                                $<input type="text" id="seniaReserva" minlength="3" maxlength="6">
                             </div>
                             <div class="datos">
-                                <label for="total-reserva">Pago Total:</label>
-                                $<input type="number" id="total-reserva" min="100">
+                                <label for="totalReserva" id="lblTotalReserva">Pago Total:</label>
+                                $<input type="text" id="totalReserva" minlength="4" maxlength="6">
                             </div>
                         </div>
                         <div class="servicios">
@@ -64,27 +64,28 @@
                             Tarjeta de Crédito<input type="checkbox" name="formaPago-reserva" value="6">
                         </div>
                         <div class="datos">
-                            <label for="nombre-reserva">Nombre:</label>
-                            <input type="text" id="nombre-reserva" placeholder="Nombre del cliente.">
+                            <label for="nombreReserva" id="lblNombreReserva">Nombre:</label>
+                            <input type="text" id="nombreReserva" placeholder="Nombre del cliente.">
                         </div>
                         <div class="datos">
-                            <label for="apellido-reserva">Apellido:</label>
-                            <input type="text" id="apellido-reserva" placeholder="Apellido del cliente.">
+                            <label for="apellidoReserva" id="lblApellidoReserva">Apellido:</label>
+                            <input type="text" id="apellidoReserva" placeholder="Apellido del cliente.">
                         </div>
                         <div class="datos">
-                            <label for="dni-reserva">DNI:</label>
-                            <input type="number" id="dni-reserva" placeholder="DNI del cliente.">
+                            <label for="dniReserva" id="lblDniReserva">DNI:</label>
+                            <input type="text" id="dniReserva" minlength="7" maxlength="8" placeholder="DNI del cliente.">
                         </div>
                         <div class="datos">
-                            <label for="mail-reserva">Mail:</label>
-                            <input type="text" id="mail-reserva" placeholder="Mail del cliente.">
+                            <label for="mailReserva" id="lblMailReserva">Mail:</label>
+                            <input type="text" id="mailReserva" placeholder="Mail del cliente.">
                         </div>
                         <div class="datos">
-                            <label for="tel-reserva">Celular / Teléfono:</label>
-                            <input type="tel" id="tel-reserva" placeholder="N° de contacto del cliente.">
+                            <label for="telReserva" id="lblTelReserva">Celular / Teléfono:</label>
+                            <input type="text" id="telReserva" minlength="9" maxlength="15" placeholder="N° de contacto del cliente.">
                         </div>
-                        <button id="boton" type="button" onclick="validaReserva()">RESERVAR</button>
+                        
                     </form>
+                    <button id="boton" type="button" onclick="validarReservaAdmin()">RESERVAR</button>
                 </div>
             </div>
         </div>
@@ -147,7 +148,7 @@
       </footer>
       </div>
 
-    <script src="js/valid-reserva.js"></script>
+    <script src="js/valid-form.js"></script>
 </body>
 
 </html>
