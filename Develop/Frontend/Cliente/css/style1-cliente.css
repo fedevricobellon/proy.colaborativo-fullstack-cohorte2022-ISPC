@@ -66,18 +66,30 @@ body {
 .grid-container {
     display: grid;
     gap: 10px;
-    grid-template-areas:
+   /* grid-template-areas:
     "header"
     "navbar"
     "main"
     "sidebar"
-    "footer";
+    "footer";*/
     
+<<<<<<< HEAD
     /* grid-template:
     "header header"
     "navbar navbar"
     "sidebar main"
     "footer footer"; */
+=======
+    
+    grid-template-columns: 1fr 3fr
+    
+
+  /*  grid-template:
+    "header header"
+    "navbar navbar"
+    "sidebar main"
+    "footer footer";*/
+>>>>>>> 03213a64a89d9c4e1e24a11359b863f727a19ea5
 
 }
 
@@ -106,7 +118,7 @@ li a.active {
   color: white;
 }
 
-button { 
+.button { 
     height: 70px;
     width: 125px;
     background: rgba(219, 143, 2, 0.438);
@@ -117,4 +129,17 @@ button {
     border-radius: 4px;
     cursor: pointer; 
 }
+
+.button2 { 
+    height: 70px;
+    width: 165px;
+    background: rgba(219, 143, 2, 0.438);
+    border: 1;
+    color: rgb(0, 0, 0);
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
 
