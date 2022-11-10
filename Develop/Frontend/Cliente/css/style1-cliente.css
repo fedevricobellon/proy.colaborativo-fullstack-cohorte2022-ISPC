@@ -29,7 +29,6 @@ body {
 .navbar {
     grid-area: navbar;
     background-color: aquamarine;
-    background-style: #bdc3c7;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right,#966042, #c4a86d, #966042);
         /* Chrome 10-25, Safari 5.1-6 */
@@ -40,7 +39,6 @@ body {
 .sidebar {
     grid-area: sidebar;
     background-color: whitesmoke;
-    background-style: #bdc3c7;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right,#966042, #c4a86d, #966042);
         /* Chrome 10-25, Safari 5.1-6 */
@@ -51,7 +49,6 @@ body {
 .main {
     grid-area: main;
     background-color: rgb(21, 94, 69);
-    background-style: #bdc3c7;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right,#966042, #c4a86d, #966042);
         /* Chrome 10-25, Safari 5.1-6 */
@@ -76,21 +73,20 @@ body {
     "sidebar"
     "footer";
     
-    grid-template:
+    /* grid-template:
     "header header"
     "navbar navbar"
     "sidebar main"
-    "footer footer";
+    "footer footer"; */
 
 }
 
 @media (min-width: 900px) {
     .grid-container {
         grid-template:
-        "header header header header header" 100px
-        "navbar main sidebar sidebar sidebar" auto
-        "footer footer footer footer footer" 100px /
-        200px   auto    auto  200px
+        "header"
+        "navbar main" 
+        "footer" 
     }
 }
 
