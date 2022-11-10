@@ -1,4 +1,4 @@
-header h1 {
+/*header h1 {
     background: url("../imagenes/complejo_de_cabañas.jpeg");
     height: 150px;
     background-size: cover;
@@ -7,6 +7,10 @@ header h1 {
     overflow: hidden;
     font-size: 40px;
     padding-top: 5px;
+}*/
+
+header {
+    color: #fff;
 }
 
 .jumbotron{
