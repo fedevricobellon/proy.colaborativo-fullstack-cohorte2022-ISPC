@@ -1,4 +1,3 @@
-
 var nombre=document.querySelector("#nombre");
 var apellido=document.querySelector("#apellido");
 var email=document.querySelector("#email");
@@ -23,6 +22,7 @@ var codigoPostal=document.querySelector("#codigo-postal");
  }
 // _______________validacion nombre_________________
  function validarNombre(){
+    
      if(nombre.value==''){
          nombre.style.backgroundColor="#f07676"
          nombre.setCustomValidity('Ingrese su nombre por favor');
@@ -31,7 +31,7 @@ var codigoPostal=document.querySelector("#codigo-postal");
         nombre.style.backgroundColor="#f07676"
         nombre.setCustomValidity('Caracteres permitidos mínimo:3 y máximo:35 ');
      }
-     else if(isNaN(nombre.value)==false){
+     else if(isNaN(nombre.value)){
         nombre.style.backgroundColor="#f07676"
         nombre.setCustomValidity('Ingrese letras por favor');
      }
@@ -129,7 +129,7 @@ function validarCodigoPostal(){
 /*validacion de formulario: checkValidity()*/ 
 
 function enviar(){
-    var boton=document.querySelector('.button')
+    var boton=document.querySelector('#boton')
     boton.addEventListener('click', enviarFormulario)
 }
 

@@ -39,7 +39,7 @@
       <h1>Reservas</h1><br>
       <h2>Completá el formulario para hacer la reserva</h2><br>
 
-      <form action="reserva-cliente.php" method="post">
+      <form id="formulario1" action="reserva-cliente.php" method="post">
         <div class="datos">
         <label for="provincia-elegida">Seleccioná la provincia de destino</label><br>
         <select id="provincia-elegida" name="seleccion_provincia" required>
@@ -70,11 +70,13 @@
           </div>
           <div class="datos">
           <label for="adultos">Adultos</label>
-          <input type="number" id="adultos" name="total_adultos" placeholder="2" min="1" required>
+          <input type="number" id="adultos" name="total_adultos" placeholder="2" min="1" required > 
+    
           </div>
           <div class="datos">
           <label for="menores">Menores</label>
-          <input type="number" id="menores" name="total_menores" placeholder="2" min="0" required><br><br>
+          <input type="number" id="menores" name="total_menores" placeholder="2" min="0" required ><br><br>
+     
           </div>
           <div class="datos">
           <label for="fecha-ingreso">Fecha de ingreso</label><br>
@@ -88,18 +90,18 @@
           <h1>Forma de pago</h1><br>
           <p>Presione el botón pago en efectivo para reservar y coordinar el pago en efectivo</p><br>
 
-        <input class="button2" type="submit" value="Pago en efectivo">
+        <input class="button2" id="button1" type="submit" value="Pago en efectivo">
       </form><br><br>
 
       <h2>Pago con tarjeta</h2>
 
-      <form action="datos-cliente.php" method="post">
+      <form id="formulario2" action="datos-cliente.php" method="post">
         <div class="datos">
         <label for="nombre-titular-tarjeta">Nombre del titular de la tarjeta</label><br>
         <input type="text" name="nombre-titular-tarjeta" id="nombre-titular-tarjeta" size="30" placeholder="ingresa el nombre del titular de la tarjeta"><br><br>
         <div class="datos">
         <label for="numero-tarjeta">Número de la tarjeta</label><br> 
-        <input type="text" name="numero-tarjeta" id="numero-tarjeta" maxlength="16" minlength="16"><br>
+        <input type="text" name="numero-tarjeta" id="numero-tarjeta" maxlength="16" minlength="16" ><br>
         <small>Ingresá los números que figuran al frente de la tarjeta. Ejemplo: 1234 5678 9101 1213</small><br><br>
         </div>
         <div class="datos">
@@ -108,11 +110,11 @@
         </div>
         <div class="datos">
         <label for="codigo-seguridad">Código de seguridad</label><br>
-          <input type="text" id="codigo-seguridad" name="codigo-seguridad" maxlength="3" minlength="3" required><br>
+          <input type="text" id="codigo-seguridad" name="codigo-seguridad" maxlength="3" minlength="3" required> <br>
           <small>Ingresa los últimos tres números que figuran al dorso de la tarjeta</small><br><br>
           </div>
   
-        <input class="button2" type="submit" value="Pagar con tarjeta">
+        <input class="button2" id="button2" type="submit" value="Pagar con tarjeta" onclick=" validarNombreTarjerta()">
       </form>
 
         
@@ -168,6 +170,7 @@
   <script src="node_modules/jquerry/dist/jquerry.min.js/"></script>
   <script src="node_modules/popper.js/dist/popper.min.js" ></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+   
+  <script src="./JavaScript/cliente.form-reservas.js"></script>
 </body>
 </html>
