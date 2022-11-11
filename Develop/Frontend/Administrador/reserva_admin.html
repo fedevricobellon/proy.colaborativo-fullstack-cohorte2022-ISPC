@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="../Administrador/css/admin.css">
+    <link rel="stylesheet" href="../Administrador/Header para Proyecto/header.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="mb-2">
+        <section>
+            <div class="conte">
+                <p>NUEVA RESERVA</p>
+                <a href="../Administrador/index-admin.html">Volver a Inicio</a>
+            </div>
+        </section>
+    </header>
+
+    <main class="background-style">
+        <div class="container">
+            <div class="forms-cabanias">
+                <div class="perfil form-cabania" id="reserva">
+                    <form name="fvalida">
+                        <legend>Nueva Reserva</legend>
+                        <div id="info-principal">
+                            <div class="datos">
+                                <label for="ingresoReserva" id="lblIngresoReserva">Ingreso:</label>
+                                <input type="date" id="ingresoReserva">
+                            </div>
+                            <div class="datos">
+                                <label for="salidaReserva" id="lblSalidaReserva">Salida:</label>
+                                <input type="date" id="salidaReserva">
+                            </div>
+                            <div class="datos">
+                                <label for="personasReserva" id="lblPersonasReserva">N° de Personas:</label>
+                                <input type="text" id="personasReserva" placeholder="Cant. personas." minlength="1"
+                                    maxlength="2">
+                            </div>
+                        </div>
+                        <div id="info-pagos">
+                            <div class="datos">
+                                <label for="seniaReserva" id="lblSeniaReserva">Seña:</label>
+                                $<input type="text" id="seniaReserva" minlength="3" maxlength="6">
+                            </div>
+                            <div class="datos">
+                                <label for="totalReserva" id="lblTotalReserva">Pago Total:</label>
+                                $<input type="text" id="totalReserva" minlength="4" maxlength="6">
+                            </div>
+                        </div>
+                        <div class="servicios">
+                            <label for="formaPago-reserva">Formas de Pago:</label>
+                            Efectivo<input type="checkbox" name="formaPago-reserva" value="1">
+                            Transferencia<input type="checkbox" name="formaPago-reserva" value="2">
+                            Mercado Pago<input type="checkbox" name="formaPago-reserva" value="3"><br>
+                            Uala<input type="checkbox" name="formaPago-reserva" value="4">
+                            Tarjeta de Débito<input type="checkbox" name="formaPago-reserva" value="5">
+                            Tarjeta de Crédito<input type="checkbox" name="formaPago-reserva" value="6">
+                        </div>
+                        <div class="datos">
+                            <label for="nombreReserva" id="lblNombreReserva">Nombre:</label>
+                            <input type="text" id="nombreReserva" placeholder="Nombre del cliente.">
+                        </div>
+                        <div class="datos">
+                            <label for="apellidoReserva" id="lblApellidoReserva">Apellido:</label>
+                            <input type="text" id="apellidoReserva" placeholder="Apellido del cliente.">
+                        </div>
+                        <div class="datos">
+                            <label for="dniReserva" id="lblDniReserva">DNI:</label>
+                            <input type="text" id="dniReserva" minlength="7" maxlength="8"
+                                placeholder="DNI del cliente.">
+                        </div>
+                        <div class="datos">
+                            <label for="mailReserva" id="lblMailReserva">Mail:</label>
+                            <input type="text" id="mailReserva" placeholder="Mail del cliente.">
+                        </div>
+                        <div class="datos">
+                            <label for="telReserva" id="lblTelReserva">Celular / Teléfono:</label>
+                            <input type="text" id="telReserva" minlength="9" maxlength="15"
+                                placeholder="N° de contacto del cliente.">
+                        </div>
+
+                    </form>
+                    <button id="boton" type="button" onclick="validarReservaAdmin()">RESERVAR</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" style="background-color: #1f1c09f1;">
+
+
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">CABANIAPP</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="../Administrador/index-admin.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/agregar-cabania.html" class="nav__links">Cabañas</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/contabilidad.html" class="nav__links">Contabilidad</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/agenda.html" class="nav__links">Agenda</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg"
+                        class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg"
+                        class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg"
+                        class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg"
+                        class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
+        </section>
+    </footer>
+    <script src="js/valid-form.js"></script>
+</body>
+
+</html>

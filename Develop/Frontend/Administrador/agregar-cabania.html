@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="../Administrador/css/admin.css">
+    <title>Nueva Cabaña</title>
+</head>
+
+<body class="background-style">
+
+    <!-- HEADER -->
+    <header>
+        <section>
+            <div class="conte">
+                <p>GESTION DE CABAÑAS</p>
+                <a href="../Administrador/index-admin.html">Volver a Inicio</a>
+            </div>
+        </section>
+    </header>
+    <!---------------------------------------------------------------------------------------------------------->
+
+    <main>
+        <div class="container">
+            <div class="cuadro-sup">
+                <h1>CABAÑA</h1>
+                <div class="selec-complejo">
+                    <h2>SELECCIONAR COMPLEJO</h2>
+                    <select name="agregar-complejo" id="">
+                        <option value="1" selected>Cabañas "Arco Iris"</option>
+                    </select>
+                    <!-- Boton aparece si selecciona "AGREGAR COMPLEJO" solamente. -->
+                    <button><a href="agregar-complejo.html">Agregar Complejo</a></button>
+                </div>
+            </div>
+            <div class="forms-cabanias">
+                <div class="form-cabania">
+                    <form name="fvalida">
+                        <legend>Datos de la Cabaña</legend>
+                        <div class="datos">
+                            <label for="nomCab" id="lblNomCab">Nombre Cabaña:</label>
+                            <input type="text" id="nomCab" placeholder="Nombre o numeración de la cabaña." name="nomCab">
+                        </div>
+                        <div class="datos" id="lblDormCab">
+                            <label for="dormCab">Cantidad de Dormitorios:</label>
+                            <input type="text" id="dormCab" maxlength="2"
+                                placeholder="Espacios con cama/s." name="dormCab">
+                        </div>
+                        <div class="datos">
+                            <label for="plazaCab" id="lblPlazaCab">Cantidad de Personas:</label>
+                            <input type="text" id="plazaCab" minlength="1" maxlength="2"
+                                placeholder="Máx. cantidad de personas." name="plazaCab">
+                        </div>
+                        <div class="datos camas camas-dobles">
+                            <label for="camasDobles" id="lblCamasDobles">Camas Doble:</label>
+                            <input type="text" id="camasDobles" minlength="1" maxlength="2" placeholder="Cama doble."
+                                name="camasDobles">
+                        </div>
+                        <div class="datos camas camas-simples">
+                            <label for="camasSimples" id="lblCamasSimples">Camas Simple:</label>
+                            <input type="text" id="camasSimples" minlength="1" maxlength="2"
+                                placeholder="Cama simple, cucheta." name="camasSimples">
+                        </div>
+                        <div class="servicios">
+                            <label for="plaza-cab">Ambientes:</label>
+                            BAÑO<input type="checkbox" name="ambientes-cab-1" value="1" checked><br>
+                            LIVING<input type="checkbox" name="ambientes-cab-1" value="3"><br>
+                            COCINA<input type="checkbox" name="ambientes-cab-1" value="4" checked><br>
+                            COMEDOR<input type="checkbox" name="ambientes-cab-1" value="2" checked><br>
+                            GALERIA<input type="checkbox" name="ambientes-cab-1" value="6"><br>
+                            BALCON/TERRAZA<input type="checkbox" name="ambientes-cab-1" value="5"><br>
+                            COCHERA INDIVIDUAL<input type="checkbox" name="ambientes-cab-1" value="7"><br>
+                            PARRILLA INDIVIDUAL<input type="checkbox" name="ambientes-cab-1" value="8">
+                        </div>
+                        <!-- Luego habrá que configurarlo para que el usuario pueda subir más de una imagen. -->
+                        <div class="datos">
+                            <label for="img-cab">Imagenes de la cabaña:</label>
+                            <input type="file" id="img-cab">
+                        </div>
+                    </form>
+                </div>
+                <div class="form-cabania">
+                    <form name="fvalida">
+                        <legend class="legend2">Servicios de la Cabaña</legend>
+                        <div class="servicios">
+                            <label for="serv-1">Serv. Digitales:</label>
+                            TV<input type="checkbox" name="serv-cab-2" value="2"><br>
+                            WI-FI<input type="checkbox" name="serv-cab-2" value="1"><br>
+                            DIRECTV<input type="checkbox" name="serv-cab-2" value="3">
+                        </div>
+                        <div class="servicios">
+                            <label for="serv-cab-3">Serv. Cocina/Comedor:</label>
+                            COCINA<input type="checkbox" name="serv-cab-3" value="1"><br>
+                            VAJILLA<input type="checkbox" name="serv-cab-3" value="4" checked><br>
+                            MICROONDAS<input type="checkbox" name="serv-cab-3" value="3"><br>
+                            VASOS / TAZAS<input type="checkbox" name="serv-cab-3" value="5" checked><br>
+                            COCINA C/ HORNO<input type="checkbox" name="serv-cab-3" value="2">
+                        </div>
+                        <div class="servicios">
+                            <label for="serv-cab-4">Serv. Climatización:</label>
+                            VENTILADOR<input type="checkbox" name="serv-cab-4" value="1"><br>
+                            CALEFACCIÓN<input type="checkbox" name="serv-cab-4" value="2"><br>
+                            AIRE ACONDICIONADO<input type="checkbox" name="serv-cab-4" value="3">
+                        </div>
+                        <div class="servicios">
+                            <label for="serv-cab-5">Serv. Higiene:</label>
+                            LAVARROPAS<input type="checkbox" name="serv-cab-5" value="1"><br>
+                            AMENIDADES<input type="checkbox" name="serv-cab-5" value="5"><br>
+                            LIMPIEZA BAÑO<input type="checkbox" name="serv-cab-5" value="3" checked><br>
+                            LIMPIEZA HOGAR<input type="checkbox" name="serv-cab-5" value="4"><br>
+                            LIMPIEZA COCINA<input type="checkbox" name="serv-cab-5" value="2">
+                        </div>
+                    </form>
+                </div>                
+            </div>
+            <div class="boton-enviar">
+                <button id="boton" type="button" onclick="validarCabania()">AGREGAR CABAÑA</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-3">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">CABANIAPP</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="../Administrador/index-admin.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/agregar-cabania.html" class="nav__links">Cabañas</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/contabilidad.html" class="nav__links">Contabilidad</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/agenda.html" class="nav__links">Agenda</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg"
+                        class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg"
+                        class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg"
+                        class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg"
+                        class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
+        </section>
+    </footer>
+
+    <script src="js/valid-form.js"></script>
+</body>
+
+</html>

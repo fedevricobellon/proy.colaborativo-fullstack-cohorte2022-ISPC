@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <<link rel="stylesheet" href="css/footerN.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <title>Home CabaniApp</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top  navbar-expand-md" style="background-color: #e7b242e9 ;"><!--Sirve para poner la barra de navegacion fija (Fixed-top)--> 
+      <div class="container-fluid">
+        <img src="/Imagenes/Logo.svg" alt="Bootstrap" width="30" height="48">
+        <a class="navbar-brand" href="#">CabaniApp</a>
+      < <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="./Home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Quiene somos.html">¿Quienes somos?</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="./login.html">Mi Cuenta</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="jumbotron">
+      <h1>CabaniApp</h1>
+    </div>
+
+    <div class="container">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="nav-item active"><a class="nav-link" href="./Home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Quiene somos.html">¿Quienes somos?</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="./login.html">Mi Cuenta</a></li>
+        </ol>
+      </nav>
+
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead class="table-danger">
+            <th>Calidad</th>
+            <th>Buenos Aires</th>
+           <th>Jujuy</th>
+           <th>Tucumán</th>
+          </thead>
+          <tbody>
+           <tr>
+             <td>1 Estrella</td>
+             <td>$100</td>
+              <td>$100</td>
+              <td>$100</td>
+           </tr>
+           <tr>
+              <td>2 Estrella</td>
+              <td>$100</td>
+              <td>$100</td>
+              <td>$100</td>
+           </tr>
+           <tr>
+              <td>3 Estrella</td>
+              <td>$100</td>
+              <td>$100</td>
+              <td>$100</td>
+           </tr>
+            <tr>
+             <td>4 Estrella</td>
+             <td>$100</td>
+              <td>$100</td>
+              <td>$100</td>
+           </tr>
+         </tbody>
+        </table>
+      </div>
+      
+      <footer class="footer mt-3">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">CABANIAPP</h2>
+    
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="../Administrador/index-admin.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/agregar-cabania.html" class="nav__links">Cabañas</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/contabilidad.html" class="nav__links">Contabilidad</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/agenda.html" class="nav__links">Agenda</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+    
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg" class="footer__img"></a>
+            </div>
+    
+            <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
+        </section>
+    </footer>
+  
+    <script src="node_modules/jquerry/dist/jquerry.min.js/"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js" ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente: pago con tarjetas</title>
+    <link rel="stylesheet" href="css/footerN.css">
+    <link rel="stylesheet" href="css\style1-cliente.css">
+</head>
+
+<body class="grid-container">
+    <header class="header">Header</header>
+
+    <nav class="navbar">
+        <ul>
+          <li><a href="cliente-datos-personales.html">Datos personales</a></li>
+          <li><a class="active" href="cliente-pago-con-tarjetas.html">Tarjeta de pago</a></li>
+          <li><a href="cliente-form-reservas.html">Reservas</a></li>
+          <li><a href="cliente-seguridad.html">Seguridad</a></li>
+        </ul>
+    </nav>
+
+    <!--<aside class="sidebar">Sidebar</aside>-->
+
+    <article class="main">
+
+      <h1>Carga los datos de tu tarjeta para hacer reservas</h1><br>
+
+    <form action="datos-cliente.php" method="post">
+      <div class="datos">
+      <label for="nombre-titular-tarjeta">Nombre del titular de la tarjeta</label><br>
+      <input type="text" name="nombre-titular-tarjeta" id="nombre-titular-tarjeta" size="30" placeholder="ingresa el nombre del titular de la tarjeta"><br><br>
+      </div>
+      <div class="datos">
+      <label for="numero-tarjeta">Número de la tarjeta</label><br> 
+      <input type="text" name="numero-tarjeta" id="numero-tarjeta" maxlength="16" minlength="16"><br>
+      <small>Ingresá los números que figuran al frente de la tarjeta. Ejemplo: 1234 5678 9101 1213</small><br><br>
+      </div>
+      <div class="datos">
+      <label for="vencimiento-tarjeta">Fecha de vencimiento</label><br>
+        <input type="month" id="vencimiento-tarjeta" name="vencimiento-tarjeta" required><br><br>
+      </div>
+      <div class="datos">
+        <label for="codigo-seguridad">Código de seguridad</label><br>
+        <input type="password" id="codigo-seguridad" name="codigo-seguridad" maxlength="3" minlength="3" required><br>
+        <small>Ingresa los últimos tres números que figuran al dorso de la tarjeta</small><br><br>
+      </div>
+
+      <input class="button" type="submit" value="Guardar">
+
+
+    </form>
+
+    </article>
+
+     
+    <footer class="footer mt-3">
+      <section class="footer__container container">
+          <nav class="nav nav--footer">
+              <h2 class="footer__title">CABANIAPP</h2>
+  
+              <ul class="nav__link nav__link--footer">
+                  <li class="nav__items">
+                      <a href="../Administrador/index-admin.html" class="nav__links">Inicio</a>
+                  </li>
+                  <li class="nav__items">
+                      <a href="../Administrador/agregar-cabania.html" class="nav__links">Cabañas</a>
+                  </li>
+                  <li class="nav__items">
+                      <a href="../Administrador/contabilidad.html" class="nav__links">Contabilidad</a>
+                  </li>
+                  <li class="nav__items">
+                      <a href="../Administrador/agenda.html" class="nav__links">Agenda</a>
+                  </li>
+                  <li class="nav__items">
+                      <a href="#" class="nav__links">Preguntas Frecuentes</a>
+                  </li>
+              </ul>
+          </nav>
+  
+          <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+              <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+              <div class="footer__inputs">
+                  <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                  <input type="submit" value="Registrate" class="footer__submit">
+              </div>
+          </form>
+      </section>
+  
+      <section class="footer__copy container">
+          <div class="footer__social">
+              <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg" class="footer__img"></a>
+              <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg" class="footer__img"></a>
+              <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg" class="footer__img"></a>
+              <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg" class="footer__img"></a>
+          </div>
+  
+          <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
+      </section>
+  </footer>
+
+  <script src="node_modules/jquerry/dist/jquerry.min.js/"></script>
+  <script src="node_modules/popper.js/dist/popper.min.js" ></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    
+</body>
+</html>

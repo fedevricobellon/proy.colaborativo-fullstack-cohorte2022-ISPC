@@ -1,0 +1,141 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    font-family: 'calibri';
+}
+
+.background-style {
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c4a86d, #966042, #c4a86d);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c4a86d, #966042, #c4a86d);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.row {
+    color: black;
+}
+
+/*
+header {
+    background: url('./complejo\ cabañas\ 2.jpeg');
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0;
+  }
+  
+  section h1 {
+    font-size: 44px;
+  }
+  
+  .conte {
+    text-align: center;
+  }
+  
+  .conte p {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 1em 0;
+  }
+  
+  .conte a {
+    color: white;
+    text-decoration: none;
+    background: #8BC34A;
+    padding: 4px 20px;
+    border-radius: 30px;
+    font-size: 30px;
+    margin: 10px;
+  }
+  
+.conte a:hover {
+    background: #C05805;
+}
+
+
+.accordion-body li a {
+    text-decoration: none !important;
+    color: black;
+}*/
+
+footer {
+    width: 100%;
+    margin-top: 10%;
+    background: #DB9501;
+}
+
+.container_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box_footer .logo img {
+    width: 180 px;
+}
+
+.box_footer .terms {
+    max-width: 400px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: black;
+    font-size: 18px;
+}
+
+.box_footer h2 {
+    margin-bottom: 30px;
+    color: black;
+    font-weight: 700;
+}
+
+.box_footer a {
+    margin-top: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+.box_footer a:hover {
+    opacity: 0.8;
+}
+
+.box_copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box_copyright p {
+    margin-top: 20px;
+    color: black;
+}
+
+.box_copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #C05805;
+}
+
+.day-name {
+    background: #DB9501;
+    font-weight: bold;
+}

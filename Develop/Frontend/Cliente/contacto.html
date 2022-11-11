@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/footerN.css">
+  <link rel="stylesheet" href="../Administrador/Header para Proyecto/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
+
+  <title>Home CabaniApp</title>
+</head>
+
+<body class="fondo_general">
+  <div class="container-fluid mb-4">
+    <div class="row">
+      <div class="col">
+
+        <!-- <header style="color:white">
+          <h1 class="mb-0">Contacto</h1>
+        </header> -->
+
+         <!-- HEADER -->
+  <header class="mb-2">
+    <section>
+      <div class="conte">
+        <p>COMUNICATE CON NOSOTROS</p>
+        <a href="../Administrador/index-admin.html">Volver a Inicio</a>
+      </div>
+    </section>
+  </header>
+
+
+        <nav class="navbar  navbar-expand-md" style="background-color: #e7b242e9 ;">
+          <div class="container-fluid">
+            <img src="./imagenes/logo.png" alt="Bootstrap" width="70" height="50">
+            <a class="navbar-brand" href="#">CabaniApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="./Home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./Quiene somos.html">¿Quienes somos?</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+            <li class="nav-item"><a class="nav-link" href="./login.html">Mi Cuenta</a></li>
+              </ul>
+            </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="forms-cabanias">
+      <div class="perfil form-cabania">
+        <form action="POST">
+          <legend>Formulario para contacto</legend>
+          <div class="datos">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrerse su nombre">
+          </div>
+          <div class="datos">
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingrerse su apellido">
+          </div>
+          <div class="datos">
+
+            <label for="email">email</label>
+           <input type="email" class="form-control" id="email_contacto" placeholder="usuario@example.com" onclick="validarEmail()" required="required">
+          </div>
+
+          <div class="datos">
+
+            <label for="domicilio">Domicilio</label>
+            <input type="text" class="form-control" id="domicilio" placeholder="Ingrerse su domicilio">
+          </div>
+          <div class="datos"><label for="provincia">Provincia</label>
+            <select id="provincia">
+              <option>Buenos Aires</option>
+              <option>Ciudad Autónoma de Buenos Aires</option>
+              <option>Catamarca</option>
+              <option>Chaco</option>
+              <option>Chubut</option>
+              <option>Córdoba</option>
+              <option>Corrientes</option>
+              <option>Entre Ríos</option>
+              <option>Jujuy</option>
+              <option>La Pampa</option>
+              <option>La Rioja</option>
+              <option>Mendoza</option>
+              <option>Misiones</option>
+              <option>Neuquén</option>
+              <option>Río Negro</option>
+              <option>Salta</option>
+              <option>San Juan</option>
+              <option>San Luis</option>
+              <option>Santa Cruz</option>
+              <option>Santa Fe</option>
+              <option>Santiago del Estero</option>
+              <option>Tierra del Fuego</option>
+              <option>Tucumán</option>
+              <option>Formosa</option>
+            </select>
+          </div>
+          <div class="datos">
+
+            <label for="email">email</label>
+            <input type="text" class="form-control" id="email" placeholder="Ingrerse su email">
+          </div>
+
+          <div class="datos">
+
+            <label for="comentario">Comentario</label>
+            <textarea id="comentario"class="form-control" rows="10"></textarea>
+          </div>
+
+          <div class="datos">
+
+            <input class="form-check-input" type="checkbox" id="gridCheck" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>
+          </div>
+          <button id="boton" type="button" onclick="confirmarDatos()">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer mt-3">
+    <section class="footer__container container">
+        <nav class="nav nav--footer">
+            <h2 class="footer__title">CABANIAPP</h2>
+
+            <ul class="nav__link nav__link--footer">
+                <li class="nav__items">
+                    <a href="../Administrador/index-admin.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../Administrador/agregar-cabania.html" class="nav__links">Cabañas</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../Administrador/contabilidad.html" class="nav__links">Contabilidad</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../Administrador/agenda.html" class="nav__links">Agenda</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Preguntas Frecuentes</a>
+                </li>
+            </ul>
+        </nav>
+
+        <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+            <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+            <div class="footer__inputs">
+                <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                <input type="submit" value="Registrate" class="footer__submit">
+            </div>
+        </form>
+    </section>
+
+    <section class="footer__copy container">
+        <div class="footer__social">
+            <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg" class="footer__img"></a>
+            <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg" class="footer__img"></a>
+            <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg" class="footer__img"></a>
+            <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg" class="footer__img"></a>
+        </div>
+
+        <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
+    </section>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+     <script src="email-validacionContacto.js"></script>>
+    <script src="js/enviar-datos.js"></script>
+</body>
+
+</html>
