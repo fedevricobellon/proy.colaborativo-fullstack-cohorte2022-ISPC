@@ -126,6 +126,24 @@ li a.active {
     cursor: pointer; 
 }
 
+<<<<<<< HEAD
+form a{
+    text-decoration: none;
+    color: white;
+}
+
+form a:visited{
+    text-decoration: none;
+    color: white;
+    visibility: hidden;
+}
+
+form a:active{
+    text-decoration: none;
+    color: white;
+}
+
+=======
 .button2 { 
     height: 70px;
     width: 170px;
@@ -173,3 +191,4 @@ input {
     padding: 5px;
     border-radius: 5px;
 }
+>>>>>>> bfa9b0f28de79b085bef90d25f4495122bc75d37
