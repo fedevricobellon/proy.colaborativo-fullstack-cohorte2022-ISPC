@@ -1,66 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cliente: datos personlaes</title>
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="css/footerN.css">
-    <link rel="stylesheet" href="css\style1-cliente.css">
-</head>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <title>Home CabaniApp</title>
+  </head>
+  <!-- <body> -->
+  <body class="fondo_general">
 
-<body class="grid-container">
-    <header class="header">Header</header>
-
-    <nav class="navbar">
-        <ul>
-            <li><a class="active" href="cliente-datos-personales.html">Datos personales</a></li>
-            <li><a href="cliente-pago-con-tarjetas.html">Tarjeta de pago</a></li>
-            <li><a href="cliente-form-reservas.html">Reservas</a></li>
-            <li><a href="cliente-seguridad.html">Seguridad</a></li>
-        </ul>
-    </nav>
-
+    <div class="container-fluid mb-4">
+      <div class="row">
+        <div class="col">
+          <header style="color:white">
+            <h1 class="mb-0">Datos Personales</h1>
+          </header>
+          <nav class="navbar  navbar-expand-md" style="background-color: #e7b242e9 ;">
+            <div class="container-fluid">
+              <img src="/Develop/Frontend/Cliente/imagenes/logo.png" width="60" height="50">
+              <a class="navbar-brand" href="#">CabaniApp</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="/Develop/Frontend/Cliente/cliente-datos-personales.html">Datos personales</a></li>
+                <li class="nav-item"><a class="nav-link" href="./cliente-pago-con-tarjetas.html">Tarjeta de pago</a></li>
+                <li class="nav-item"><a class="nav-link" href="./cliente-form-reservas.html">Reserva</a></li>
+                <li class="nav-item"><a class="nav-link" href="./cliente-seguridad.html">Seguridad</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
     <!--
     <aside class="sidebar">Sidebar</aside>-->
 
-    <article class="main">
-    
-        <form action="datos-cliente.php" method="post">
-          <h1>Completa tus datos personales</h1><br>
-            <label for="nombre">Nombre</label><br>
-            <input type="text" name="nombre" id="nombre" size="30" placeholder="ingrese su nombre"><br><br>
-            <label for="apellido">Apellido</label><br> 
-            <input type="text" name="apellido" id="apellido" placeholder="ingrese su apellido"><br><br>
-        
-            <label for="email">Dirección de e-mail</label><br> 
-            <input type="email" name="email" id="email" placeholder="ingrese su e-mail"><br><br>
-            <label for="celular">Número de teléfono móvil</label><br>
-            <input type="tel" id="celular" name="celular" placeholder="54-11-12345678" pattern="[0-9]{2}-[0-9]{2}-[0-9]{8}" required><br><br>
-
-            <label for="fecha-nacimiento">Fecha de nacimiento</label><br>
-            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento"><br><br>
-              <label for="pais-elegido">Nacionalidad</label><br>
-              <select id="pais-elegido" name="seleccion_pais" required>
-                <option value="no-pais-declarado">Seleccioná tu país de origen</option>
-                <option value="argentina">Argentina</option>
-                <option value="bolivia">Bolivia</option>
-                <option value="brasil">Brasil</option>
-                <option value="chile">Chile</option>
-                <option value="uruguay">Uruguay</option>
-                <option value="venezuela">Venezuela</option>
-                <option value="otro">Otro país</option>
-              </select><br><br>
-
-              <label for="genero-elegido">Género</label><br>
-              <select id="genero-elegido" name="seleccion_genero" required>
-                <option value="genero-no-declarado">Seleccioná tu sexo</option>
-                <option value="hombre">Soy hombre</option>
-                <option value="mujer">Soy mujer</option>
-                <option value="no-binario">Soy de género no binario</option>
-                <option value="en-privacidad">Elijo mantenerlo en privacidad</option>
-              </select><br><br>
-
+    <div class="container">
+      <div class="forms-cabanias">
+        <div class="perfil form-cabania">
+          <form action="POST">
+            <legend>Formulario para contacto</legend>
+            <div class="datos">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingrerse su nombre">
+            </div>
+            <div class="datos">
+              <label for="apellido">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Ingrerse su apellido">
+            </div>
+            <div class="datos">
+  
+              <label for="Direccion de e-mail">Direccion de e-mail</label>
+             <input type="Direccion de e-mail" class="form-control" id="email_contacto" placeholder="usuario@example.com" onclick="validarEmail()" required="required">
+            </div>
+  
               <h1>Dirección</h1>
               <label for="pais-elegido">País</label>
               <select id="pais-elegido" name="seleccion_pais" required>
@@ -74,7 +77,7 @@
                 <option value="otro">Otro país</option>
               </select><br><br>
 
-            <label for="calle-numero">Nombre y número de la calle</label><br> 
+            <label for="calle-numero">Nombre y número de la calle</label>
             <input type="text" name="calle-numero" id="calle-numero" placeholder="ingrese nombre y número de la calle"><br><br>
             
               <label for="Ciudad">Ciudad</label>
@@ -87,12 +90,58 @@
           </form>
     </article>
 
-    <footer class="footer">Footer
-      
 
 
-    </footer>
-
+    <div class="footer mt-3">
+      <section class="footer__container container">
+          <nav class="nav nav--footer">
+              <h2 class="footer__title">CABANIAPP</h2>
+  
+              <ul class="nav__link nav__link--footer">
+                  <li class="nav__items">
+                      <a href="../Administrador/index-admin.html" class="nav__links">Inicio</a>
+                  </li>
+                  <li class="nav__items">
+                      <a href="../Administrador/agregar-cabania.html" class="nav__links">Cabañas</a>
+                  </li>
+                  <li class="nav__items">
+                      <a href="../Administrador/contabilidad.html" class="nav__links">Contabilidad</a>
+                  </li>
+                  <li class="nav__items">
+                      <a href="../Administrador/agenda.html" class="nav__links">Agenda</a>
+                  </li>
+                  <li class="nav__items">
+                      <a href="#" class="nav__links">Preguntas Frecuentes</a>
+                  </li>
+              </ul>
+          </nav>
+  
+          <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+              <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+              <div class="footer__inputs">
+                  <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                  <input type="submit" value="Registrate" class="footer__submit">
+              </div>
+          </form>
+      </section>
+  
+      <section class="footer__copy container">
+          <div class="footer__social">
+              <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg" class="footer__img"></a>
+              <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg" class="footer__img"></a>
+              <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg" class="footer__img"></a>
+              <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg" class="footer__img"></a>
+          </div>
+  
+          <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
+      </section>
+    
+  </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+     crossorigin="anonymous"></script>
+     <script src="JavaScript/valid-crearCuenta.js"></script>
     
 </body>
 </html>
