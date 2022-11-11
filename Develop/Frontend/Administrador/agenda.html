@@ -10,8 +10,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/estilo_admin.css">
-  <link rel="stylesheet" href="../Administrador/css/admin.css">
   <link rel="stylesheet" href="../Administrador/Header para Proyecto/header.css">
+  <link rel="stylesheet" href="../Administrador/css/admin.css">
 
   <title>Agenda</title>
 </head>
@@ -112,15 +112,20 @@
                   <p class="card-text text-center">Elija el periodo que desea chequear para una nueva reserva</p>
                 </div>
                 <ul class="list-group list-group-flush">
+<<<<<<< HEAD
                   <li class="list-group-item">Desde
                     <input type="date" id="" class="" style="margin-left:10%; width: 80%; height: 30px;">
+=======
+                  <li class="list-group-item ">Desde
+                    <input type="date" class="" style="margin-left:9%; width: 80%; height: 30px;">
+>>>>>>> 93643b79fb2537f7034007d2f90b073defa3e440
 
                   </li>
                   <li class="list-group-item">Dias<input type="date" style="margin-left:13%; width: 80%; height: 30px;">
 
                   </li>
                   <li class="list-group-item">N° Personas<select name="NPersonas"
-                      style="margin-left:4%; width: 80%; height: 30px;">
+                      style="margin-left:2%; width: 80%; height: 30px;">
                       <option>1-2</option>
                       <option>3-4</option>
                       <option>5 o mas</option>
@@ -128,7 +133,7 @@
 
                   </li>
                   <li class="list-group-item">Ciudad<input list="Ciudad"
-                      style="margin-left:10%; width: 80%; height: 30px" />
+                      style="margin-left:9%; width: 80%; height: 30px" />
                     <datalist id="Ciudad">
                       <option>Merlo</option>
                       <option>Mendoza</option>
@@ -152,20 +157,27 @@
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">Antiguedad<select name="Antiguedad"
-                      style="margin-left:5%; width: 80%; height: 30px;">
+                      style="margin-left:2%; width: 80%; height: 30px;">
                       <option>Del mas antiguo al mas nuevo</option>
                       <option>Del mas nuevo al mas antiguo</option>
                     </select>
 
                   </li>
-                  <li class="list-group-item">Aportes<select name="Antiguedad"
-                      style="margin-left:9%; width: 80%; height: 30px;">
+                  <li class="list-group-item">Aportes<select name="Aportes"
+                      style="margin-left:8%; width: 80%; height: 30px;">
                       <option>Del cliente con mas reservas al menor</option>
                       <option>Del cliente con menos reservas al mayor</option>
                     </select>
 
                   </li>
-                  <li class="list-group-item">numero de tablas</li>
+                  <li class="list-group-item">numero de tablas<select name="CantidadTablas"
+                    style="margin-left:3%; width: 70%; height: 30px;">
+                    <option>0 - 25</option>
+                    <option>26 - 50</option>
+                    <option>51 - 75</option>
+                  </select>
+
+                  </li>
                 </ul>
                 <div class="card-body text-center">
                   <button type="button" class="btn btn-primary">Consulta</button>
