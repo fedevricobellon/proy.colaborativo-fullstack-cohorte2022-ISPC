@@ -66,10 +66,10 @@ body {
     
 }
 
-.footer {
+/* .footer {
     grid-area: footer;
     background-color: rgb(196, 178, 23);
-}
+} */
 
 .grid-container {
     display: grid;
