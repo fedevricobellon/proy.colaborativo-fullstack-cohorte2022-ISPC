@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Administrador/css/admin.css">
     <link rel="stylesheet" href="css/forms.css">
-    <title>Nueva Reserva</title>
+    <link rel="stylesheet" href="../Administrador/css/admin.css">
+    <link rel="stylesheet" href="../Administrador/Header para Proyecto/header.css">
 </head>
 
 <body>
     <!-- HEADER -->
-  <header class="mb-2">
-    <section>
-      <div class="conte">
-        <p>NUEVA RESERVA</p>
-        <a href="../Administrador/index-admin.html">Volver a Inicio</a>
-      </div>
-    </section>
-  </header>
+    <header class="mb-2">
+        <section>
+            <div class="conte">
+                <p>NUEVA RESERVA</p>
+                <a href="../Administrador/index-admin.html">Volver a Inicio</a>
+            </div>
+        </section>
+    </header>
 
     <main class="background-style">
         <div class="container">
@@ -71,7 +71,8 @@
                         </div>
                         <div class="datos">
                             <label for="dniReserva" id="lblDniReserva">DNI:</label>
-                            <input type="text" id="dniReserva" minlength="7" maxlength="8" placeholder="DNI del cliente.">
+                            <input type="text" id="dniReserva" minlength="7" maxlength="8"
+                                placeholder="DNI del cliente.">
                         </div>
                         <div class="datos">
                             <label for="mailReserva" id="lblMailReserva">Mail:</label>
@@ -79,9 +80,10 @@
                         </div>
                         <div class="datos">
                             <label for="telReserva" id="lblTelReserva">Celular / Teléfono:</label>
-                            <input type="text" id="telReserva" minlength="9" maxlength="15" placeholder="N° de contacto del cliente.">
+                            <input type="text" id="telReserva" minlength="9" maxlength="15"
+                                placeholder="N° de contacto del cliente.">
                         </div>
-                        
+
                     </form>
                     <button id="boton" type="button" onclick="validarReservaAdmin()">RESERVAR</button>
                 </div>
@@ -89,9 +91,9 @@
         </div>
     </main>
 
-    <!-- FOOTER      <footer class="footer mt-3" style="background-color: #1b1808d8;"> -->
+    <footer class="footer" style="background-color: #1f1c09f1;">
 
-    <footer class="footer mt-3" style="background-color: #1b1808d8">
+
         <section class="footer__container container">
             <nav class="nav nav--footer">
                 <h2 class="footer__title">CABANIAPP</h2>
@@ -139,7 +141,6 @@
             <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
         </section>
     </footer>
-   
     <script src="js/valid-form.js"></script>
 </body>
 
