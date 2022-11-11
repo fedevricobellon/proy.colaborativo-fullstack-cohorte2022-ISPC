@@ -5,23 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Administrador/css/admin.css">
     <link rel="stylesheet" href="css/forms.css">
-    <link rel="stylesheet" href="./css/footer_nuevo.css">
-
     <title>Nueva Reserva</title>
 </head>
 
 <body>
-    <header>
-        <!-- Vuelve al panel administración. -->
-        <div class="col">
-            <button><a href="../Administrador/index-admin.html">
-                    <---- VOLVER</a></button>
-        </div>
-        <div class="titulo-central col">
-            <h1>Nueva Reserva</h1>
-        </div>
-    </header>
+    <!-- HEADER -->
+  <header class="mb-2">
+    <section>
+      <div class="conte">
+        <p>NUEVA RESERVA</p>
+        <a href="../Administrador/index-admin.html">Volver a Inicio</a>
+      </div>
+    </section>
+  </header>
 
     <main class="background-style">
         <div class="container">
@@ -31,27 +29,27 @@
                         <legend>Nueva Reserva</legend>
                         <div id="info-principal">
                             <div class="datos">
-                                <label for="ingreso-reserva">Ingreso:</label>
-                                <input type="date" id="ingreso-reserva">
+                                <label for="ingresoReserva" id="lblIngresoReserva">Ingreso:</label>
+                                <input type="date" id="ingresoReserva">
                             </div>
                             <div class="datos">
-                                <label for="egreso-reserva">Salida:</label>
-                                <input type="date" id="egreso-reserva">
+                                <label for="salidaReserva" id="lblSalidaReserva">Salida:</label>
+                                <input type="date" id="salidaReserva">
                             </div>
                             <div class="datos">
-                                <label for="personas-reserva">N° de Personas:</label>
-                                <input type="number" id="personas-reserva" placeholder="Cant. personas." min="1"
-                                    max="20">
+                                <label for="personasReserva" id="lblPersonasReserva">N° de Personas:</label>
+                                <input type="text" id="personasReserva" placeholder="Cant. personas." minlength="1"
+                                    maxlength="2">
                             </div>
                         </div>
                         <div id="info-pagos">
                             <div class="datos">
-                                <label for="senia-reserva">Seña:</label>
-                                $<input type="number" id="senia-reserva" min="100">
+                                <label for="seniaReserva" id="lblSeniaReserva">Seña:</label>
+                                $<input type="text" id="seniaReserva" minlength="3" maxlength="6">
                             </div>
                             <div class="datos">
-                                <label for="total-reserva">Pago Total:</label>
-                                $<input type="number" id="total-reserva" min="100">
+                                <label for="totalReserva" id="lblTotalReserva">Pago Total:</label>
+                                $<input type="text" id="totalReserva" minlength="4" maxlength="6">
                             </div>
                         </div>
                         <div class="servicios">
@@ -64,90 +62,85 @@
                             Tarjeta de Crédito<input type="checkbox" name="formaPago-reserva" value="6">
                         </div>
                         <div class="datos">
-                            <label for="nombre-reserva">Nombre:</label>
-                            <input type="text" id="nombre-reserva" placeholder="Nombre del cliente.">
+                            <label for="nombreReserva" id="lblNombreReserva">Nombre:</label>
+                            <input type="text" id="nombreReserva" placeholder="Nombre del cliente.">
                         </div>
                         <div class="datos">
-                            <label for="apellido-reserva">Apellido:</label>
-                            <input type="text" id="apellido-reserva" placeholder="Apellido del cliente.">
+                            <label for="apellidoReserva" id="lblApellidoReserva">Apellido:</label>
+                            <input type="text" id="apellidoReserva" placeholder="Apellido del cliente.">
                         </div>
                         <div class="datos">
-                            <label for="dni-reserva">DNI:</label>
-                            <input type="number" id="dni-reserva" placeholder="DNI del cliente.">
+                            <label for="dniReserva" id="lblDniReserva">DNI:</label>
+                            <input type="text" id="dniReserva" minlength="7" maxlength="8" placeholder="DNI del cliente.">
                         </div>
                         <div class="datos">
-                            <label for="mail-reserva">Mail:</label>
-                            <input type="text" id="mail-reserva" placeholder="Mail del cliente.">
+                            <label for="mailReserva" id="lblMailReserva">Mail:</label>
+                            <input type="text" id="mailReserva" placeholder="Mail del cliente.">
                         </div>
                         <div class="datos">
-                            <label for="tel-reserva">Celular / Teléfono:</label>
-                            <input type="tel" id="tel-reserva" placeholder="N° de contacto del cliente.">
+                            <label for="telReserva" id="lblTelReserva">Celular / Teléfono:</label>
+                            <input type="text" id="telReserva" minlength="9" maxlength="15" placeholder="N° de contacto del cliente.">
                         </div>
-                        <button id="boton" type="button" onclick="validaReserva()">RESERVAR</button>
+                        
                     </form>
+                    <button id="boton" type="button" onclick="validarReservaAdmin()">RESERVAR</button>
                 </div>
             </div>
         </div>
     </main>
 
-    <div class="container-fluid">
-        <footer>
-          <div class="container-footer-all">
-              <div class="container-body">
-                  <div class="colum1">
-                      <figure>
-                          <a href="#">
-                              <img src="./img/footer_icons/logo_para_footer.png" alt="Logo de SLee Dw">
-                          </a>
-                      </figure>
-                  </div>
-                  <div class="colum2">
-                      <h1>Redes Sociales</h1>
-                      <div class="row-footer">
-                          <img src="./img/footer_icons/facebook.png">
-                          <label>Siguenos en Facebook</label>
-                      </div>
-                      <div class="row-footer">
-                          <img src="./img/footer_icons/twitter.png">
-                          <label>Siguenos en Twitter</label>
-                      </div>
-                      <div class="row-footer">
-                          <img src="./img/footer_icons/instagram.png">
-                          <label>Siguenos en Instagram</label>
-                      </div>
-                  </div>
-                  <div class="colum3">
-                      <h1>Informacion Contactos</h1>
-                      <div class="row2">
-                          <img src="./img/footer_icons/house.png">
-                          <label>Domicilio Cabaña</label>
-                      </div>
-                      <div class="row2">
-                          <img src="./img/footer_icons/smartphone.png">
-                          <label>Contacto</label>
-                      </div>
-                      <div class="row2">
-                          <img src="./img/footer_icons/contact.png">
-                          <label>cabaniapp@gmail.com</label>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="container-footer">
-              <div class="footer">
-                  <div class="copyright">
-                      © 2022 Todos los Derechos Reservados | <a href="">CABANIAPP</a>
-                  </div>
-                  <div class="information">
-                      <a href="">Sobre Nosotros</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y
-                          Condiciones</a>
-                  </div>
-              </div>
-          </div>
-      </footer>
-      </div>
+    <!-- FOOTER      <footer class="footer mt-3" style="background-color: #1b1808d8;"> -->
 
-    <script src="js/valid-reserva.js"></script>
+    <footer class="footer mt-3" style="background-color: #1b1808d8">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">CABANIAPP</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="../Administrador/index-admin.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/agregar-cabania.html" class="nav__links">Cabañas</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/contabilidad.html" class="nav__links">Contabilidad</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="../Administrador/agenda.html" class="nav__links">Agenda</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg"
+                        class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg"
+                        class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg"
+                        class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg"
+                        class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
+        </section>
+    </footer>
+   
+    <script src="js/valid-form.js"></script>
 </body>
 
 </html>

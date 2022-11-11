@@ -30,8 +30,8 @@
       <h2>Completá el formulario para hacer la reserva</h2><br>
 
       <form action="reserva-cliente.php" method="post">
-
-        <label for="provincia-elegida">Seleccioná la provincia de destino</label>
+        <div class="datos">
+        <label for="provincia-elegida">Seleccioná la provincia de destino</label><br>
         <select id="provincia-elegida" name="seleccion_provincia" required>
           <option value="buenos-aires">Buenos Aires</option>
           <option value="catamarca">Catamarca</option>
@@ -41,57 +41,68 @@
           <option value="rio-negro">Río Negro</option>
           <option value="san-luis">San Luis</option>
           <option value="santa-cruz">Santa Cruz</option>
-        </select><br><br>
-
-          <label for="ciudad-elegida">Seleccioná la ciudad</label>
+        </select>
+        </div>
+        <div class="datos">
+          <label for="ciudad-elegida">Seleccioná la ciudad</label><br>
           <select id="ciudad-elegida" name="seleccion_ciudad" required>
             <option value="bariloche">Bariloche</option>
             <option value="gualeguaychu">Gualeguaychú</option>
             <option value="villa-carlos-paz">Villa Carlos Paz</option>
-          </select><br><br>
-
-          <label for="complejo-elegido">Seleccioná el nombre del complejo</label>
+        </div>
+          </select>
+          <div class="datos">
+          <label for="complejo-elegido">Seleccioná el nombre del complejo</label><br>
           <select id="complejo-elegido" name="seleccion_complejo" required>
             <option value="cabañas-arcoiris">Cabañas Arcoiris</option>
             <option value="complejo-cuarzo">Complejo Cuarzo</option>
           </select><br><br>
-
+          </div>
+          <div class="datos">
           <label for="adultos">Adultos</label>
           <input type="number" id="adultos" name="total_adultos" placeholder="2" min="1" required>
-
+          </div>
+          <div class="datos">
           <label for="menores">Menores</label>
           <input type="number" id="menores" name="total_menores" placeholder="2" min="0" required><br><br>
-
-          <label for="fecha-ingreso">Fecha de ingreso</label>
+          </div>
+          <div class="datos">
+          <label for="fecha-ingreso">Fecha de ingreso</label><br>
           <input type="date" id="fecha-ingreso" name="ingreso" required>
-
-          <label for="fecha-salida">Fecha de salida</label>
+          </div>
+          <div class="datos">
+          <label for="fecha-salida">Fecha de salida</label><br>
           <input type="date" id="fecha-salida" name="salida" required><br><br><br>
+          </div>
 
           <h1>Forma de pago</h1><br>
           <p>Presione el botón pago en efectivo para reservar y coordinar el pago en efectivo</p><br>
 
-        <button type="submit">Pago en efectivo</button>
+        <input class="button2" type="submit" value="Pago en efectivo">
       </form><br><br>
 
       <h2>Pago con tarjeta</h2>
 
       <form action="datos-cliente.php" method="post">
+        <div class="datos">
         <label for="nombre-titular-tarjeta">Nombre del titular de la tarjeta</label><br>
         <input type="text" name="nombre-titular-tarjeta" id="nombre-titular-tarjeta" size="30" placeholder="ingresa el nombre del titular de la tarjeta"><br><br>
-        
+        <div class="datos">
         <label for="numero-tarjeta">Número de la tarjeta</label><br> 
         <input type="text" name="numero-tarjeta" id="numero-tarjeta" maxlength="16" minlength="16"><br>
         <small>Ingresá los números que figuran al frente de la tarjeta. Ejemplo: 1234 5678 9101 1213</small><br><br>
-    
-          <label for="vencimiento-tarjeta">Fecha de vencimiento</label><br>
+        </div>
+        <div class="datos">
+        <label for="vencimiento-tarjeta">Fecha de vencimiento</label><br>
           <input type="month" id="vencimiento-tarjeta" name="vencimiento-tarjeta" required><br><br>
-  
-          <label for="codigo-seguridad">Código de seguridad</label><br>
+        </div>
+        <div class="datos">
+        <label for="codigo-seguridad">Código de seguridad</label><br>
           <input type="text" id="codigo-seguridad" name="codigo-seguridad" maxlength="3" minlength="3" required><br>
           <small>Ingresa los últimos tres números que figuran al dorso de la tarjeta</small><br><br>
+          </div>
   
-        <button type="submit">Pagar con tarjeta</button>
+        <input class="button2" type="submit" value="Pagar con tarjeta">
       </form>
 
         
