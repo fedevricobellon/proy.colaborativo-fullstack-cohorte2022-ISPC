@@ -1,31 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente: formulario de busqueda</title>
     <link rel="stylesheet" href="css/footerN.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css\style1-cliente.css">
+
     <link rel="stylesheet" href="../Administrador/Header para Proyecto/header.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-    crossorigin="anonymous">
-    <title>Cliente Form Busqueda</title>
-  </head>
-  <!-- <body> -->
-  <body class="fondo_general">
+</head>
 
-    <div class="container-fluid mb-4">
-      <div class="row">
-        <div class="col">
-          <!-- <header style="color:white">
-            <h1 class="mb-0">Datos Personales</h1>
-          </header> -->
-
-          <!-- HEADER -->
+<body class="grid-container">
+    
+        <!-- HEADER -->
   <header class="mb-2">
     <section>
       <div class="conte">
@@ -35,159 +23,154 @@
     </section>
   </header>
 
+  <!------------------------------------------------------------------------------------------------------------>
 
-          <nav class="navbar  navbar-expand-md" style="background-color: #e7b242e9 ;">
-            <div class="container-fluid">
-              <img src="/Develop/Frontend/Cliente/imagenes/logo.png" width="60" height="50">
-              <a class="navbar-brand" href="#">CabaniApp</a>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="/Develop/Frontend/Cliente/cliente-datos-personales.html">Datos personales</a></li>
-                <li class="nav-item"><a class="nav-link" href="./cliente-pago-con-tarjetas.html">Tarjeta de pago</a></li>
-                <li class="nav-item"><a class="nav-link" href="./cliente-form-reservas.html">Reserva</a></li>
-                <li class="nav-item"><a class="nav-link" href="./cliente-seguridad.html">Seguridad</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
+  <div class="navbar">
+       <!-- <ul>
+            <li><a class="active" href="cliente-datos-personales.html">Datos personales</a></li>
+            <li><a href="cliente-pago-con-tarjetas.html">Tarjeta de pago</a></li>
+            <li><a href="cliente-form-reservas.html">Reservas</a></li>
+            <li><a href="cliente-seguridad.html">Seguridad</a></li>
+        </ul> -->
     </div>
 
+
     <article class="main">
-      <h2>Completá el formulario para consultar las cabañas disponibles</h2><br>
-
-      <form action="reserva-cliente.php" method="post">
-        <div class="datos">
-        <label for="provincia-elegida">Seleccioná la provincia de destino</label><br>
-        <select id="provincia-elegida" name="seleccion_provincia" required>
-          <option value="buenos-aires">Buenos Aires</option>
-          <option value="catamarca">Catamarca</option>
-          <option value="cordoba">Córdoba</option>
-          <option value="mendoza">Mendoza</option>
-          <option value="neuquen">Neuquén</option>
-          <option value="rio-negro">Río Negro</option>
-          <option value="san-luis">San Luis</option>
-          <option value="santa-cruz">Santa Cruz</option>
-        </select>
-        </div>
-        <div class="datos">
-          <label for="ciudad-elegida">Seleccioná la ciudad</label><br>
-          <select id="ciudad-elegida" name="seleccion_ciudad" required>
-            <option value="bariloche">Bariloche</option>
-            <option value="gualeguaychu">Gualeguaychú</option>
-            <option value="villa-carlos-paz">Villa Carlos Paz</option>
-          </select>
-          </div>
-          <div class="datos">
-          <label for="adultos">Adultos</label>
-          <input type="number" id="adultos" name="total_adultos" placeholder="2" min="1" required>
-          </div>
-          <div class="datos">
-          <label for="menores">Menores</label>
-          <input type="number" id="menores" name="total_menores" placeholder="2" min="0" required>
-        </div>
-        <div class="datos">
-          <label for="fecha-ingreso">Fecha de ingreso</label><br>
-          <input type="date" id="fecha-ingreso" name="ingreso" required>
-        </div>
-        <div class="datos">
-          <label for="fecha-salida">Fecha de salida</label><br>
-          <input type="date" id="fecha-salida" name="salida" required>
-        </div>
-          <h1>Servicios</h1>
-          <div class="datos2">
-          <label class="container">Wifi
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-          </label>
-          </div>
-          <div class="datos2">
-          <label class="container">TV con Directv
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-        </div>
-        <div class="datos2">
-          <label class="container">Cocina
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label><br>
-        </div>
-        <div class="datos2">
-          <label class="container">Lavarropas
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label><br>
-          </div>
-          <div class="datos2">
-          <label class="container">Aire acondicionado
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label><br>
-          </div>
-          <div class="datos2">
-          <label class="container">Pileta
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label><br>
-          </div>
-          <div class="datos2">
-          <label class="container">Estacionamiento techado
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label><br>
-          </div>
-          <div class="datos2">
-          <label class="container">Parrilla
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label><br>
-          </div>
-          <div class="datos2">
-          <label class="container">Desayuno
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label><br>
-          </div>
-          <div class="datos2">
-          <label class="container">Servicio de ropa blanca
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label><br><br>
-          </div>
-
-        <input class="button2" type="submit" value="Buscar cabañas"><!--debe llevar a una página como la de Home pero que diga "Resultados de la búsqueda" -->
-      </form>
     
+      <div class="container">
+        <div class="form-cliente">
+          <h2>Completá el formulario para consultar las cabañas disponibles</h2><br>
+          <form action="reserva-cliente.php" method="post">
+            <div class="datos">
+            <label for="provincia-elegida">Seleccioná la provincia de destino</label><br>
+            <select id="provincia-elegida" name="seleccion_provincia" required>
+              <option value="buenos-aires">Buenos Aires</option>
+              <option value="catamarca">Catamarca</option>
+              <option value="cordoba">Córdoba</option>
+              <option value="mendoza">Mendoza</option>
+              <option value="neuquen">Neuquén</option>
+              <option value="rio-negro">Río Negro</option>
+              <option value="san-luis">San Luis</option>
+              <option value="santa-cruz">Santa Cruz</option>
+            </select>
+            </div>
+            <div class="datos">
+              <label for="ciudad-elegida">Seleccioná la ciudad</label><br>
+              <select id="ciudad-elegida" name="seleccion_ciudad" required>
+                <option value="bariloche">Bariloche</option>
+                <option value="gualeguaychu">Gualeguaychú</option>
+                <option value="villa-carlos-paz">Villa Carlos Paz</option>
+              </select>
+              </div>
+              <div class="datos">
+              <label for="adultos">Adultos</label>
+              <input type="number" id="adultos" name="total_adultos" placeholder="2" min="1" required>
+              </div>
+              <div class="datos">
+              <label for="menores">Menores</label>
+              <input type="number" id="menores" name="total_menores" placeholder="2" min="0" required>
+            </div>
+            <div class="datos">
+              <label for="fecha-ingreso">Fecha de ingreso</label><br>
+              <input type="date" id="fecha-ingreso" name="ingreso" required>
+            </div>
+            <div class="datos">
+              <label for="fecha-salida">Fecha de salida</label><br>
+              <input type="date" id="fecha-salida" name="salida" required>
+            </div>
+              <h1>Servicios</h1>
+              <div class="datos2">
+              <label class="container">Wifi
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+              </div>
+              <div class="datos2">
+              <label class="container">TV con Directv
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="datos2">
+              <label class="container">Cocina
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label><br>
+            </div>
+            <div class="datos2">
+              <label class="container">Lavarropas
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label><br>
+              </div>
+              <div class="datos2">
+              <label class="container">Aire acondicionado
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label><br>
+              </div>
+              <div class="datos2">
+              <label class="container">Pileta
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label><br>
+              </div>
+              <div class="datos2">
+              <label class="container">Estacionamiento techado
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label><br>
+              </div>
+              <div class="datos2">
+              <label class="container">Parrilla
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label><br>
+              </div>
+              <div class="datos2">
+              <label class="container">Desayuno
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label><br>
+              </div>
+              <div class="datos2">
+              <label class="container">Servicio de ropa blanca
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label><br><br>
+              </div>
+    
+            <input class="button2" type="submit" value="Buscar cabañas"><!--debe llevar a una página como la de Home pero que diga "Resultados de la búsqueda" -->
+          </form>
+        </div>
+        </div>
     </article>
 
-    <!-- <div class="footer mt-3">
+    <!-- FOOTER -->
+    <footer class="footer mt-3">
       <section class="footer__container container">
           <nav class="nav nav--footer">
               <h2 class="footer__title">CABANIAPP</h2>
   
               <ul class="nav__link nav__link--footer">
                   <li class="nav__items">
-                      <a href="../Administrador/index-admin.html" class="nav__links">Inicio</a>
+                    <a href="../Cliente/Home.html" class="nav__links">HOME</a>
                   </li>
                   <li class="nav__items">
-                      <a href="../Administrador/agregar-cabania.html" class="nav__links">Cabañas</a>
+                      <a href="../Cliente/Quiene somos.html" class="nav__links">QUIENES SOMOS</a>
                   </li>
                   <li class="nav__items">
-                      <a href="../Administrador/contabilidad.html" class="nav__links">Contabilidad</a>
+                      <a href="../Cliente/contacto.html" class="nav__links">CONTACTO</a>
                   </li>
                   <li class="nav__items">
-                      <a href="../Administrador/agenda.html" class="nav__links">Agenda</a>
+                      <a href="../Cliente/precios.html" class="nav__links">PRECIOS</a>
                   </li>
                   <li class="nav__items">
-                      <a href="#" class="nav__links">Preguntas Frecuentes</a>
+                      <a href="../Cliente/cliente-datos-personales.html" class="nav__links">MI CUENTA</a>
                   </li>
               </ul>
           </nav>
-  
+
           <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
               <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
               <div class="footer__inputs">
@@ -205,63 +188,11 @@
               <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg" class="footer__img"></a>
           </div>
   
-          <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
+          <h3 class="footer__copyright">Derechos reservados &copy; CABANIAPP</h3>
       </section>
+  </footer>
+
     
-  </footer> -->
-    
-  <!-- FOOTER -->
-  <footer class="footer mt-3">
-    <section class="footer__container container">
-        <nav class="nav nav--footer">
-            <h2 class="footer__title">CABANIAPP</h2>
-
-            <ul class="nav__link nav__link--footer">
-                <li class="nav__items">
-                  <a href="../Cliente/Home.html" class="nav__links">HOME</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../Cliente/Quiene somos.html" class="nav__links">QUIENES SOMOS</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../Cliente/contacto.html" class="nav__links">CONTACTO</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../Cliente/precios.html" class="nav__links">PRECIOS</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../Cliente/cliente-datos-personales.html" class="nav__links">MI CUENTA</a>
-                </li>
-            </ul>
-        </nav>
-
-        <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
-            <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
-            <div class="footer__inputs">
-                <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
-                <input type="submit" value="Registrate" class="footer__submit">
-            </div>
-        </form>
-    </section>
-
-    <section class="footer__copy container">
-        <div class="footer__social">
-            <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg" class="footer__img"></a>
-        </div>
-
-        <h3 class="footer__copyright">Derechos reservados &copy; CABANIAPP</h3>
-    </section>
-</footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-     crossorigin="anonymous"></script>
-     <script src="JavaScript/valid-crearCuenta.js"></script>
-    
+   <script src="./JavaScript/clientes-datos-personales.js"></script> 
 </body>
 </html>
-
- 
