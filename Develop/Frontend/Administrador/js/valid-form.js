@@ -191,7 +191,6 @@ function validarPerfilAdmin(){
 
     alert("¡¡Se ha completado el perfil con éxito!!")
     document.fvalida.submit()
-
 }
 
 function validarReservaAdmin(){
@@ -356,9 +355,39 @@ function validarReservaAdmin(){
     document.fvalida.submit()
 }
 
+
 function validarConsultaReserva(){
     
+    let fechaIngreso = document.getElementById("fechaIngreso").value
+    let liFechaIngreso = document.getElementById("liFechaIngreso").textContent
+    liFechaIngreso = `${liFechaIngreso}:`
+    if (validarVacio(fechaIngreso, liFechaIngreso)){
+        document.getElementById("fechaIngreso").focus()
+        return 0
+    }
+
+
+    let fechaEgreso = document.getElementById("fechaEgreso").value
+    let liFechaEgreso = document.getElementById("liFechaEgreso").textContent
+    liFechaEgreso = `${liFechaEgreso}:`
+    if (validarVacio(fechaEgreso, liFechaEgreso)){
+        document.getElementById("fechaIngreso").focus()
+        return 0
+    }
+
     
+    if(document.getElementById("numPersonas").selectedIndex == 0){
+        alert("Debe seleccionar 'N° Personas'.")
+        document.getElementById("provComplejo").focus()
+        return 0
+    }
+
+
+    if(document.getElementById("ciudadReserva").selectedIndex == 0){
+        alert("Debe seleccionar una 'Ciudad'.")
+        document.getElementById("provComplejo").focus()
+        return 0
+    }
     
     alert("Pre-reserva efectuada con éxito. Será redirigido al 'Formulario de Reserva'.")
     window.location.href = "reserva_admin.html"

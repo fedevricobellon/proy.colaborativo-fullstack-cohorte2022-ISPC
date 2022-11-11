@@ -112,40 +112,33 @@
                   <p class="card-text text-center">Elija el periodo que desea chequear para una nueva reserva</p>
                 </div>
                 <ul class="list-group list-group-flush">
-<<<<<<< HEAD
-                  <li class="list-group-item">Desde
-                    <input type="date" id="" class="" style="margin-left:10%; width: 80%; height: 30px;">
-=======
-                  <li class="list-group-item ">Desde
-                    <input type="date" class="" style="margin-left:9%; width: 80%; height: 30px;">
->>>>>>> 93643b79fb2537f7034007d2f90b073defa3e440
-
-                  </li>
-                  <li class="list-group-item">Dias<input type="date" style="margin-left:13%; width: 80%; height: 30px;">
-
-                  </li>
-                  <li class="list-group-item">N° Personas<select name="NPersonas"
-                      style="margin-left:2%; width: 80%; height: 30px;">
-                      <option>1-2</option>
-                      <option>3-4</option>
-                      <option>5 o mas</option>
+                  <li class="list-group-item" id="liFechaIngreso">Desde<input type="date" id="fechaIngreso"
+                      style="margin-left:9%; width: 80%; height: 30px;"></li>
+                  <li class="list-group-item" id="liFechaEgreso">Hasta<input type="date" id="fechaEgreso"
+                      style="margin-left:13%; width: 80%; height: 30px;"></li>
+                  <li class="list-group-item" id="liNumPersonas">N° Personas
+                    <select name="NPersonas" id="numPersonas" style="margin-left:2%; width: 80%; height: 30px;">
+                      <option value="0">Seleccionar opcion...</option>
+                      <option value="1">1-2</option>
+                      <option value="2">3-4</option>
+                      <option value="3">5-6</option>
+                      <option value="4">7 o más</option>
                     </select>
-
                   </li>
-                  <li class="list-group-item">Ciudad<input list="Ciudad"
-                      style="margin-left:9%; width: 80%; height: 30px" />
-                    <datalist id="Ciudad">
-                      <option>Merlo</option>
-                      <option>Mendoza</option>
-                      <option>Rosario</option>
-                    </datalist>
+                  <li class="list-group-item" id="idNumPersonas">Ciudad
+                    <select id="ciudadReserva" style="margin-left:2%; width: 80%; height: 30px;">
+                      <option value="0">Seleccionar opcion...</option>
+                      <option value="1">Merlo</option>
+                      <option value="2">Mendoza</option>
+                      <option value="3">Rosario</option>
+                    </select>
                   </li>
                 </ul>
                 <div class="card-body text-center">
                   <!-- Momentaneamente lleva a reserva, luego con back consultará y luego reserva.-->
                   <button type="button" class="btn btn-primary" onclick="validarConsultaReserva()">Reserva</button>
                   <!-- Función para redireccionar al form reserva. -->
-                 
+
                 </div>
               </div>
             </div>
@@ -171,11 +164,11 @@
 
                   </li>
                   <li class="list-group-item">numero de tablas<select name="CantidadTablas"
-                    style="margin-left:3%; width: 70%; height: 30px;">
-                    <option>0 - 25</option>
-                    <option>26 - 50</option>
-                    <option>51 - 75</option>
-                  </select>
+                      style="margin-left:3%; width: 70%; height: 30px;">
+                      <option>0 - 25</option>
+                      <option>26 - 50</option>
+                      <option>51 - 75</option>
+                    </select>
 
                   </li>
                 </ul>
