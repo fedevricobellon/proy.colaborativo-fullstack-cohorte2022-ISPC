@@ -112,8 +112,8 @@
                   <p class="card-text text-center">Elija el periodo que desea chequear para una nueva reserva</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item ">Desde
-                    <input type="date" class="" style="margin-left:10%; width: 80%; height: 30px;">
+                  <li class="list-group-item">Desde
+                    <input type="date" id="" class="" style="margin-left:10%; width: 80%; height: 30px;">
 
                   </li>
                   <li class="list-group-item">Dias<input type="date" style="margin-left:13%; width: 80%; height: 30px;">
@@ -138,13 +138,9 @@
                 </ul>
                 <div class="card-body text-center">
                   <!-- Momentaneamente lleva a reserva, luego con back consultará y luego reserva.-->
-                  <button type="button" class="btn btn-primary" onclick="formReserva()">Reserva</button>
+                  <button type="button" class="btn btn-primary" onclick="validarConsultaReserva()">Reserva</button>
                   <!-- Función para redireccionar al form reserva. -->
-                  <script>
-                    function formReserva() {
-                      window.location.href = "reserva_admin.html"
-                    }
-                  </script>
+                 
                 </div>
               </div>
             </div>
@@ -234,6 +230,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="./js/displays.js"></script>
+  <script src="js/valid-form.js"></script>
 </body>
 
 </html>

@@ -356,7 +356,13 @@ function validarReservaAdmin(){
     document.fvalida.submit()
 }
 
-
+function validarConsultaReserva(){
+    
+    
+    
+    alert("Pre-reserva efectuada con éxito. Será redirigido al 'Formulario de Reserva'.")
+    window.location.href = "reserva_admin.html"
+}
 // Manipula el contenido del label para otorgar un texto sin los ":" finales.
 function alertaLabel(lbl){
     lbl = lbl.substring(0, lbl.length - 1) // Elimina 2 puntos.
