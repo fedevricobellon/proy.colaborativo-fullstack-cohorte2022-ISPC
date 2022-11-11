@@ -74,65 +74,104 @@ panel_Inicio_Contabilidad = `
 panel_Inicio_Agenda = `
 <div class="container-fluid" id="panelInicio">
 
-<div class="row">
-  <div class="col">
-    <div class="card text-center">
-      <div class="card-header text-start">
-        INICIO
-      </div>
-      <div class="card-body">
-        <h4 class="card-title text-start">Nombre del administrador</h4>
-        <h2 class="card-text">$00.00 Facturado en el mes   -   0 ocupadas / 0 disponibles /0 reservadas  </h2>
-      </div>
-      <div class="card-footer text-muted text-end">
-        Próximos 7 días de actividad
-      </div>
-    </div>
-  </div>
-</div>
+          <div class="row">
+            <div class="col">
+              <div class="card text-center">
+                <div class="card-header text-start">
+                  INICIO
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title text-start">Nombre del administrador</h4>
+                  <h2 class="card-text">$00.00 Facturado en el mes - 0 ocupadas / 0 disponibles /0 reservadas </h2>
+                </div>
+                <div class="card-footer text-muted text-end">
+                  Próximos 7 días de actividad
+                </div>
+              </div>
+            </div>
+          </div>
 
-<div class="row">    
-  <div class="col">
-    <div class="card mt-2">
-      <div class="card-body">
-        <h5 class="card-title text-center">Reserva</h5>
-        <p class="card-text text-center">Elija el periodo que desea chequear para una nueva reserva</p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Desde</li>
-        <li class="list-group-item">Dias</li>
-        <li class="list-group-item">N° Personas</li>
-        <li class="list-group-item">Ciudad<input list="Ciudad" style="margin-left:10px; width: 80%;" />
-          <datalist id="Ciudad">
-            <option>Merlo</option>
-            <option>Mendoza</option>
-            <option>Rosario</option>
-          </datalist>
-        </li>
-        </ul>
-          <div class="card-body text-center">
-        <button type="button" class="btn btn-primary">Consulta</button>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card mt-2">
-      <div class="card-body">
-        <h5 class="card-title text-center">Clientes</h5>
-        <p class="card-text text-center">Elija el modo de presentación de la tabla</p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Antiguedad</li>
-        <li class="list-group-item">Aportes</li>
-        <li class="list-group-item">numero de tablas</li>
-      </ul>
-      <div class="card-body text-center">
-        <button type="button" class="btn btn-primary">Consulta</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+          <div class="row">
+            <div class="col-lg">
+              <div class="card mt-2">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Reserva</h5>
+                  <p class="card-text text-center">Elija el periodo que desea chequear para una nueva reserva</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item ">Desde
+                    <input type="date" class="" style="margin-left:9%; width: 80%; height: 30px;">
+
+                  </li>
+                  <li class="list-group-item">Dias<input type="date" style="margin-left:13%; width: 80%; height: 30px;">
+
+                  </li>
+                  <li class="list-group-item">N° Personas<select name="NPersonas"
+                      style="margin-left:2%; width: 80%; height: 30px;">
+                      <option>1-2</option>
+                      <option>3-4</option>
+                      <option>5 o mas</option>
+                    </select>
+
+                  </li>
+                  <li class="list-group-item">Ciudad<input list="Ciudad"
+                      style="margin-left:9%; width: 80%; height: 30px" />
+                    <datalist id="Ciudad">
+                      <option>Merlo</option>
+                      <option>Mendoza</option>
+                      <option>Rosario</option>
+                    </datalist>
+                  </li>
+                </ul>
+                <div class="card-body text-center">
+                  <!-- Momentaneamente lleva a reserva, luego con back consultará y luego reserva.-->
+                  <button type="button" class="btn btn-primary" onclick="formReserva()">Reserva</button>
+                  <!-- Función para redireccionar al form reserva. -->
+                  <script>
+                    function formReserva() {
+                      window.location.href = "reserva_admin.html"
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="card mt-2">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Clientes</h5>
+                  <p class="card-text text-center">Elija el modo de presentación de la tabla</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Antiguedad<select name="Antiguedad"
+                      style="margin-left:2%; width: 80%; height: 30px;">
+                      <option>Del mas antiguo al mas nuevo</option>
+                      <option>Del mas nuevo al mas antiguo</option>
+                    </select>
+
+                  </li>
+                  <li class="list-group-item">Aportes<select name="Aportes"
+                      style="margin-left:8%; width: 80%; height: 30px;">
+                      <option>Del cliente con mas reservas al menor</option>
+                      <option>Del cliente con menos reservas al mayor</option>
+                    </select>
+
+                  </li>
+                  <li class="list-group-item">numero de tablas<select name="CantidadTablas"
+                    style="margin-left:3%; width: 70%; height: 30px;">
+                    <option>0 - 25</option>
+                    <option>26 - 50</option>
+                    <option>51 - 75</option>
+                  </select>
+
+                  </li>
+                </ul>
+                <div class="card-body text-center">
+                  <button type="button" class="btn btn-primary">Consulta</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 `
 
 
