@@ -245,7 +245,6 @@ input {
 
 /* Footer provisorio */
 
-<<<<<<< HEAD
 footer {
     width: 100%;
     margin-top: 10%;
@@ -318,11 +317,7 @@ footer {
     font-weight: bold;
 }
 
-#boton{
-=======
-
 #boton {
->>>>>>> f8baf38aed14e9bcfb6725e57d4540e2eaf6f86b
     width: 25%;
     text-decoration: none;
     background-color: #5d3c21;
