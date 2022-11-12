@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/Develop/Frontend/Cliente/imagenes/Fogata.jpg);
+    background-image: url(/img/img-clientes/Fogata.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,7 +115,7 @@ body {
     color: rgb(16, 16, 16);
 }
 
-.formulario input[type="button"] {
+.formulario input[type="button"]  {
     width: 60%;
     margin: auto;
     border: solid thin  rgb(128, 0, 0, 66);
@@ -128,7 +128,6 @@ body {
     cursor: pointer;
     color: #222;
 }
-
 
 .sign-in {
     position: absolute;
@@ -159,4 +158,3 @@ a {
     transition: all .3s ease-in;
     color: #fefefe;
 }
-

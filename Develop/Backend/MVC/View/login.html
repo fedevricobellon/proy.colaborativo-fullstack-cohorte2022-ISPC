@@ -25,8 +25,8 @@
 
                 <p>Si ya tenes una cuenta por favor inicia sesion aqui</p>
             </div>
-            <a class="sign-up-btn" href="/Develop/Frontend/Administrador/index-admin.html">Administrador</a>
-            <a class="sign-up-btn" href="/Develop/Frontend/Cliente/cliente-datos-personales.html">Cliente</a>
+            <a class="sign-up-btn" href="./admin-inicio.html">Administrador</a>
+            <a class="sign-up-btn" href="./cliente-datos-personales.html">Cliente</a>
         </div>
         <form class="formulario" name="fvalida">
             <h2 class="create-account">Crear una cuenta</h2>
@@ -46,12 +46,12 @@
             <input type="email" placeholder="E-mail" name="email">
             <input type="password" placeholder="Contraseña" name="password">
             <input type="password" placeholder="Repetir Contraseña" name="password2">
-            <input type="button" placeholder="Registrarse" onclick="validarNuevaCuenta()">
+            <input type="button" placeholder="Registrarse" id="NuevaCuenta_Button" onclick="validarNuevaCuenta()">
         </form>
     </div>
 
-    <script src="./JavaScript/login.js"></script>
-    <script src="./JavaScript/valid-crearCuenta.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/login-valid_crearCuenta.js"></script>
 </body>
 
 </html>

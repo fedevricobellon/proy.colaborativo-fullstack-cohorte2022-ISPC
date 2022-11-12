@@ -12,7 +12,7 @@ function validarNuevaCuenta() {
     for (let index = 0; index < cadenaNombre.length; index++) {
         if (parseInt(cadenaNombre[index])) {
             alert("El nombre no puede contener numeros.")
-            document.fvalida.nombre.focus()
+            document.fvalida.nombre.focus() 
             return 0
         }
     }
