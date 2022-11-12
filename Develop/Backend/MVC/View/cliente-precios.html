@@ -1,43 +1,16 @@
 <!doctype html>
 <html lang="es">
 
-<<<<<<< HEAD
-    <!-- Bootstrap CSS -->
-    <<link rel="stylesheet" href="css/footerN.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    
-    <title>Home CabaniApp</title>
-  </head>
-  <body>
-    <nav class="navbar fixed-top  navbar-expand-md" style="background-color: #e7b242e9 ;"><!--Sirve para poner la barra de navegacion fija (Fixed-top)--> 
-      <div class="container-fluid">
-        <img src="/Imagenes/Logo.svg" alt="Bootstrap" width="30" height="48">
-        <a class="navbar-brand" href="#">CabaniApp</a>
-     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a class="nav-link" href="./Home.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Quiene somos.html">¿Quienes somos?</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
-          <li class="nav-item"><a class="nav-link" href="./login.html">Mi Cuenta</a></li>
-        </ul>
-=======
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/footerN.css">
-  <link rel="stylesheet" href="../Administrador/Header para Proyecto/header.css">
-  <link rel="stylesheet" href="css/main.css">
+  <!-- Links -->
+  <link rel="stylesheet" href="../View/css/cliente-footerN.css">
+  <link rel="stylesheet" href="../View/css/admin-header.css">
+  <link rel="stylesheet" href="../View/css/cliente-main.css">
+  <link rel="stylesheet" href="../View/css/admin-estilo.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
@@ -54,12 +27,12 @@
           <h1 class="mb-0">Contacto</h1>
         </header> -->
 
-         <!-- HEADER -->
+    <!-- HEADER -->
   <header class="mb-2">
     <section>
       <div class="conte">
-        <p> ELIGE TU LUGAR DE DESCANSO</p>
->>>>>>> 3effb2bb2afcd4309510aa0b7b8c57d78dc57b35
+        <p>ELEGI TU LUGAR DE DESCANSO</p>
+        <a href="../View/cliente-home.html">Volver a Inicio</a>
       </div>
     </section>
   </header>
@@ -139,50 +112,52 @@
         </table>
       </div>
       
-      <footer class="footer mt-3">
-        <section class="footer__container container">
-            <nav class="nav nav--footer">
-                <h2 class="footer__title">CABANIAPP</h2>
-    
-                <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="../Administrador/index-admin.html" class="nav__links">Inicio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="../Administrador/agregar-cabania.html" class="nav__links">Cabañas</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="../Administrador/contabilidad.html" class="nav__links">Contabilidad</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="../Administrador/agenda.html" class="nav__links">Agenda</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Preguntas Frecuentes</a>
-                    </li>
-                </ul>
-            </nav>
-    
-            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
-                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
-                <div class="footer__inputs">
-                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
-                    <input type="submit" value="Registrate" class="footer__submit">
-                </div>
-            </form>
-        </section>
-    
-        <section class="footer__copy container">
-            <div class="footer__social">
-                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg" class="footer__img"></a>
-            </div>
-    
-            <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
-        </section>
-    </footer>
+<!-- FOOTER -->
+<footer class="footer">
+  <section class="footer__container container">
+      <nav class="nav nav--footer">
+          <h2 class="footer__title">CABANIAPP</h2>
+
+          <ul class="nav__link nav__link--footer">
+              <li class="nav__items">
+                  <a href="../View/cliente-home.html" class="nav__links">Inicio</a>
+              </li>
+              <li class="nav__items">
+                  <a href="../View/cliente-quienes somos.html" class="nav__links">Quienes Somos</a>
+              </li>
+              <li class="nav__items">
+                  <a href="../View/cliente-pago-con-tarjetas.html" class="nav__links">Mi Cuenta</a>
+              </li>
+              <li class="nav__items">
+                  <a href="../View/cliente-contacto.html" class="nav__links">Contacto</a>
+              </li>
+              <li class="nav__items">
+                  <a href="../View/admin-preguntas.html" class="nav__links">Preguntas Frecuentes</a>
+              </li>
+          </ul>
+      </nav>
+
+      <form class="footer__form" action="../View/login.html" method="POST">
+          <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+          <div class="footer__inputs">
+              <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+              <input type="submit" value="Registrate" class="footer__submit">
+          </div>
+      </form>
+  </section>
+
+  <section class="footer__copy container">
+      <div class="footer__social">
+          <a href="#" class="footer__icons"><img src="../View/img/img-svg/facebook.svg" class="footer__img"></a>
+          <a href="#" class="footer__icons"><img src="../View/img/img-svg/instagram.svg" class="footer__img"></a>
+          <a href="#" class="footer__icons"><img src="../View/img/img-svg/whatsapp.svg" class="footer__img"></a>
+          <a href="#" class="footer__icons"><img src="../View/img/img-svg/gmail.svg" class="footer__img"></a>
+      </div>
+
+      <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
+  </section>
+</footer>
+
   
     <script src="node_modules/jquerry/dist/jquerry.min.js/"></script>
     <script src="node_modules/popper.js/dist/popper.min.js" ></script>
