@@ -63,7 +63,7 @@ p {
 	fill: var(--primario);
 }
 
-.categoria svg {
+.categoria .iconos {
 	width: 64px;
 	margin-bottom: 10px;
 }

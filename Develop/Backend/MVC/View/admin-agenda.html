@@ -9,9 +9,11 @@
   <!-- Bootstrap & CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/estilo_admin.css">
-  <link rel="stylesheet" href="../Administrador/Header para Proyecto/header.css">
-  <link rel="stylesheet" href="../Administrador/css/admin.css">
+ 
+  <link rel="stylesheet" href="../View/css/admin-estilo.css">
+  <link rel="stylesheet" href="../View/css/admin-header.css">
+  <link rel="stylesheet" href="../View/css/admin-header.css">
+  <link rel="stylesheet" href="../View/css/header_footer.css">
 
   <title>Agenda</title>
 </head>
@@ -19,11 +21,11 @@
 <body class="background-style">
 
   <!-- HEADER -->
-  <header class="mb-4">
+  <header class="mb-2">
     <section>
       <div class="conte">
-        <p>GESTION DE TU AGENDA</p>
-        <a href="../Administrador/index-admin.html">Volver a Inicio</a>
+        <p>GESTION DE COMPLEJOS</p>
+        <a href="../View/css/admin-inicio.css">Volver a Inicio</a>
       </div>
     </section>
   </header>
@@ -184,50 +186,51 @@
     </div>
   </div>
 
-  <footer class="footer mt-3">
+  <!-- FOOTER -->
+  <footer class="footer">
     <section class="footer__container container">
-      <nav class="nav nav--footer">
-        <h2 class="footer__title">CABANIAPP</h2>
+        <nav class="nav nav--footer">
+            <h2 class="footer__title">CABANIAPP</h2>
 
-        <ul class="nav__link nav__link--footer">
-          <li class="nav__items">
-            <a href="../Administrador/index-admin.html" class="nav__links">Inicio</a>
-          </li>
-          <li class="nav__items">
-            <a href="../Administrador/agregar-cabania.html" class="nav__links">Cabañas</a>
-          </li>
-          <li class="nav__items">
-            <a href="../Administrador/contabilidad.html" class="nav__links">Contabilidad</a>
-          </li>
-          <li class="nav__items">
-            <a href="../Administrador/agenda.html" class="nav__links">Agenda</a>
-          </li>
-          <li class="nav__items">
-            <a href="#" class="nav__links">Preguntas Frecuentes</a>
-          </li>
-        </ul>
-      </nav>
+            <ul class="nav__link nav__link--footer">
+                <li class="nav__items">
+                    <a href="../View/admin-inicio.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../View/admin-agregar-cabania.html" class="nav__links">Cabañas</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../View/admin-contabilidad.html" class="nav__links">Contabilidad</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../View/admin-agenda.html" class="nav__links">Agenda</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../View/admin-preguntas.html" class="nav__links">Preguntas Frecuentes</a>
+                </li>
+            </ul>
+        </nav>
 
-      <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
-        <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
-        <div class="footer__inputs">
-          <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
-          <input type="submit" value="Registrate" class="footer__submit">
-        </div>
-      </form>
+        <form class="footer__form" action="#" method="POST">
+            <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+            <div class="footer__inputs">
+                <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                <input type="submit" value="Registrate" class="footer__submit">
+            </div>
+        </form>
     </section>
 
     <section class="footer__copy container">
-      <div class="footer__social">
-        <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg" class="footer__img"></a>
-        <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg" class="footer__img"></a>
-        <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg" class="footer__img"></a>
-        <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg" class="footer__img"></a>
-      </div>
+        <div class="footer__social">
+            <a href="#" class="footer__icons"><img src="../View/img/img-svg/facebook.svg" class="footer__img"></a>
+            <a href="#" class="footer__icons"><img src="../View/img/img-svg/instagram.svg" class="footer__img"></a>
+            <a href="#" class="footer__icons"><img src="../View/img/img-svg/whatsapp.svg" class="footer__img"></a>
+            <a href="#" class="footer__icons"><img src="../View/img/img-svg/gmail.svg" class="footer__img"></a>
+        </div>
 
-      <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
+        <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
     </section>
-  </footer>
+</footer>
 
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
