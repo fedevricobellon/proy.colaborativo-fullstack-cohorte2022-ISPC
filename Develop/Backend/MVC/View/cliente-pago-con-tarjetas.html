@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cliente: pago con tarjetas</title>
-    <link rel="stylesheet" href="css/footerN.css">
-    <link rel="stylesheet" href="../Administrador/Header para Proyecto/header.css">
-    <link rel="stylesheet" href="css\style1-cliente.css">
+    
+    <link rel="stylesheet" href="../View/css/cliente-footerN.css">
+    <link rel="stylesheet" href="../View/css/admin-header.css">
+    <link rel="stylesheet" href="../View/css/cliente-style1.css">
 </head>
 
 <body class="grid-container">
@@ -17,7 +18,7 @@
     <section>
       <div class="conte">
         <p>GESTIONA TUS PAGOS</p>
-        <a href="../Cliente/Home.html">Volver a Inicio</a>
+        <a href="../View/cliente-home.html">Volver a Inicio</a>
       </div>
     </section>
   </header>
@@ -66,41 +67,51 @@
 
      
   <!-- FOOTER -->
-  <footer class="footer mt-3">
-    <section class="footer__container container">
-        <nav class="nav nav--footer">
-            <h2 class="footer__title">CABANIAPP</h2>
+<footer class="footer">
+  <section class="footer__container container">
+      <nav class="nav nav--footer">
+          <h2 class="footer__title">CABANIAPP</h2>
 
-           
-              <ul>
-                <li><a href="cliente-datos-personales.html">Datos personales</a></li>
-                <li><a href="cliente-pago-con-tarjetas.html">Tarjeta de pago</a></li>
-                <li><a class="active" href="cliente-form-reservas.html">Reservas</a></li>
-                <li><a href="cliente-seguridad.html">Seguridad</a></li>
-                <li><a href="/Develop/Frontend/Cliente/cliente-form-busqueda.html">Busqueda</a></li>
-              </ul>
-        </nav>
+          <ul class="nav__link nav__link--footer">
+              <li class="nav__items">
+                  <a href="../View/cliente-home.html" class="nav__links">Inicio</a>
+              </li>
+              <li class="nav__items">
+                  <a href="../View/cliente-quienes somos.html" class="nav__links">Quienes Somos</a>
+              </li>
+              <li class="nav__items">
+                  <a href="../View/cliente-pago-con-tarjetas.html" class="nav__links">Mi Cuenta</a>
+              </li>
+              <li class="nav__items">
+                  <a href="../View/cliente-contacto.html" class="nav__links">Contacto</a>
+              </li>
+              <li class="nav__items">
+                  <a href="../View/admin-preguntas.html" class="nav__links">Preguntas Frecuentes</a>
+              </li>
+          </ul>
+      </nav>
 
-        <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
-            <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
-            <div class="footer__inputs">
-                <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
-                <input type="submit" value="Registrate" class="footer__submit">
-            </div>
-        </form>
-    </section>
+      <form class="footer__form" action="../View/login.html" method="POST">
+          <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+          <div class="footer__inputs">
+              <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+              <input type="submit" value="Registrate" class="footer__submit">
+          </div>
+      </form>
+  </section>
 
-    <section class="footer__copy container">
-        <div class="footer__social">
-            <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/facebook.svg" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/instagram.svg" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/whatsapp.svg" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="../Administrador/img/img-svg/gmail.svg" class="footer__img"></a>
-        </div>
+  <section class="footer__copy container">
+      <div class="footer__social">
+          <a href="#" class="footer__icons"><img src="../View/img/img-svg/facebook.svg" class="footer__img"></a>
+          <a href="#" class="footer__icons"><img src="../View/img/img-svg/instagram.svg" class="footer__img"></a>
+          <a href="#" class="footer__icons"><img src="../View/img/img-svg/whatsapp.svg" class="footer__img"></a>
+          <a href="#" class="footer__icons"><img src="../View/img/img-svg/gmail.svg" class="footer__img"></a>
+      </div>
 
-        <h3 class="footer__copyright">Derechos reservados &copy; CABANIAPP</h3>
-    </section>
+      <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
+  </section>
 </footer>
+
 
   <script src="node_modules/jquerry/dist/jquerry.min.js/"></script>
   <script src="node_modules/popper.js/dist/popper.min.js" ></script>

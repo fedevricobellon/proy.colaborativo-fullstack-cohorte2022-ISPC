@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/img/img-clientes/Fogata.jpg);
+    background-image: url(../img/img-clientes/Fogata.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,7 +121,7 @@ body {
     border: solid thin  rgb(128, 0, 0, 66);
     padding: .7rem;
     border-radius: 2rem;
-    background-color: rgb(247, 244, 244);
+    background-color: rgb(247, 244, 244); /* --> este si le cambias el color modificas el boton que ves en blanco*/
     font-weight: 600;
     margin-top: 3rem;
     font-size: .8rem;
