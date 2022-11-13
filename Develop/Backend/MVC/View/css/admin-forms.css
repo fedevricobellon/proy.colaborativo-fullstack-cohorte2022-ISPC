@@ -30,7 +30,9 @@ body {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
+.form-cabania select{
+    padding: 3px;
+}
 
 header {
     /*background: url('../img/complejo\ cabañas\ 2.jpeg');*/
@@ -205,7 +207,10 @@ input {
 }
 
 .form-cabania input:hover {
-    background-color: hsl(47, 76%, 92%);
+    background-color: hsl(47, 69%, 86%);
+}
+.form-cabania select:hover {
+    background-color: hsl(47, 69%, 86%);
 }
 
 

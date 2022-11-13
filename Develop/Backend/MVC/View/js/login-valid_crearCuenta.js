@@ -3,7 +3,7 @@ function validarNuevaCuenta() {
     // Validamos el nombre que sean solo caracteres.
     let cadenaNombre = document.fvalida.nombre.value.split("")
 
-    if (nombre == " ") {
+    if (cadenaNombre == "") {
         alert("El nombre no puede estar vacío.")
         document.fvalida.nombre.focus()
         return 0
@@ -15,11 +15,17 @@ function validarNuevaCuenta() {
             document.fvalida.nombre.focus() 
             return 0
         }
+        if(cadenaNombre[index] == " "){
+            alert("El nombre no puede contener espacios.")
+            document.fvalida.nombre.focus() 
+            return 0
+        }
     }
 
     // Validamos mail con JS
     if (document.fvalida.email.value.length == 0) {
         alert("Tiene que escribir su email.")
+        document.fvalida.email.focus()
         return 0
     }
 
@@ -107,7 +113,7 @@ function validarNuevaCuenta() {
 
     if (document.fvalida.password.value !== document.fvalida.password2.value) {
         alert("Las contraseñas no coinciden")
-        document.fvalida.password.focus()
+        document.fvalida.password2.focus()
         return 0;
     }
 
