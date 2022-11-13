@@ -69,7 +69,6 @@ panel_Inicio_Contabilidad = `
 </div>
 </div>
 `
-
 panel_Inicio_Agenda = `
 <div class="container-fluid" id="panelInicio">
 
@@ -172,10 +171,46 @@ panel_Inicio_Agenda = `
           </div>
         </div>
 `
-
 panel_Clientes = `
-<div class="container-fluid" id="panelClientes">
-<h1> panel Clientes </h1>
+<div class="container" id="panelEgresos">
+<div class="row">
+  <div class="col">
+    <div class="card text-center">
+      <div class="card-header text-start">
+        AGREGAR NUEVO CLIENTE:
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <label for="enabledSelect" class="form-label"><h1>INFLO CLI 1</h1></label>
+            <select id="ensabledSelect" class="form-select">
+              <option>Todas</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="enabledSelect" class="form-label"><h1>INFLO CLI 2</h1></label>
+            <select id="ensabledSelect" class="form-select">
+              <option>Todas</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="enabledSelect" class="form-label"><h1>INFO CLI 3</h1></label>
+            <select id="ensabledSelect" class="form-select">
+              <option>Todas</option>
+            </select>
+          </div>
+          <div class="col">
+            <h1>Agregar</h1>
+            <button type="button" class="btn btn-primary">Confirmar</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted text-end">
+
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 `
 panel_Egresos = `
@@ -220,7 +255,6 @@ panel_Egresos = `
 </div>
 </div>
 `
-
 panel_Reportes = `
 <div class="container" id="panelReportes">
 <div class="row">
@@ -263,7 +297,6 @@ panel_Reportes = `
 </div>
 </div>
 `
-
 panel_Agenda = `
 <div class="container-fluid" id="panelAgenda">
 <div class="row">
@@ -272,7 +305,7 @@ panel_Agenda = `
     <div class="row">
       <div class="col-3">
         <div class="card" style="width: 15rem;">
-          <img src="./img/carpetaPrueba/cabañaPrueba1.jpg" class="card-img-top" 
+          <img src="../img/carpetaPrueba/cabañaPrueba1.jpg" class="card-img-top" 
           alt="..."style="height:15rem">
           <div class="card-body text-center">
             <h5 class="card-title">Cabaña 1</h5>
@@ -338,7 +371,7 @@ panel_Agenda = `
     <div class="row">
       <div class="col-3">
         <div class="card" style="width: 15rem;">
-          <img src="./img/carpetaPrueba/cabañaPrueba2.jpg" class="card-img-top" 
+          <img src="../img/carpetaPrueba/cabañaPrueba2.jpg" class="card-img-top" 
           alt="..."style="height:15rem">
           <div class="card-body text-center">
             <h5 class="card-title">Cabaña 2</h5>
@@ -350,7 +383,7 @@ panel_Agenda = `
       </div>
       <div class="col">
         <div class="card" style="width: 15rem;">
-          <img src="./img/carpetaPrueba/fotoFamilia1.jpg" class="card-img-top" 
+          <img src="../img/carpetaPrueba/fotoFamilia1.jpg" class="card-img-top" 
           alt="..."style="height:15rem">
           <div class="card-body text-center">
             <h5 class="card-title">Familia Messi</h5>
@@ -413,7 +446,7 @@ panel_Agenda = `
     <div class="row">
       <div class="col-3">
         <div class="card" style="width: 15rem;">
-          <img src="./img/carpetaPrueba/cabañaPrueba3.jpg" class="card-img-top" 
+          <img src="../img/carpetaPrueba/cabañaPrueba3.jpg" class="card-img-top" 
           alt="..."style="height:15rem">
           <div class="card-body text-center">
             <h5 class="card-title">Cabaña 3</h5>
@@ -425,7 +458,7 @@ panel_Agenda = `
       </div>
       <div class="col">
         <div class="card" style="width: 15rem;">
-          <img src="./img/carpetaPrueba/fotoFamilia2.jpg" class="card-img-top" 
+          <img src="../img/carpetaPrueba/fotoFamilia2.jpg" class="card-img-top" 
           alt="..."style="height:15rem">
           <div class="card-body text-center">
             <h5 class="card-title">Familia Corleone</h5>
