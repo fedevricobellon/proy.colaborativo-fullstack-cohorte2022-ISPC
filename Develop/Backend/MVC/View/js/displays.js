@@ -7,7 +7,6 @@ const accordion_Ayuda = document.getElementById("flush-headingFive")
 const panel_Zone = document.getElementById("panelZone")
 
 const showPanel = (show) => {
-    //listaDePaneles = [panel_Inicio, panel_Clientes, panel_Agenda, panel_Marketing, panel_Ayuda]
     panel_Zone.innerHTML = show
 }
 
@@ -174,19 +173,61 @@ panel_Inicio_Agenda = `
         </div>
 `
 
-
 panel_Clientes = `
 <div class="container-fluid" id="panelClientes">
 <h1> panel Clientes </h1>
 </div>
 `
+panel_Egresos = `
+<div class="container" id="panelEgresos">
+<div class="row">
+  <div class="col">
+    <div class="card text-center">
+      <div class="card-header text-start">
+        FILTRO DE EGRESOS POR:
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <label for="enabledSelect" class="form-label"><h1>Tipo de egreso</h1></label>
+            <select id="ensabledSelect" class="form-select">
+              <option>Todas</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="enabledSelect" class="form-label"><h1>Desde</h1></label>
+            <select id="ensabledSelect" class="form-select">
+              <option>Todas</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="enabledSelect" class="form-label"><h1>Hasta</h1></label>
+            <select id="ensabledSelect" class="form-select">
+              <option>Todas</option>
+            </select>
+          </div>
+          <div class="col">
+            <h1>Reporte</h1>
+            <button type="button" class="btn btn-primary">Generar reporte</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted text-end">
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+`
+
 panel_Reportes = `
 <div class="container" id="panelReportes">
 <div class="row">
   <div class="col">
     <div class="card text-center">
       <div class="card-header text-start">
-        FILTRO
+        FILTRO DE REPORTES POR:
       </div>
       <div class="card-body">
         <div class="row">
@@ -222,6 +263,7 @@ panel_Reportes = `
 </div>
 </div>
 `
+
 panel_Agenda = `
 <div class="container-fluid" id="panelAgenda">
 <div class="row">
