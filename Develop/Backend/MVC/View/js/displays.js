@@ -97,27 +97,35 @@ panel_Inicio_Agenda = `
         <p class="card-text text-center">Elija el periodo que desea chequear para una nueva reserva</p>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item" id="liFechaIngreso">Desde<input type="date" id="fechaIngreso"
-            style="margin-left:19%; width: 80%; height: 30px;"></li>
-        <li class="list-group-item" id="liFechaEgreso">Hasta<input type="date" id="fechaEgreso"
-            style="margin-left:12%; width: 80%; height: 30px;"></li>
-        <li class="list-group-item" id="liNumPersonas">N° Personas
-          <select name="NPersonas" id="numPersonas" style="margin-left:4%; width: 80%; height: 30px;">
-            <option value="0">Seleccionar opcion...</option>
-            <option value="1">1-2</option>
-            <option value="2">3-4</option>
-            <option value="3">5-6</option>
-            <option value="4">7 o más</option>
-          </select>
-        </li>
-        <li class="list-group-item" id="idNumPersonas">Ciudad
-          <select id="ciudadReserva" style="margin-left:10%; width: 80%; height: 30px;">
+        <li class="list-group-item" id="idNumPersonas">Complejo
+          <select id="ciudadReserva" style="margin-left:7%; width: 80%; height: 30px;">
             <option value="0">Seleccionar opcion...</option>
             <option value="1">Merlo</option>
             <option value="2">Mendoza</option>
             <option value="3">Rosario</option>
           </select>
         </li>
+        <li class="list-group-item" id="idNumPersonas">Cabaña
+          <select id="ciudadReserva" style="margin-left:9%; width: 80%; height: 30px;">
+            <option value="0">Seleccionar opcion...</option>
+            <option value="1">Merlo</option>
+            <option value="2">Mendoza</option>
+            <option value="3">Rosario</option>
+          </select>
+        </li>
+        <li class="list-group-item" id="liFechaIngreso">Desde<input type="date" id="fechaIngreso"
+          style="margin-left:11%; width: 80%; height: 30px;"></li>
+      <li class="list-group-item" id="liFechaEgreso">Hasta<input type="date" id="fechaEgreso"
+          style="margin-left:12%; width: 80%; height: 30px;"></li>
+      <li class="list-group-item" id="liNumPersonas">N° Personas
+        <select name="NPersonas" id="numPersonas" style="margin-left:4%; width: 80%; height: 30px;">
+          <option value="0">Seleccionar opcion...</option>
+          <option value="1">1-2</option>
+          <option value="2">3-4</option>
+          <option value="3">5-6</option>
+          <option value="4">7 o más</option>
+        </select>
+      </li>
       </ul>
       <div class="card-body text-center">
         <!-- Momentaneamente lleva a reserva, luego con back consultará y luego reserva.-->
@@ -167,8 +175,7 @@ panel_Inicio_Agenda = `
 
 </div>
 </div>
-</div>
-`
+</div>`
 panel_Clientes = `
 <div class="container" id="panelEgresos">
 <div class="row">
