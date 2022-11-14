@@ -27,13 +27,14 @@
     <div class="row">
       <div class="col">
 
-  <header class="mb-2">
-    <section>
-      <div class="conte">
-        <p>¿QUIENES SOMOS?</p>
-      </div>
-    </section>
-  </header>
+        <header class="mb-2">
+          <section>
+            <div class="conte">
+              <p>¿QUIENES SOMOS?</p>
+              <a href= "./cliente-home.html">Volver a Inicio</a>
+            </div>
+          </section>
+        </header>
 
 
         <nav class="navbar  navbar-expand-md" style="background-color: #e7b242e9 ;">
@@ -50,7 +51,7 @@
                 <li class="nav-item active"><a class="nav-link" href="./cliente-home.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="./cliente-quienes somos.html">¿Quienes somos?</a></li>
                 <li class="nav-item"><a class="nav-link" href="./cliente-contacto.html">Contacto</a></li>
-            <li class="nav-item"><a class="nav-link" href="./login.html">Mi Cuenta</a></li>
+                <li class="nav-item"><a class="nav-link" href="./cliente-pago-con-tarjetas.html">Mi Cuenta</a></li>
               </ul>
             </div>
         </nav>
@@ -67,7 +68,7 @@
     <button id="btn-traducirEs">Traducir al Español</button>
   </div>
 
-  <section class="seccionPrincipal" id = "secPrincipal">
+  <section class="seccionPrincipal" id="secPrincipal">
     <div class="seccionTexto1" id="bloqueUnoEs">
       <p>Somos un <strong> grupo de dueños de cabañas </strong>con una amplia trayectoria y un reconocido prestigio, que
         nos dedicamos a brindarles el mejor servicio, y la tranquilidad que se necesita al momento de elegir una Cabaña
@@ -157,51 +158,57 @@
   </section>
 
   </div>
-  <!-- FOOTER -->
-<footer class="footer">
-  <section class="footer__container container">
-      <nav class="nav nav--footer">
-          <h2 class="footer__title">CABANIAPP</h2>
 
-          <ul class="nav__link nav__link--footer">
-              <li class="nav__items">
-                  <a href="./cliente-home.html" class="nav__links">Inicio</a>
-              </li>
-              <li class="nav__items">
-                  <a href="./cliente-quienes somos.html" class="nav__links">Quienes Somos</a>
-              </li>
-              <li class="nav__items">
-                  <a href="./cliente-pago-con-tarjetas.html" class="nav__links">Mi Cuenta</a>
-              </li>
-              <li class="nav__items">
-                  <a href="./cliente-contacto.html" class="nav__links">Contacto</a>
-              </li>
-              <li class="nav__items">
-                  <a href="./admin-preguntas.html" class="nav__links">Preguntas Frecuentes</a>
-              </li>
-          </ul>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <section class="footer__container container">
+      <nav class="nav nav--footer">
+        <h2 class="footer__title">CABANIAPP</h2>
+
+        <ul class="nav__link nav__link--footer">
+          <li class="nav__items">
+            <a href="./cliente-home.html" class="nav__links">Inicio</a>
+          </li>
+          <li class="nav__items">
+            <a href="./cliente-quienes somos.html" class="nav__links">Quienes Somos</a>
+          </li>
+          <li class="nav__items">
+            <a href="./cliente-pago-con-tarjetas.html" class="nav__links">Mi Cuenta</a>
+          </li>
+          <li class="nav__items">
+            <a href="./cliente-contacto.html" class="nav__links">Contacto</a>
+          </li>
+          <li class="nav__items">
+            <a href="./admin-preguntas.html" class="nav__links">Preguntas Frecuentes</a>
+          </li>
+        </ul>
       </nav>
 
-      <form class="footer__form" action="./login.html" method="POST">
-          <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
-          <div class="footer__inputs">
-              <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
-              <input type="submit" value="Registrate" class="footer__submit">
-          </div>
+      <form class="footer__form" action="#" method="POST">
+        <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+        <div class="footer__inputs">
+          <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+          <input type="submit" value="Registrate" class="footer__submit" onclick="enviarAHome()">
+          <script>
+            function enviarAHome() {
+              document.location.href = "index.html"
+            }
+          </script>
+        </div>
       </form>
-  </section>
+    </section>
 
-  <section class="footer__copy container">
+    <section class="footer__copy container">
       <div class="footer__social">
-          <a href="#" class="footer__icons"><img src="./img/img-svg/facebook.svg" class="footer__img"></a>
-          <a href="#" class="footer__icons"><img src="./img/img-svg/instagram.svg" class="footer__img"></a>
-          <a href="#" class="footer__icons"><img src="./img/img-svg/whatsapp.svg" class="footer__img"></a>
-          <a href="#" class="footer__icons"><img src="./img/img-svg/gmail.svg" class="footer__img"></a>
+        <a href="#" class="footer__icons"><img src="./img/img-svg/facebook.svg" class="footer__img"></a>
+        <a href="#" class="footer__icons"><img src="./img/img-svg/instagram.svg" class="footer__img"></a>
+        <a href="#" class="footer__icons"><img src="./img/img-svg/whatsapp.svg" class="footer__img"></a>
+        <a href="#" class="footer__icons"><img src="./img/img-svg/gmail.svg" class="footer__img"></a>
       </div>
 
       <h3 class="footer__copyright">Derechos reservados &copy; ISPC</h3>
-  </section>
-</footer>
+    </section>
+  </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
