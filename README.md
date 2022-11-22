@@ -17,8 +17,6 @@ Espacios en el mar y en la montaña, en el norte y en el sur, contamos con proye
 ### Integrantes
 
 >[Romina Maira Cortez](https://github.com/RomCort).
-
->[Romina Cattaneo](https://github.com/romica44).
  
 >[Álvarez jesica](https://github.com/Js-Alvarez).
 
